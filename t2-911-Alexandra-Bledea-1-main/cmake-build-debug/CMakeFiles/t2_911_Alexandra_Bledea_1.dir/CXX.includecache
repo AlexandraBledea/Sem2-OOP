@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../BMI/BMI.h
+Measurement.h
+../BMI/Measurement.h
+
+../BP/BP.h
+Measurement.h
+../BP/Measurement.h
+
+../Measurement/Measurement.h
+string
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/Person.cpp
+Person.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/Person.h
+BP.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/BP.h
+BMI.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/BMI.h
+sstream
+-
+fstream
+-
+iostream
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/Person.h
+Measurement.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t2-911-Alexandra-Bledea-1/Person/Measurement.h
+vector
+-
+
