@@ -1,0 +1,48 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Domain/Gene.h
+string
+-
+
+../DynamicArray/dynamic_array.h
+cstdlib
+-
+Gene.h
+../DynamicArray/Gene.h
+
+../Repository/Repository.h
+cstdlib
+-
+Gene.h
+../Repository/Gene.h
+dynamic_array.h
+../Repository/dynamic_array.h
+
+../Service/Service.h
+cstdlib
+-
+dynamic_array.h
+../Service/dynamic_array.h
+Repository.h
+../Service/Repository.h
+Gene.h
+../Service/Gene.h
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t1-911-Alexandra-Bledea-1/Console/Console.cpp
+iostream
+-
+Console.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t1-911-Alexandra-Bledea-1/Console/Console.h
+iomanip
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t1-911-Alexandra-Bledea-1/Console/Console.h
+Service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/t1-911-Alexandra-Bledea-1/Console/Service.h
+
