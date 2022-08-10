@@ -1,0 +1,64 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../DynamicArray/dynamic-array.h
+domain.h
+../DynamicArray/domain.h
+
+../console/console.h
+../domain/domain.h
+../domain/domain.h
+repository.h
+../console/repository.h
+service.h
+../console/service.h
+stdio.h
+-
+
+../domain/domain.h
+
+../repository/repository.h
+../domain/domain.h
+../domain/domain.h
+dynamic-array.h
+../repository/dynamic-array.h
+
+../service/service.h
+../repository/repository.h
+../repository/repository.h
+../undo_redo/repo_undo.h
+../undo_redo/repo_undo.h
+
+../tests/tests.h
+
+../undo_redo/repo_undo.h
+repository.h
+../undo_redo/repository.h
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a23-911-Alexandra-Bledea/main.c
+service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a23-911-Alexandra-Bledea/service.h
+../undo_redo/repo_undo.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/undo_redo/repo_undo.h
+repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a23-911-Alexandra-Bledea/repository.h
+console.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a23-911-Alexandra-Bledea/console.h
+stdio.h
+-
+time.h
+-
+crtdbg.h
+-
+string.h
+-
+../tests/tests.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/tests/tests.h
+stdlib.h
+-
+
