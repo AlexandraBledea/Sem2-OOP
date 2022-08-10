@@ -1,0 +1,649 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_service.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_service.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_service.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/23/2021.
+        -:    3://
+        -:    4:#include "repository.h"
+        -:    5:#include "service.h"
+        -:    6:#include "test_service.h"
+        -:    7:#include "Exceptions.h"
+        -:    8:#include <assert.h>
+        -:    9:
+        1:   10:void Test_Service::TestAddService() {
+        2:   11:    Repository UserRepo;
+        1:   11-block  0
+    $$$$$:   11-block  1
+        2:   12:    Repository repo;
+        1:   12-block  0
+        1:   12-block  1
+    $$$$$:   12-block  2
+        1:   13:    repo.init_repository();
+        1:   13-block  0
+        1:   14:    Service service(repo, UserRepo);
+        1:   14-block  0
+        1:   15:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+        1:   15-block  3
+        1:   15-block  4
+    $$$$$:   15-block  5
+    $$$$$:   15-block  6
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+        -:   16:    try {
+       7*:   17:        service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+        1:   17-block  4
+        1:   17-block  5
+        1:   17-block  6
+        1:   17-block  7
+        1:   17-block  8
+        1:   17-block  9
+        1:   17-block 10
+        1:   17-block 11
+        1:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   17-block 15
+    #####:   18:        assert(false);
+        -:   19:    }
+        1:   20:    catch(ExceptionsRepository&) {
+        1:   20-block  0
+        -:   21:        assert(true);
+        -:   22:    }
+        1:   23:}
+        -:   24:
+        1:   25:void Test_Service::TestDeleteService() {
+        2:   26:    Repository UserRepo;
+        1:   26-block  0
+    $$$$$:   26-block  1
+        2:   27:    Repository repo;
+        1:   27-block  0
+        1:   27-block  1
+    $$$$$:   27-block  2
+        1:   28:    repo.init_repository();
+        1:   28-block  0
+        1:   29:    Service service(repo, UserRepo);
+        1:   29-block  0
+        -:   30:
+        1:   31:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   31-block  0
+        1:   31-block  1
+        1:   31-block  2
+        1:   31-block  3
+        1:   31-block  4
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+    $$$$$:   31-block 15
+    $$$$$:   31-block 16
+        1:   32:    service.DeleteService("XL", "Pink", "https://abcd.com", 1);
+        1:   32-block  0
+        1:   32-block  1
+        1:   32-block  2
+        1:   32-block  3
+    $$$$$:   32-block  4
+    $$$$$:   32-block  5
+    $$$$$:   32-block  6
+    $$$$$:   32-block  7
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+    $$$$$:   32-block 15
+        -:   33:    try{
+       7*:   34:        service.DeleteService("XL", "Pink", "https://abcd.com", 1);
+        1:   34-block  0
+        1:   34-block  1
+        1:   34-block  2
+    %%%%%:   34-block  3
+        1:   34-block  4
+        1:   34-block  5
+        1:   34-block  6
+        1:   34-block  7
+        1:   34-block  8
+        1:   34-block  9
+        1:   34-block 10
+        1:   34-block 11
+        1:   34-block 12
+        1:   34-block 13
+        1:   34-block 14
+        1:   34-block 15
+    #####:   35:        assert(false);
+        -:   36:    }
+        1:   37:    catch(ExceptionsRepository&)
+        1:   37-block  0
+        -:   38:    {
+        -:   39:        assert(true);
+        -:   40:    }
+        -:   41:
+        1:   42:    service.AddService("XL", "Pink", 100, 0, "https://abcd.com");
+        1:   42-block  0
+        1:   42-block  1
+        1:   42-block  2
+        1:   42-block  3
+        1:   42-block  4
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+    $$$$$:   42-block 11
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+    $$$$$:   42-block 16
+        1:   43:    service.DeleteService("XL", "Pink", "https://abcd.com", 2);
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+        1:   43-block  3
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+        -:   44:    try{
+       7*:   45:        service.DeleteService("XL", "Pink", "https://abcd.com", 2);
+        1:   45-block  0
+        1:   45-block  1
+        1:   45-block  2
+    %%%%%:   45-block  3
+        1:   45-block  4
+        1:   45-block  5
+        1:   45-block  6
+        1:   45-block  7
+        1:   45-block  8
+        1:   45-block  9
+        1:   45-block 10
+        1:   45-block 11
+        1:   45-block 12
+        1:   45-block 13
+        1:   45-block 14
+        1:   45-block 15
+    #####:   46:        assert(false);
+        -:   47:    }
+        1:   48:    catch(ExceptionsRepository&)
+        1:   48-block  0
+        -:   49:    {
+        -:   50:        assert(true);
+        -:   51:    }
+        -:   52:
+        1:   53:}
+        -:   54:
+        1:   55:void Test_Service::TestUpdatePriceService() {
+        2:   56:    Repository UserRepo;
+        1:   56-block  0
+    $$$$$:   56-block  1
+        2:   57:    Repository repo;
+        1:   57-block  0
+        1:   57-block  1
+    $$$$$:   57-block  2
+        1:   58:    repo.init_repository();
+        1:   58-block  0
+        1:   59:    Service service(repo, UserRepo);
+        1:   59-block  0
+        -:   60:
+        1:   61:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   61-block  0
+        1:   61-block  1
+        1:   61-block  2
+        1:   61-block  3
+        1:   61-block  4
+    $$$$$:   61-block  5
+    $$$$$:   61-block  6
+    $$$$$:   61-block  7
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+    $$$$$:   61-block 10
+    $$$$$:   61-block 11
+    $$$$$:   61-block 12
+    $$$$$:   61-block 13
+    $$$$$:   61-block 14
+    $$$$$:   61-block 15
+    $$$$$:   61-block 16
+        1:   62:    service.UpdatePriceService("XL", "Pink", "https://abcd.com", 200);
+        1:   62-block  0
+        1:   62-block  1
+        1:   62-block  2
+        1:   62-block  3
+    $$$$$:   62-block  4
+    $$$$$:   62-block  5
+    $$$$$:   62-block  6
+    $$$$$:   62-block  7
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+    $$$$$:   62-block 13
+    $$$$$:   62-block 14
+    $$$$$:   62-block 15
+       1*:   63:    assert(service.GetRepository()[10].GetPrice() == 200);
+        1:   63-block  0
+        1:   63-block  1
+    %%%%%:   63-block  2
+        1:   63-block  3
+    %%%%%:   63-block  4
+        -:   64:    try{
+       7*:   65:        service.UpdatePriceService("XL", "Purple", "https://abcdaadsd.com", 200);
+        1:   65-block  0
+        1:   65-block  1
+        1:   65-block  2
+        1:   65-block  3
+    %%%%%:   65-block  4
+        1:   65-block  5
+        1:   65-block  6
+        1:   65-block  7
+        1:   65-block  8
+        1:   65-block  9
+        1:   65-block 10
+        1:   65-block 11
+        1:   65-block 12
+        1:   65-block 13
+        1:   65-block 14
+        1:   65-block 15
+        1:   65-block 16
+    #####:   66:        assert(false);
+        -:   67:    }
+        1:   68:    catch(ExceptionsRepository&)
+        1:   68-block  0
+        -:   69:    {
+        -:   70:        assert(true);
+        -:   71:    }
+        -:   72:
+        1:   73:}
+        -:   74:
+        1:   75:void Test_Service::TestUpdateQuantityService() {
+        2:   76:    Repository UserRepo;
+        1:   76-block  0
+    $$$$$:   76-block  1
+        2:   77:    Repository repo;
+        1:   77-block  0
+        1:   77-block  1
+    $$$$$:   77-block  2
+        1:   78:    repo.init_repository();
+        1:   78-block  0
+        1:   79:    Service service(repo, UserRepo);
+        1:   79-block  0
+        -:   80:
+        1:   81:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   81-block  0
+        1:   81-block  1
+        1:   81-block  2
+        1:   81-block  3
+        1:   81-block  4
+    $$$$$:   81-block  5
+    $$$$$:   81-block  6
+    $$$$$:   81-block  7
+    $$$$$:   81-block  8
+    $$$$$:   81-block  9
+    $$$$$:   81-block 10
+    $$$$$:   81-block 11
+    $$$$$:   81-block 12
+    $$$$$:   81-block 13
+    $$$$$:   81-block 14
+    $$$$$:   81-block 15
+    $$$$$:   81-block 16
+        1:   82:    service.UpdateQuantityService("XL", "Pink", "https://abcd.com", 200);
+        1:   82-block  0
+        1:   82-block  1
+        1:   82-block  2
+        1:   82-block  3
+    $$$$$:   82-block  4
+    $$$$$:   82-block  5
+    $$$$$:   82-block  6
+    $$$$$:   82-block  7
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+    $$$$$:   82-block 13
+    $$$$$:   82-block 14
+    $$$$$:   82-block 15
+        -:   83:    try{
+       7*:   84:        service.UpdateQuantityService("XL", "Purple", "https://abcdaadsd.com", 200);
+        1:   84-block  0
+        1:   84-block  1
+        1:   84-block  2
+    %%%%%:   84-block  3
+        1:   84-block  4
+        1:   84-block  5
+        1:   84-block  6
+        1:   84-block  7
+        1:   84-block  8
+        1:   84-block  9
+        1:   84-block 10
+        1:   84-block 11
+        1:   84-block 12
+        1:   84-block 13
+        1:   84-block 14
+        1:   84-block 15
+    #####:   85:        assert(false);
+        -:   86:    }
+        1:   87:    catch(ExceptionsRepository&)
+        1:   87-block  0
+        -:   88:    {
+        -:   89:        assert(true);
+        -:   90:    }
+        -:   91:
+        1:   92:}
+        -:   93:
+        1:   94:void Test_Service::TestGetSize() {
+        2:   95:    Repository UserRepo;
+        1:   95-block  0
+    $$$$$:   95-block  1
+        2:   96:    Repository repo;
+        1:   96-block  0
+        1:   96-block  1
+    $$$$$:   96-block  2
+        1:   97:    Service service(repo, UserRepo);
+        1:   97-block  0
+        -:   98:
+        1:   99:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   99-block  0
+        1:   99-block  1
+        1:   99-block  2
+        1:   99-block  3
+        1:   99-block  4
+    $$$$$:   99-block  5
+    $$$$$:   99-block  6
+    $$$$$:   99-block  7
+    $$$$$:   99-block  8
+    $$$$$:   99-block  9
+    $$$$$:   99-block 10
+    $$$$$:   99-block 11
+    $$$$$:   99-block 12
+    $$$$$:   99-block 13
+    $$$$$:   99-block 14
+    $$$$$:   99-block 15
+    $$$$$:   99-block 16
+       1*:  100:    assert(service.GetSize() == 1);
+        1:  100-block  0
+    %%%%%:  100-block  1
+        1:  100-block  2
+    %%%%%:  100-block  3
+        -:  101:
+        1:  102:}
+        -:  103:
+        1:  104:void Test_Service::TestAddUserService() {
+        2:  105:    Repository UserRepo;
+        1:  105-block  0
+    $$$$$:  105-block  1
+        2:  106:    Repository repo;
+        1:  106-block  0
+    $$$$$:  106-block  1
+        1:  107:    Service service(repo, UserRepo);
+        1:  107-block  0
+        -:  108:
+        1:  109:    service.AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:  109-block  0
+        1:  109-block  1
+        1:  109-block  2
+        1:  109-block  3
+        1:  109-block  4
+    $$$$$:  109-block  5
+    $$$$$:  109-block  6
+    $$$$$:  109-block  7
+    $$$$$:  109-block  8
+    $$$$$:  109-block  9
+    $$$$$:  109-block 10
+    $$$$$:  109-block 11
+    $$$$$:  109-block 12
+    $$$$$:  109-block 13
+    $$$$$:  109-block 14
+    $$$$$:  109-block 15
+    $$$$$:  109-block 16
+        3:  110:    Coat c("XL", "Pink", 100, 3, "https://abcd.com");
+        1:  110-block  0
+        1:  110-block  1
+        1:  110-block  2
+    $$$$$:  110-block  3
+    $$$$$:  110-block  4
+    $$$$$:  110-block  5
+    $$$$$:  110-block  6
+    $$$$$:  110-block  7
+    $$$$$:  110-block  8
+    $$$$$:  110-block  9
+        3:  111:    Coat cUser("XL", "Pink", 100, 1, "https://abcd.com");
+        1:  111-block  0
+        1:  111-block  1
+        1:  111-block  2
+    $$$$$:  111-block  3
+    $$$$$:  111-block  4
+    $$$$$:  111-block  5
+    $$$$$:  111-block  6
+    $$$$$:  111-block  7
+    $$$$$:  111-block  8
+    $$$$$:  111-block  9
+       1*:  112:    assert(service.AddUserService(c, cUser) == 0);
+        1:  112-block  0
+        1:  112-block  1
+        1:  112-block  2
+    %%%%%:  112-block  3
+        1:  112-block  4
+    %%%%%:  112-block  5
+        1:  112-block  6
+        1:  112-block  7
+        1:  112-block  8
+        1:  112-block  9
+    $$$$$:  112-block 10
+    $$$$$:  112-block 11
+    $$$$$:  112-block 12
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+    $$$$$:  112-block 15
+       1*:  113:    assert(service.GetUserRepository()[0].GetSize() == "XL");
+        1:  113-block  0
+        1:  113-block  1
+        1:  113-block  2
+    %%%%%:  113-block  3
+        1:  113-block  4
+    %%%%%:  113-block  5
+        1:  113-block  6
+        1:  113-block  7
+    $$$$$:  113-block  8
+    $$$$$:  113-block  9
+    $$$$$:  113-block 10
+       1*:  114:    assert(service.GetUserRepository()[0].GetColor() == "Pink");
+        1:  114-block  0
+        1:  114-block  1
+        1:  114-block  2
+    %%%%%:  114-block  3
+        1:  114-block  4
+    %%%%%:  114-block  5
+        1:  114-block  6
+        1:  114-block  7
+        1:  114-block  8
+        1:  114-block  9
+    $$$$$:  114-block 10
+    $$$$$:  114-block 11
+    $$$$$:  114-block 12
+    $$$$$:  114-block 13
+    $$$$$:  114-block 14
+    $$$$$:  114-block 15
+       1*:  115:    assert(service.GetUserRepository()[0].GetPrice() == 100);
+        1:  115-block  0
+        1:  115-block  1
+        1:  115-block  2
+    %%%%%:  115-block  3
+        1:  115-block  4
+    %%%%%:  115-block  5
+        1:  115-block  6
+        1:  115-block  7
+    $$$$$:  115-block  8
+    $$$$$:  115-block  9
+    $$$$$:  115-block 10
+       1*:  116:    assert(service.GetUserRepository()[0].GetQuantity() == 1);
+        1:  116-block  0
+        1:  116-block  1
+        1:  116-block  2
+    %%%%%:  116-block  3
+        1:  116-block  4
+    %%%%%:  116-block  5
+        1:  116-block  6
+        1:  116-block  7
+    $$$$$:  116-block  8
+    $$$$$:  116-block  9
+    $$$$$:  116-block 10
+       1*:  117:    assert(service.GetUserRepository()[0].GetPhotograph() == "https://abcd.com");
+        1:  117-block  0
+        1:  117-block  1
+        1:  117-block  2
+    %%%%%:  117-block  3
+        1:  117-block  4
+    %%%%%:  117-block  5
+        1:  117-block  6
+        1:  117-block  7
+        1:  117-block  8
+        1:  117-block  9
+    $$$$$:  117-block 10
+    $$$$$:  117-block 11
+    $$$$$:  117-block 12
+    $$$$$:  117-block 13
+    $$$$$:  117-block 14
+    $$$$$:  117-block 15
+       1*:  118:    assert(service.AddUserService(c, cUser) == 0);
+        1:  118-block  0
+        1:  118-block  1
+        1:  118-block  2
+        1:  118-block  3
+    %%%%%:  118-block  4
+        1:  118-block  5
+    %%%%%:  118-block  6
+        1:  118-block  7
+        1:  118-block  8
+        1:  118-block  9
+        1:  118-block 10
+    $$$$$:  118-block 11
+    $$$$$:  118-block 12
+    $$$$$:  118-block 13
+    $$$$$:  118-block 14
+    $$$$$:  118-block 15
+    $$$$$:  118-block 16
+       1*:  119:    assert(UserRepo.GetDynArr()[0].GetQuantity() == 2);
+        1:  119-block  0
+        1:  119-block  1
+        1:  119-block  2
+    %%%%%:  119-block  3
+        1:  119-block  4
+    %%%%%:  119-block  5
+        1:  120:    service.AddService("XL", "Purple", 100, 0, "https://sag.com");
+        1:  120-block  0
+        1:  120-block  1
+        1:  120-block  2
+        1:  120-block  3
+        1:  120-block  4
+    $$$$$:  120-block  5
+    $$$$$:  120-block  6
+    $$$$$:  120-block  7
+    $$$$$:  120-block  8
+    $$$$$:  120-block  9
+    $$$$$:  120-block 10
+    $$$$$:  120-block 11
+    $$$$$:  120-block 12
+    $$$$$:  120-block 13
+    $$$$$:  120-block 14
+    $$$$$:  120-block 15
+    $$$$$:  120-block 16
+        2:  121:    Coat cc("XL", "Purple", 100, 0, "https://sag.com");
+        1:  121-block  0
+        1:  121-block  1
+        1:  121-block  2
+    $$$$$:  121-block  3
+    $$$$$:  121-block  4
+    $$$$$:  121-block  5
+    $$$$$:  121-block  6
+    $$$$$:  121-block  7
+    $$$$$:  121-block  8
+    $$$$$:  121-block  9
+       1*:  122:    assert(service.AddUserService(cc, cUser) == 1);
+        1:  122-block  0
+        1:  122-block  1
+        1:  122-block  2
+    %%%%%:  122-block  3
+        1:  122-block  4
+    %%%%%:  122-block  5
+        1:  122-block  6
+        1:  122-block  7
+        1:  122-block  8
+        1:  122-block  9
+        1:  122-block 10
+    $$$$$:  122-block 11
+    $$$$$:  122-block 12
+    $$$$$:  122-block 13
+    $$$$$:  122-block 14
+    $$$$$:  122-block 15
+    $$$$$:  122-block 16
+        -:  123:
+        1:  124:}
+        -:  125:
+        1:  126:void Test_Service::TestGetTotalPrice() {
+        2:  127:    Repository UserRepo;
+        1:  127-block  0
+    $$$$$:  127-block  1
+        2:  128:    Repository repo;
+        1:  128-block  0
+        1:  128-block  1
+    $$$$$:  128-block  2
+        1:  129:    repo.init_repository();
+        1:  129-block  0
+        1:  130:    Service service(repo, UserRepo);
+        1:  130-block  0
+        -:  131:
+       1*:  132:    assert(service.GetTotalPrice() == 0);
+        1:  132-block  0
+        1:  132-block  1
+    %%%%%:  132-block  2
+        1:  132-block  3
+    %%%%%:  132-block  4
+        1:  133:}
+        -:  134:
+        -:  135:
+        1:  136:void Test_Service::TestAllService() {
+        1:  137:    TestAddService();
+        1:  137-block  0
+        1:  138:    TestDeleteService();
+        1:  139:    TestUpdatePriceService();
+        1:  140:    TestUpdateQuantityService();
+        1:  141:    TestGetSize();
+        1:  142:    TestAddUserService();
+        1:  143:    TestGetTotalPrice();
+        1:  144:}
+        -:  145:
+        -:  146:

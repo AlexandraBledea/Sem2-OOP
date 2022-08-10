@@ -1,0 +1,68 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Domain/domain.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Domain\domain.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Domain\domain.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <cstring>
+        -:    6:#include "domain.h"
+        -:    7:
+        1:    8:Coat::Coat() {
+        1:    8-block  0
+        1:    9:}
+        -:   10:
+      112:   11:Coat::Coat(string size, string color, int price, int quantity, string photograph):
+      112:   12:size{size}, color{color}, price{price}, quantity{quantity}, photograph{photograph}{
+      112:   12-block  0
+      112:   12-block  1
+    $$$$$:   12-block  2
+    $$$$$:   12-block  3
+      112:   13:}
+      112:   13-block  0
+        -:   14:
+        -:   15:
+        1:   16:void Coat::SetQuantity(int quantity) {
+        1:   17:    this->quantity = quantity;
+        1:   18:}
+        -:   19:
+        1:   20:void Coat::SetPrice(int price) {
+        1:   21:    this->price = price;
+        1:   22:}
+        -:   23:
+      537:   24:const string& Coat::GetSize() const{
+      537:   25:    return this->size;
+      537:   25-block  0
+        -:   26:}
+        -:   27:
+      102:   28:string Coat::GetColor() const{
+      102:   29:    return this->color;
+      102:   29-block  0
+        -:   30:}
+        -:   31:
+       15:   32:int Coat::GetPrice() const{
+       15:   33:    return this->price;
+       15:   33-block  0
+        -:   34:}
+        -:   35:
+       20:   36:int Coat::GetQuantity() const{
+       20:   37:    return this->quantity;
+       20:   37-block  0
+        -:   38:}
+        -:   39:
+       30:   40:string Coat::GetPhotograph() const{
+       30:   41:    return this->photograph;
+       30:   41-block  0
+        -:   42:}
+        -:   43:
+        6:   44:Coat &Coat::operator=(const Coat &c) {
+        6:   45:    this->size = c.size;
+        6:   45-block  0
+        6:   46:    this->color = c.color;
+        6:   47:    this->price = c.price;
+        6:   48:    this->quantity = c.quantity;
+        6:   49:    this->photograph = c.photograph;
+        6:   50:    return *this;
+        -:   51:}

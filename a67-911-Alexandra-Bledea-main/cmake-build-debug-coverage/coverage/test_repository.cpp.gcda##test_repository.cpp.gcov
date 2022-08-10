@@ -1,0 +1,590 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_repository.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/23/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "test_repository.h"
+        -:    6:#include <vector>
+        -:    7:#include "Exceptions.h"
+        -:    8:
+        1:    9:void Test_Repository::Test_init_repository() {
+        1:   10:    Repository repo;
+        1:   10-block  0
+    $$$$$:   10-block  1
+        1:   11:    repo.init_repository();
+        1:   11-block  0
+       1*:   12:    assert(repo[0].GetSize() == "M");
+        1:   12-block  0
+        1:   12-block  1
+    %%%%%:   12-block  2
+        1:   12-block  3
+    %%%%%:   12-block  4
+       1*:   13:    assert(repo[0].GetColor() == "Blue");
+        1:   13-block  0
+        1:   13-block  1
+    %%%%%:   13-block  2
+        1:   13-block  3
+    %%%%%:   13-block  4
+        1:   13-block  5
+        1:   13-block  6
+    $$$$$:   13-block  7
+    $$$$$:   13-block  8
+    $$$$$:   13-block  9
+       1*:   14:    assert(repo[0].GetPrice() == 100);
+        1:   14-block  0
+        1:   14-block  1
+    %%%%%:   14-block  2
+        1:   14-block  3
+    %%%%%:   14-block  4
+       1*:   15:    assert(repo[0].GetQuantity() == 10);
+        1:   15-block  0
+        1:   15-block  1
+    %%%%%:   15-block  2
+        1:   15-block  3
+    %%%%%:   15-block  4
+       1*:   16:    assert(repo[0].GetPhotograph() == "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   16-block  0
+        1:   16-block  1
+    %%%%%:   16-block  2
+        1:   16-block  3
+    %%%%%:   16-block  4
+        1:   16-block  5
+        1:   16-block  6
+        1:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+    $$$$$:   16-block 10
+        -:   17:
+        1:   18:}
+        -:   19:
+        1:   20:void Test_Repository::TestGetSize() {
+        2:   21:    Repository repo;
+        1:   21-block  0
+        1:   21-block  1
+    $$$$$:   21-block  2
+        1:   22:    repo.init_repository();
+        1:   22-block  0
+       1*:   23:    assert(repo.GetSize() == 10);
+        1:   23-block  0
+        1:   23-block  1
+    %%%%%:   23-block  2
+        1:   23-block  3
+    %%%%%:   23-block  4
+        -:   24:
+        1:   25:}
+        -:   26:
+        -:   27://void Test_Repository::TestGetDynArr() {
+        -:   28://    Repository repo;
+        -:   29://    assert(repo.GetDynArr() == repo.GetDynArr());
+        -:   30://}
+        -:   31:
+        1:   32:void Test_Repository::TestAddRepo() {
+        2:   33:    Repository repo;
+        1:   33-block  0
+        1:   33-block  1
+    $$$$$:   33-block  2
+        1:   34:    repo.AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   34-block  0
+        1:   34-block  1
+        1:   34-block  2
+        1:   34-block  3
+        1:   34-block  4
+    $$$$$:   34-block  5
+    $$$$$:   34-block  6
+    $$$$$:   34-block  7
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+    $$$$$:   34-block 11
+    $$$$$:   34-block 12
+    $$$$$:   34-block 13
+    $$$$$:   34-block 14
+    $$$$$:   34-block 15
+    $$$$$:   34-block 16
+       1*:   35:    assert(repo[0].GetSize() == "M");
+        1:   35-block  0
+    %%%%%:   35-block  1
+        1:   35-block  2
+    %%%%%:   35-block  3
+       1*:   36:    assert(repo[0].GetColor() == "Blue");
+        1:   36-block  0
+        1:   36-block  1
+    %%%%%:   36-block  2
+        1:   36-block  3
+    %%%%%:   36-block  4
+        1:   36-block  5
+        1:   36-block  6
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+       1*:   37:    assert(repo[0].GetPrice() == 100);
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+        1:   37-block  3
+    %%%%%:   37-block  4
+       1*:   38:    assert(repo[0].GetQuantity() == 10);
+        1:   38-block  0
+        1:   38-block  1
+    %%%%%:   38-block  2
+        1:   38-block  3
+    %%%%%:   38-block  4
+       1*:   39:    assert(repo[0].GetPhotograph() == "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   39-block  0
+        1:   39-block  1
+    %%%%%:   39-block  2
+        1:   39-block  3
+    %%%%%:   39-block  4
+        1:   39-block  5
+        1:   39-block  6
+    $$$$$:   39-block  7
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+        -:   40:    try{
+       7*:   41:        repo.AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   41-block  0
+        1:   41-block  1
+        1:   41-block  2
+        1:   41-block  3
+    %%%%%:   41-block  4
+        1:   41-block  5
+        1:   41-block  6
+        1:   41-block  7
+        1:   41-block  8
+        1:   41-block  9
+        1:   41-block 10
+        1:   41-block 11
+        1:   41-block 12
+        1:   41-block 13
+        1:   41-block 14
+        1:   41-block 15
+        1:   41-block 16
+    #####:   42:        assert(false);
+        -:   43:    }
+        1:   44:    catch(ExceptionsRepository&)
+        1:   44-block  0
+        -:   45:    {
+        -:   46:        assert(true);
+        -:   47:    }
+        -:   48:
+        -:   49:
+        1:   50:}
+        -:   51:
+        1:   52:void Test_Repository::TestCheckExistenceCoat() {
+        1:   53:    Repository repo;
+        1:   53-block  0
+    $$$$$:   53-block  1
+        1:   54:    repo.AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   54-block  0
+        1:   54-block  1
+        1:   54-block  2
+        1:   54-block  3
+        1:   54-block  4
+    $$$$$:   54-block  5
+    $$$$$:   54-block  6
+    $$$$$:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+    $$$$$:   54-block 13
+    $$$$$:   54-block 14
+    $$$$$:   54-block 15
+    $$$$$:   54-block 16
+       1*:   55:    assert(repo.CheckExistenceCoat("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 0);
+        1:   55-block  0
+        1:   55-block  1
+        1:   55-block  2
+        1:   55-block  3
+    %%%%%:   55-block  4
+        1:   55-block  5
+    %%%%%:   55-block  6
+        1:   55-block  7
+        1:   55-block  8
+        1:   55-block  9
+        1:   55-block 10
+        1:   55-block 11
+        1:   55-block 12
+        1:   55-block 13
+        1:   55-block 14
+        1:   55-block 15
+        1:   55-block 16
+        1:   55-block 17
+        1:   55-block 18
+    $$$$$:   55-block 19
+    $$$$$:   55-block 20
+    $$$$$:   55-block 21
+    $$$$$:   55-block 22
+    $$$$$:   55-block 23
+    $$$$$:   55-block 24
+    $$$$$:   55-block 25
+    $$$$$:   55-block 26
+    $$$$$:   55-block 27
+    $$$$$:   55-block 28
+    $$$$$:   55-block 29
+    $$$$$:   55-block 30
+    $$$$$:   55-block 31
+    $$$$$:   55-block 32
+    $$$$$:   55-block 33
+    $$$$$:   55-block 34
+    $$$$$:   55-block 35
+    $$$$$:   55-block 36
+       1*:   56:    assert(repo.CheckExistenceCoat("S", "Pink", "https://sagsahj.jpg/saghsa") == -1);
+        1:   56-block  0
+        1:   56-block  1
+        1:   56-block  2
+        1:   56-block  3
+        1:   56-block  4
+    %%%%%:   56-block  5
+        1:   56-block  6
+    %%%%%:   56-block  7
+        1:   56-block  8
+        1:   56-block  9
+        1:   56-block 10
+        1:   56-block 11
+        1:   56-block 12
+        1:   56-block 13
+        1:   56-block 14
+        1:   56-block 15
+        1:   56-block 16
+        1:   56-block 17
+        1:   56-block 18
+        1:   56-block 19
+        1:   56-block 20
+    $$$$$:   56-block 21
+    $$$$$:   56-block 22
+    $$$$$:   56-block 23
+    $$$$$:   56-block 24
+    $$$$$:   56-block 25
+    $$$$$:   56-block 26
+    $$$$$:   56-block 27
+    $$$$$:   56-block 28
+    $$$$$:   56-block 29
+    $$$$$:   56-block 30
+    $$$$$:   56-block 31
+    $$$$$:   56-block 32
+    $$$$$:   56-block 33
+    $$$$$:   56-block 34
+    $$$$$:   56-block 35
+    $$$$$:   56-block 36
+    $$$$$:   56-block 37
+    $$$$$:   56-block 38
+        1:   57:}
+        -:   58:
+        1:   59:void Test_Repository::TestDeleteEntireProductRepo() {
+        2:   60:    Repository repo;
+        1:   60-block  0
+        1:   60-block  1
+    $$$$$:   60-block  2
+        1:   61:    repo.AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   61-block  0
+        1:   61-block  1
+        1:   61-block  2
+        1:   61-block  3
+        1:   61-block  4
+    $$$$$:   61-block  5
+    $$$$$:   61-block  6
+    $$$$$:   61-block  7
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+    $$$$$:   61-block 10
+    $$$$$:   61-block 11
+    $$$$$:   61-block 12
+    $$$$$:   61-block 13
+    $$$$$:   61-block 14
+    $$$$$:   61-block 15
+    $$$$$:   61-block 16
+        1:   62:    repo.DeleteEntireProductRepo("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   62-block  0
+        1:   62-block  1
+        1:   62-block  2
+        1:   62-block  3
+    $$$$$:   62-block  4
+    $$$$$:   62-block  5
+    $$$$$:   62-block  6
+    $$$$$:   62-block  7
+    $$$$$:   62-block  8
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+    $$$$$:   62-block 13
+    $$$$$:   62-block 14
+    $$$$$:   62-block 15
+        -:   63:    try{
+       7*:   64:        repo.DeleteEntireProductRepo("s", "Purple", "https://safghsajk.jpg");
+        1:   64-block  0
+        1:   64-block  1
+        1:   64-block  2
+    %%%%%:   64-block  3
+        1:   64-block  4
+        1:   64-block  5
+        1:   64-block  6
+        1:   64-block  7
+        1:   64-block  8
+        1:   64-block  9
+        1:   64-block 10
+        1:   64-block 11
+        1:   64-block 12
+        1:   64-block 13
+        1:   64-block 14
+        1:   64-block 15
+    #####:   65:        assert(false);
+        -:   66:    }
+        1:   67:    catch(ExceptionsRepository&)
+        1:   67-block  0
+        -:   68:    {
+        -:   69:        assert(true);
+        -:   70:    }
+        -:   71:
+        1:   72:}
+        -:   73:
+        1:   74:void Test_Repository::TestDeleteSoldOutProductRepo() {
+        2:   75:    Repository repo;
+        1:   75-block  0
+        1:   75-block  1
+    $$$$$:   75-block  2
+        1:   76:    repo.AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   76-block  0
+        1:   76-block  1
+        1:   76-block  2
+        1:   76-block  3
+        1:   76-block  4
+    $$$$$:   76-block  5
+    $$$$$:   76-block  6
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+    $$$$$:   76-block 14
+    $$$$$:   76-block 15
+    $$$$$:   76-block 16
+        1:   77:    repo.AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:   77-block  0
+        1:   77-block  1
+        1:   77-block  2
+        1:   77-block  3
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+    $$$$$:   77-block  6
+    $$$$$:   77-block  7
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+    $$$$$:   77-block 15
+        1:   78:    repo.DeleteSoldOutProductRepo("M", "Pink", "https://abcdef.jpg");
+        1:   78-block  0
+        1:   78-block  1
+        1:   78-block  2
+        1:   78-block  3
+    $$$$$:   78-block  4
+    $$$$$:   78-block  5
+    $$$$$:   78-block  6
+    $$$$$:   78-block  7
+    $$$$$:   78-block  8
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
+    $$$$$:   78-block 15
+        -:   79:    try{
+       7*:   80:        repo.DeleteSoldOutProductRepo("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   80-block  0
+        1:   80-block  1
+        1:   80-block  2
+    %%%%%:   80-block  3
+        1:   80-block  4
+        1:   80-block  5
+        1:   80-block  6
+        1:   80-block  7
+        1:   80-block  8
+        1:   80-block  9
+        1:   80-block 10
+        1:   80-block 11
+        1:   80-block 12
+        1:   80-block 13
+        1:   80-block 14
+        1:   80-block 15
+    #####:   81:        assert(false);
+        -:   82:    }
+        1:   83:    catch(ExceptionsRepository&)
+        1:   83-block  0
+        -:   84:    {
+        -:   85:        assert(true);
+        -:   86:    }
+        1:   87:}
+        -:   88:
+        1:   89:void Test_Repository::TestUpdatePriceRepo() {
+        2:   90:    Repository repo;
+        1:   90-block  0
+        1:   90-block  1
+    $$$$$:   90-block  2
+        1:   91:    repo.AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:   91-block  0
+        1:   91-block  1
+        1:   91-block  2
+        1:   91-block  3
+        1:   91-block  4
+    $$$$$:   91-block  5
+    $$$$$:   91-block  6
+    $$$$$:   91-block  7
+    $$$$$:   91-block  8
+    $$$$$:   91-block  9
+    $$$$$:   91-block 10
+    $$$$$:   91-block 11
+    $$$$$:   91-block 12
+    $$$$$:   91-block 13
+    $$$$$:   91-block 14
+    $$$$$:   91-block 15
+    $$$$$:   91-block 16
+        1:   92:    repo.UpdatePriceRepo("M", "Pink", "https://abcdef.jpg", 999);
+        1:   92-block  0
+        1:   92-block  1
+        1:   92-block  2
+        1:   92-block  3
+    $$$$$:   92-block  4
+    $$$$$:   92-block  5
+    $$$$$:   92-block  6
+    $$$$$:   92-block  7
+    $$$$$:   92-block  8
+    $$$$$:   92-block  9
+    $$$$$:   92-block 10
+    $$$$$:   92-block 11
+    $$$$$:   92-block 12
+    $$$$$:   92-block 13
+    $$$$$:   92-block 14
+    $$$$$:   92-block 15
+       1*:   93:    assert(repo[0].GetPrice() == 999);
+        1:   93-block  0
+    %%%%%:   93-block  1
+        1:   93-block  2
+    %%%%%:   93-block  3
+        -:   94:    try {
+       7*:   95:        repo.UpdatePriceRepo("S", "Blue", "https://abcdesaff.jpg", 999);
+        1:   95-block  0
+        1:   95-block  1
+        1:   95-block  2
+        1:   95-block  3
+    %%%%%:   95-block  4
+        1:   95-block  5
+        1:   95-block  6
+        1:   95-block  7
+        1:   95-block  8
+        1:   95-block  9
+        1:   95-block 10
+        1:   95-block 11
+        1:   95-block 12
+        1:   95-block 13
+        1:   95-block 14
+        1:   95-block 15
+        1:   95-block 16
+    #####:   96:        assert(false);
+        -:   97:    }
+        1:   98:    catch(ExceptionsRepository&)
+        1:   98-block  0
+        -:   99:    {
+        -:  100:        assert(true);
+        -:  101:    }
+        1:  102:}
+        -:  103:
+        1:  104:void Test_Repository::TestUpdateQuantityRepo() {
+        2:  105:    Repository repo;
+        1:  105-block  0
+        1:  105-block  1
+    $$$$$:  105-block  2
+        1:  106:    repo.AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:  106-block  0
+        1:  106-block  1
+        1:  106-block  2
+        1:  106-block  3
+        1:  106-block  4
+    $$$$$:  106-block  5
+    $$$$$:  106-block  6
+    $$$$$:  106-block  7
+    $$$$$:  106-block  8
+    $$$$$:  106-block  9
+    $$$$$:  106-block 10
+    $$$$$:  106-block 11
+    $$$$$:  106-block 12
+    $$$$$:  106-block 13
+    $$$$$:  106-block 14
+    $$$$$:  106-block 15
+    $$$$$:  106-block 16
+        1:  107:    repo.UpdateQuantityRepo("M", "Pink", "https://abcdef.jpg", 999);
+        1:  107-block  0
+        1:  107-block  1
+        1:  107-block  2
+        1:  107-block  3
+    $$$$$:  107-block  4
+    $$$$$:  107-block  5
+    $$$$$:  107-block  6
+    $$$$$:  107-block  7
+    $$$$$:  107-block  8
+    $$$$$:  107-block  9
+    $$$$$:  107-block 10
+    $$$$$:  107-block 11
+    $$$$$:  107-block 12
+    $$$$$:  107-block 13
+    $$$$$:  107-block 14
+    $$$$$:  107-block 15
+       1*:  108:    assert(repo[0].GetQuantity() == 999);
+        1:  108-block  0
+    %%%%%:  108-block  1
+        1:  108-block  2
+    %%%%%:  108-block  3
+        -:  109:    try{
+       7*:  110:        repo.UpdateQuantityRepo("S", "Blue", "https://abcdesaff.jpg", 999);
+        1:  110-block  0
+        1:  110-block  1
+        1:  110-block  2
+        1:  110-block  3
+    %%%%%:  110-block  4
+        1:  110-block  5
+        1:  110-block  6
+        1:  110-block  7
+        1:  110-block  8
+        1:  110-block  9
+        1:  110-block 10
+        1:  110-block 11
+        1:  110-block 12
+        1:  110-block 13
+        1:  110-block 14
+        1:  110-block 15
+        1:  110-block 16
+    #####:  111:        assert(false);
+        -:  112:    }
+        1:  113:    catch(ExceptionsRepository&)
+        1:  113-block  0
+        -:  114:    {
+        -:  115:        assert(true);
+        -:  116:    }
+        -:  117:
+        -:  118:
+        1:  119:}
+        -:  120:
+        1:  121:void Test_Repository::TestAllRepository() {
+        1:  122:    Test_init_repository();
+        1:  122-block  0
+        1:  123:    TestGetSize();
+        1:  124:    TestAddRepo();
+        1:  125:    TestCheckExistenceCoat();
+        1:  126:    TestDeleteEntireProductRepo();
+        1:  127:    TestDeleteSoldOutProductRepo();
+        1:  128:    TestUpdatePriceRepo();
+        1:  129:    TestUpdateQuantityRepo();
+        -:  130:
+        1:  131:}

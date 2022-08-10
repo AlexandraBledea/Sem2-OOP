@@ -1,0 +1,444 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Repository/repository.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Repository\repository.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Repository\repository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <cstring>
+        -:    6:#include "repository.h"
+        -:    7:#include "Exceptions.h"
+        -:    8:#include <iostream>
+        -:    9:
+       24:   10:Repository::Repository() {
+       24:   10-block  0
+       24:   11:}
+        -:   12:
+       98:   13:void Repository::AddRepo(string size, string color, int price, int quantity, string photograph) {
+        -:   14:    int position;
+       98:   15:    position = CheckExistenceCoat(size, color, photograph);
+       98:   15-block  0
+       98:   15-block  1
+       98:   15-block  2
+       98:   15-block  3
+    $$$$$:   15-block  4
+    $$$$$:   15-block  5
+    $$$$$:   15-block  6
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+       98:   16:    if(position == -1)
+        -:   17:    {
+      288:   18:        Coat c(size, color, price, quantity, photograph);
+       96:   18-block  0
+       96:   18-block  1
+       96:   18-block  2
+       96:   18-block  3
+       96:   18-block  4
+    $$$$$:   18-block  5
+    $$$$$:   18-block  6
+    $$$$$:   18-block  7
+    $$$$$:   18-block  8
+       96:   19:        this->elements.push_back(c);
+        -:   20:    }
+        -:   21:    else
+        2:   22:        throw ExceptionsRepository("The given product already exists!");
+        2:   22-block  0
+        2:   22-block  1
+        2:   22-block  2
+    $$$$$:   22-block  3
+    $$$$$:   22-block  4
+    $$$$$:   22-block  5
+    $$$$$:   22-block  6
+    $$$$$:   22-block  7
+       96:   23:}
+       96:   23-block  0
+        -:   24:
+      122:   25:int Repository::CheckExistenceCoat(string size, string color, string photograph) {
+        -:   26:
+      631:   27:    for(int i = 0; i < this->elements.size(); i++)
+      122:   27-block  0
+      631:   27-block  1
+      509:   27-block  2
+     1071:   28:        if(elements[i].GetSize() == size && elements[i].GetColor() == color &&
+      526:   28-block  0
+      526:   28-block  1
+       91:   28-block  2
+       91:   28-block  3
+       17:   28-block  4
+      509:   28-block  5
+       91:   28-block  6
+      526:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+      545:   29:        elements[i].GetPhotograph() == photograph)
+       19:   29-block  0
+       19:   29-block  1
+      526:   29-block  2
+       19:   29-block  3
+      526:   29-block  4
+    $$$$$:   29-block  5
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+       17:   30:            return i;
+       17:   30-block  0
+      105:   31:    return -1;
+      105:   31-block  0
+        -:   32:}
+        -:   33:
+        9:   34:const vector<Coat>& Repository::GetDynArr() {
+        9:   35:    return this->elements;
+        9:   35-block  0
+        -:   36:}
+        -:   37:
+        2:   38:int Repository::GetSize() {
+        2:   39:    return this->elements.size();
+        2:   39-block  0
+        -:   40:}
+        -:   41:
+        8:   42:void Repository::init_repository() {
+        8:   43:    AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        8:   43-block  0
+        8:   43-block  1
+        8:   43-block  2
+        8:   43-block  3
+        8:   43-block  4
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+    $$$$$:   43-block 16
+        8:   44:    AddRepo("L", "Red", 150, 5,
+        8:   44-block  0
+        8:   44-block  1
+        8:   44-block  2
+        8:   44-block  3
+    $$$$$:   44-block  4
+    $$$$$:   44-block  5
+    $$$$$:   44-block  6
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+    $$$$$:   44-block 11
+    $$$$$:   44-block 12
+    $$$$$:   44-block 13
+    $$$$$:   44-block 14
+    $$$$$:   44-block 15
+        -:   45:            "https://res.cloudinary.com/wolfandbadger/image/upload/s--6lJSlYAP--/q_auto:eco/products/f8mgtgse6mnpsegyxrxo");
+        8:   46:    AddRepo("S", "Pink", 200, 3, "https://images-na.ssl-images-amazon.com/images/I/71IismvKi3L._AC_UL1447_.jpg");
+        8:   46-block  0
+        8:   46-block  1
+        8:   46-block  2
+        8:   46-block  3
+    $$$$$:   46-block  4
+    $$$$$:   46-block  5
+    $$$$$:   46-block  6
+    $$$$$:   46-block  7
+    $$$$$:   46-block  8
+    $$$$$:   46-block  9
+    $$$$$:   46-block 10
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+    $$$$$:   46-block 13
+    $$$$$:   46-block 14
+    $$$$$:   46-block 15
+        8:   47:    AddRepo("S", "Yellow", 175, 10, "https://i.pinimg.com/originals/36/34/57/363457f4a8f758c43fab554e04de1038.jpg");
+        8:   47-block  0
+        8:   47-block  1
+        8:   47-block  2
+        8:   47-block  3
+    $$$$$:   47-block  4
+    $$$$$:   47-block  5
+    $$$$$:   47-block  6
+    $$$$$:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+    $$$$$:   47-block 15
+        8:   48:    AddRepo("M", "Orange", 242, 2, "https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/10/_107638010.jpg?h=365&w=240&dpr=2");
+        8:   48-block  0
+        8:   48-block  1
+        8:   48-block  2
+        8:   48-block  3
+    $$$$$:   48-block  4
+    $$$$$:   48-block  5
+    $$$$$:   48-block  6
+    $$$$$:   48-block  7
+    $$$$$:   48-block  8
+    $$$$$:   48-block  9
+    $$$$$:   48-block 10
+    $$$$$:   48-block 11
+    $$$$$:   48-block 12
+    $$$$$:   48-block 13
+    $$$$$:   48-block 14
+    $$$$$:   48-block 15
+        8:   49:    AddRepo("L", "Black", 305, 2, "https://media.mauvetree.com/wp-content/uploads/2018/04/Black-trench-coat-for-men.jpg");
+        8:   49-block  0
+        8:   49-block  1
+        8:   49-block  2
+        8:   49-block  3
+    $$$$$:   49-block  4
+    $$$$$:   49-block  5
+    $$$$$:   49-block  6
+    $$$$$:   49-block  7
+    $$$$$:   49-block  8
+    $$$$$:   49-block  9
+    $$$$$:   49-block 10
+    $$$$$:   49-block 11
+    $$$$$:   49-block 12
+    $$$$$:   49-block 13
+    $$$$$:   49-block 14
+    $$$$$:   49-block 15
+        8:   50:    AddRepo("XL", "Grey", 100, 4, "https://cdn.shopify.com/s/files/1/0024/0697/3485/products/407A7456.jpg?v=1604310704");
+        8:   50-block  0
+        8:   50-block  1
+        8:   50-block  2
+        8:   50-block  3
+    $$$$$:   50-block  4
+    $$$$$:   50-block  5
+    $$$$$:   50-block  6
+    $$$$$:   50-block  7
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    $$$$$:   50-block 11
+    $$$$$:   50-block 12
+    $$$$$:   50-block 13
+    $$$$$:   50-block 14
+    $$$$$:   50-block 15
+        8:   51:    AddRepo("XS", "Magenta", 400, 1, "https://i.pinimg.com/originals/6e/b1/a9/6eb1a9282acc0aeef06dd693ae0301d9.jpg");
+        8:   51-block  0
+        8:   51-block  1
+        8:   51-block  2
+        8:   51-block  3
+    $$$$$:   51-block  4
+    $$$$$:   51-block  5
+    $$$$$:   51-block  6
+    $$$$$:   51-block  7
+    $$$$$:   51-block  8
+    $$$$$:   51-block  9
+    $$$$$:   51-block 10
+    $$$$$:   51-block 11
+    $$$$$:   51-block 12
+    $$$$$:   51-block 13
+    $$$$$:   51-block 14
+    $$$$$:   51-block 15
+        8:   52:    AddRepo("XS", "Green", 135, 3, "https://i.etsystatic.com/6811060/r/il/f9e28e/1977783236/il_570xN.1977783236_4xx9.jpg");
+        8:   52-block  0
+        8:   52-block  1
+        8:   52-block  2
+        8:   52-block  3
+    $$$$$:   52-block  4
+    $$$$$:   52-block  5
+    $$$$$:   52-block  6
+    $$$$$:   52-block  7
+    $$$$$:   52-block  8
+    $$$$$:   52-block  9
+    $$$$$:   52-block 10
+    $$$$$:   52-block 11
+    $$$$$:   52-block 12
+    $$$$$:   52-block 13
+    $$$$$:   52-block 14
+    $$$$$:   52-block 15
+        8:   53:    AddRepo("XL", "Purple", 243, 10, "https://images-na.ssl-images-amazon.com/images/I/51W49L9WQ8L._AC_UX385_.jpg");
+        8:   53-block  0
+        8:   53-block  1
+        8:   53-block  2
+        8:   53-block  3
+    $$$$$:   53-block  4
+    $$$$$:   53-block  5
+    $$$$$:   53-block  6
+    $$$$$:   53-block  7
+    $$$$$:   53-block  8
+    $$$$$:   53-block  9
+    $$$$$:   53-block 10
+    $$$$$:   53-block 11
+    $$$$$:   53-block 12
+    $$$$$:   53-block 13
+    $$$$$:   53-block 14
+        -:   54:
+        8:   55:}
+        -:   56:
+        4:   57:void Repository::DeleteEntireProductRepo(string size, string color, string photograph) {
+        -:   58:    int position;
+        4:   59:    position = CheckExistenceCoat(size, color, photograph);
+        4:   59-block  0
+        4:   59-block  1
+        4:   59-block  2
+        4:   59-block  3
+    $$$$$:   59-block  4
+    $$$$$:   59-block  5
+    $$$$$:   59-block  6
+    $$$$$:   59-block  7
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+        4:   60:    if(position != -1)
+        -:   61:    {
+        2:   62:        this->elements.erase(this->elements.begin() + position);
+        2:   62-block  0
+        2:   62-block  1
+    $$$$$:   62-block  2
+    $$$$$:   62-block  3
+    $$$$$:   62-block  4
+        -:   63:    }
+        -:   64:    else
+        2:   65:        throw ExceptionsRepository("The given product doesn't exist!");
+        2:   65-block  0
+        2:   65-block  1
+        2:   65-block  2
+    $$$$$:   65-block  3
+    $$$$$:   65-block  4
+    $$$$$:   65-block  5
+    $$$$$:   65-block  6
+    $$$$$:   65-block  7
+        2:   66:}
+        2:   66-block  0
+        -:   67:
+        5:   68:void Repository::DeleteSoldOutProductRepo(string size, string color, string photograph) {
+        -:   69:    int position;
+        5:   70:    position = CheckExistenceCoat(size, color, photograph);
+        5:   70-block  0
+        5:   70-block  1
+        5:   70-block  2
+        5:   70-block  3
+    $$$$$:   70-block  4
+    $$$$$:   70-block  5
+    $$$$$:   70-block  6
+    $$$$$:   70-block  7
+    $$$$$:   70-block  8
+    $$$$$:   70-block  9
+        5:   71:    int quantity  = this->elements[position].GetQuantity();
+        5:   72:    if(position != -1 && quantity == 0)
+        4:   72-block  0
+        -:   73:    {
+        3:   74:        this->elements.erase(this->elements.begin() + position);
+        3:   74-block  0
+        3:   74-block  1
+    $$$$$:   74-block  2
+    $$$$$:   74-block  3
+    $$$$$:   74-block  4
+        -:   75:    }
+        -:   76:    else
+        2:   77:        throw ExceptionsRepository("The given product isn't sold out or it doesn't exist!");
+        2:   77-block  0
+        2:   77-block  1
+        2:   77-block  2
+    $$$$$:   77-block  3
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+    $$$$$:   77-block  6
+    $$$$$:   77-block  7
+        3:   78:}
+        3:   78-block  0
+        -:   79:
+        6:   80:void Repository::UpdateQuantityRepo(string size, string color, string photograph, int quantity) {
+        -:   81:    int position;
+        6:   82:    position = CheckExistenceCoat(size, color, photograph);
+        6:   82-block  0
+        6:   82-block  1
+        6:   82-block  2
+        6:   82-block  3
+    $$$$$:   82-block  4
+    $$$$$:   82-block  5
+    $$$$$:   82-block  6
+    $$$$$:   82-block  7
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+        6:   83:    if(position != -1)
+        -:   84:    {
+        4:   85:        double price = this->elements[position].GetPrice();
+        4:   85-block  0
+       12:   86:        Coat c(size, color, price, quantity, photograph);
+        4:   86-block  0
+        4:   86-block  1
+        4:   86-block  2
+        4:   86-block  3
+        4:   86-block  4
+    $$$$$:   86-block  5
+    $$$$$:   86-block  6
+    $$$$$:   86-block  7
+    $$$$$:   86-block  8
+        4:   87:        this->elements[position] = c;
+        -:   88:    }
+        -:   89:    else
+        2:   90:        throw ExceptionsRepository("The given product doesn't exist!");
+        2:   90-block  0
+        2:   90-block  1
+        2:   90-block  2
+    $$$$$:   90-block  3
+    $$$$$:   90-block  4
+    $$$$$:   90-block  5
+    $$$$$:   90-block  6
+    $$$$$:   90-block  7
+        4:   91:}
+        4:   91-block  0
+        -:   92:
+        4:   93:void Repository::UpdatePriceRepo(string size, string color, string photograph, int price) {
+        -:   94:    int position;
+        4:   95:    position = CheckExistenceCoat(size, color, photograph);
+        4:   95-block  0
+        4:   95-block  1
+        4:   95-block  2
+        4:   95-block  3
+    $$$$$:   95-block  4
+    $$$$$:   95-block  5
+    $$$$$:   95-block  6
+    $$$$$:   95-block  7
+    $$$$$:   95-block  8
+    $$$$$:   95-block  9
+        4:   96:    if(position != -1)
+        -:   97:    {
+        2:   98:        int quantity = this->elements[position].GetQuantity();
+        2:   98-block  0
+        6:   99:        Coat c(size, color, price, quantity, photograph);
+        2:   99-block  0
+        2:   99-block  1
+        2:   99-block  2
+        2:   99-block  3
+        2:   99-block  4
+    $$$$$:   99-block  5
+    $$$$$:   99-block  6
+    $$$$$:   99-block  7
+    $$$$$:   99-block  8
+        2:  100:        this->elements[position] = c;
+        -:  101:    }
+        -:  102:    else
+        2:  103:        throw ExceptionsRepository("The given product doesn't exist!");
+        2:  103-block  0
+        2:  103-block  1
+        2:  103-block  2
+    $$$$$:  103-block  3
+    $$$$$:  103-block  4
+    $$$$$:  103-block  5
+    $$$$$:  103-block  6
+    $$$$$:  103-block  7
+        2:  104:}
+        2:  104-block  0
+        -:  105:
+        -:  106://void Repository::print_repository() {
+        -:  107://    for(int i = 0; i < this->GetSize(); i++)
+        -:  108://        cout<<i+1<<")  "<<"Size:  "<<(*this->DArray)[i].GetSize()<<"  Color:  "<<(*this->DArray)[i].GetColor()
+        -:  109://        <<"  Price:  "<< (*this->DArray)[i].GetPrice() <<"  Quantity:  " << (*this->DArray)[i].GetQuantity()
+        -:  110://        <<"\nLink Photo:  " << (*this->DArray)[i].GetPhotograph()<<"\n\n";
+        -:  111://
+        -:  112://}
+        -:  113:
+        -:  114:
+        -:  115:
+        -:  116://DArray DArray::GetDArray() {
+        -:  117://    return *this->*DArray;
+        -:  118://}

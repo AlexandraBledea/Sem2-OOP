@@ -1,0 +1,31 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Exceptions/Exceptions.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Exceptions\Exceptions.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Exceptions\Exceptions.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 4/7/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "Exceptions.h"
+        -:    6:#include <utility>
+        -:    7:
+       10:    8:Exceptions::Exceptions(string MessageException) {
+       10:    8-block  0
+       10:    9:    this->message = move(MessageException);
+       10:   10:}
+        -:   11:
+    #####:   12:const char *Exceptions::what() const noexcept {
+    #####:   13:    return this->message.c_str();
+    %%%%%:   13-block  0
+        -:   14:}
+        -:   15:
+    #####:   16:ExceptionsValidator::ExceptionsValidator(string MessageException) : Exceptions(move(MessageException)) {
+    %%%%%:   16-block  0
+        -:   17:
+    #####:   18:}
+        -:   19:
+       10:   20:ExceptionsRepository::ExceptionsRepository(string MessageException) : Exceptions(move(MessageException)) {
+       10:   20-block  0
+        -:   21:
+       10:   22:}

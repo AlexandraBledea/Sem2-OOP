@@ -1,0 +1,116 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Console/console.h
+service.h
+../Console/service.h
+validation.h
+../Console/validation.h
+
+../Domain/domain.h
+string
+-
+
+../DynamicArray/dynamic_array.h
+cstdlib
+-
+domain.h
+../DynamicArray/domain.h
+
+../Repository/repository.h
+cstdlib
+-
+dynamic_array.h
+../Repository/dynamic_array.h
+domain.h
+../Repository/domain.h
+vector
+-
+
+../Service/service.h
+cstdlib
+-
+dynamic_array.h
+../Service/dynamic_array.h
+repository.h
+../Service/repository.h
+domain.h
+../Service/domain.h
+
+../Tests/test_domain.h
+string
+-
+
+../Tests/test_dynamic_array.h
+
+../Tests/test_repository.h
+
+../Tests/test_service.h
+
+../Tests/test_validation.h
+
+../Validation/validation.h
+string
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_repository.cpp
+test_repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_repository.h
+dynamic_array.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/dynamic_array.h
+repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/repository.h
+assert.h
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_repository.h
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_service.cpp
+dynamic_array.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/dynamic_array.h
+repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/repository.h
+service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/service.h
+test_service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_service.h
+assert.h
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/Tests/test_service.h
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/start.cpp
+iostream
+-
+repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/repository.h
+dynamic_array.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/dynamic_array.h
+domain.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/domain.h
+validation.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/validation.h
+service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/service.h
+console.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/console.h
+crtdbg.h
+-
+test_domain.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/test_domain.h
+test_repository.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/test_repository.h
+test_dynamic_array.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/test_dynamic_array.h
+test_service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/test_service.h
+test_validation.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/test_validation.h
+vector
+-
+

@@ -1,0 +1,98 @@
+        -:    0:Source:C:/Users/ALEXAN~1/Desktop/FACULT~1/SEMEST~2/911/A67-91~1/REPOSI~1/repository.h
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#pragma once
+        -:    6:#include <cstdlib>
+        -:    7:#include "domain.h"
+        -:    8:#include <vector>
+        -:    9:
+        -:   10:class Repository
+        -:   11:{
+        -:   12:private:
+        -:   13:    vector<Coat> elements;
+        -:   14:
+        -:   15:public:
+        -:   16:
+        -:   17:/// Constructor
+        -:   18://Repository;
+        -:   19://~Repository();
+        -:   20:
+        -:   21:/// With this function we initialize the repository
+        -:   22:void init_repository();
+        -:   23:
+        -:   24:/// With this function we print the content of the repository
+        -:   25:void print_repository();
+        -:   26:
+        -:   27:/// With this function we get the number of elements from the repository
+        -:   28:int GetSize();
+        -:   29:
+        -:   30:/// With this function we get the dynamic array
+        -:   31:const vector<Coat>& GetDynArr();
+        -:   32:
+        -:   33:/// With this function we initialize the repository with the dynamic array
+        -:   34:/// \param DArray the dynamic array
+        -:   35:Repository();
+        -:   36:
+        -:   37:/// With this function we add a product to the repository
+        -:   38:/// \param size the size of the product
+        -:   39:/// \param color the color of the product
+        -:   40:/// \param price the price of the product
+        -:   41:/// \param quantity the quantity of the product
+        -:   42:/// \param photograph the link to the photograph of the product
+        -:   43:/// \return it returns 0 if the product was added and 1 if it already exists.
+        -:   44:void AddRepo(string size, string color, int price, int quantity, string photograph);
+        -:   45:
+        -:   46:
+        -:   47:/// With this function we check if a product already exists in the repository
+        -:   48:/// \param size the size of the product
+        -:   49:/// \param color the color of the product
+        -:   50:/// \param photograph the photograph of the product
+        -:   51:/// \return it returns -1 if the product doesn't exist or the position of the product in case it exists
+        -:   52:int CheckExistenceCoat(string size, string color, string photograph);
+        -:   53:
+        -:   54:/// With this function we delete an entire product from the repository
+        -:   55:/// \param size the size of the product
+        -:   56:/// \param color the color of the product
+        -:   57:/// \param photograph the link to the photograph of the product
+        -:   58:/// \return it returns 0  if the product was deleted and 1 otherwise
+        -:   59:void DeleteEntireProductRepo(string size, string color, string photograph);
+        -:   60:
+        -:   61:/// With this function we delete a product from the repository in case of a sold out(quantity = 0)
+        -:   62:/// \param size the size of the product
+        -:   63:/// \param color the color of the product
+        -:   64:/// \param photograph the link to the photograph of the product
+        -:   65:/// \return it returns 0 if the product was deleted and 1 otherwise
+        -:   66:void DeleteSoldOutProductRepo(string size, string color, string photograph);
+        -:   67:
+        -:   68:/// With this function we update the price of a product
+        -:   69:/// \param size the size of the product
+        -:   70:/// \param color the color of the product
+        -:   71:/// \param photograph the link to the photograph of the product
+        -:   72:/// \param price the new price
+        -:   73:/// \return it return 0 if the product was updated and 1 otherwise
+        -:   74:void UpdatePriceRepo(string size, string color, string photograph, int price);
+        -:   75:
+        -:   76:/// With this function we update the quantity of a product
+        -:   77:/// \param size the size of the product
+        -:   78:/// \param color the color of the product
+        -:   79:/// \param photograph the link to the photograph of the product
+        -:   80:/// \param quantity the new quantity
+        -:   81:/// \return it return 0 if the product was updated and 1 otherwise
+        -:   82:void UpdateQuantityRepo(string size, string color, string photograph, int quantity);
+        -:   83:
+        -:   84:/// With this function we make the repository iterable
+        -:   85:/// \param position represents the position of the product
+        -:   86:/// \return returns the product from the given position
+       12:   87:Coat& operator [] (int position) {
+       12:   88:    return this->elements[position];
+       12:   88-block  0
+        -:   89:}
+        -:   90://Repository GetRepository();
+        -:   91:
+        -:   92:};

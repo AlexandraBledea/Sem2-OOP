@@ -1,0 +1,74 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a67-911-Alexandra-Bledea/start.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\start.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a67-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a67_911_Alexandra_Bledea.dir\start.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <iostream>
+        -:    6:#include "repository.h"
+        -:    7:#include "dynamic_array.h"
+        -:    8:#include "domain.h"
+        -:    9:#include "validation.h"
+        -:   10:#include "service.h"
+        -:   11:#include "console.h"
+        -:   12:#include <crtdbg.h>
+        -:   13:#include "test_domain.h"
+        -:   14:#include "test_repository.h"
+        -:   15:#include "test_dynamic_array.h"
+        -:   16:#include "test_service.h"
+        -:   17:#include "test_validation.h"
+        -:   18:#include <vector>
+        -:   19:using namespace std;
+        -:   20:
+        -:   21:
+        1:   22:int main(int argc, char* argv[])
+        -:   23:{
+        -:   24:
+        2:   25:    Repository UserRepo;
+        1:   25-block  0
+    $$$$$:   25-block  1
+        1:   26:    Repository repo;
+        1:   26-block  0
+    $$$$$:   26-block  1
+        1:   27:    repo.init_repository();
+        1:   27-block  0
+        1:   28:    Service service(repo, UserRepo);
+        1:   28-block  0
+        1:   29:    Console console(service);
+        1:   29-block  0
+        -:   30:
+        -:   31:
+        -:   32:    Test_Domain T;
+        1:   33:    T.TestAllDomain();
+        1:   33-block  0
+        -:   34:    Test_Repository R;
+        1:   35:    R.TestAllRepository();
+        1:   35-block  0
+        -:   36:    Test_DynamicArray D;
+        1:   37:    D.TestAllDynamicArray();
+        1:   37-block  0
+        -:   38:    Test_Service S;
+        1:   39:    S.TestAllService();
+        1:   39-block  0
+        -:   40:    Test_Validation V;
+        1:   41:    V.TestAllValidation();
+        1:   41-block  0
+        1:   42:    console.Start();
+        1:   42-block  0
+        -:   43:
+        -:   44:
+        -:   45:    _CrtDumpMemoryLeaks();
+        -:   46:    _CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_FILE );
+        -:   47:    _CrtSetReportFile( _CRT_WARN, _CRTDBG_FILE_STDOUT );
+        -:   48:    _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_FILE );
+        -:   49:    _CrtSetReportFile( _CRT_ERROR, _CRTDBG_FILE_STDOUT );
+        -:   50:    _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE );
+        -:   51:    _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDOUT );
+        -:   52:
+        1:   53:    return 0;
+        1:   53-block  0
+        -:   54:
+        -:   55:}
