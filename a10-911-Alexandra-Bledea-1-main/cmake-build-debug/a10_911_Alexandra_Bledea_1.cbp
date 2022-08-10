@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a10_911_Alexandra_Bledea_1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\Qt\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Charts\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a10_911_Alexandra_Bledea_1">
+				<Option output="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_CHARTS_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/include"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/DynamicArray"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCore"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCharts"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtGui"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtANGLE"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 a10_911_Alexandra_Bledea_1"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a10_911_Alexandra_Bledea_1/fast">
+				<Option output="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_CHARTS_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/include"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/DynamicArray"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode"/>
+					<Add directory="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCore"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCharts"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtWidgets"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtGui"/>
+					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtANGLE"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 a10_911_Alexandra_Bledea_1/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a10_911_Alexandra_Bledea_1_autogen">
+				<Option working_dir="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 a10_911_Alexandra_Bledea_1_autogen"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket/AbstractShoppingBasket.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket/AbstractShoppingBasket.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action/Action.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action/Action.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI/AdminModeGUI.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI/AdminModeGUI.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket/CSVShoppingBasket.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket/CSVShoppingBasket.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console/console.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console/console.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain/domain.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain/domain.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/DynamicArray/dynamic_array.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions/Exceptions.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions/Exceptions.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository/FileRepository.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository/FileRepository.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI/GUI.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI/GUI.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket/HTMLShoppingBasket.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket/HTMLShoppingBasket.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate/PictureDelegate.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate/PictureDelegate.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository/repository.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository/repository.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service/service.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service/service.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode/TableMode.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode/TableMode.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_domain.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_domain.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_dynamic_array.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_dynamic_array.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_repository.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_repository.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_service.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_service.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_validation.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_validation.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI/UserModeGUI.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI/UserModeGUI.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation/validation.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation/validation.h">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/mocs_compilation.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/start.cpp">
+			<Option target="a10_911_Alexandra_Bledea_1"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Charts/Qt5ChartsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Charts\"/>
+		</Unit>
+		<Unit filename="C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/../../../../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Charts\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

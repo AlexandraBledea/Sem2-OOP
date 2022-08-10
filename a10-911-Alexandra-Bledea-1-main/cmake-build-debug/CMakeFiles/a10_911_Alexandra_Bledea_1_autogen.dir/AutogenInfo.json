@@ -1,0 +1,360 @@
+{
+	"BUILD_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CMakeLists.txt",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeGenericSystem.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeFindCodeBlocks.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/ProcessorCount.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU-C.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/3.17.5/CMakeRCCompiler.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeRCInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-windres.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeParseArguments.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake",
+		"C:/Qt/5.15.2/mingw81_64/lib/cmake/Qt5Charts/Qt5ChartsConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket/AbstractShoppingBasket.h",
+			"MU",
+			"J2JFYUCGMV/moc_AbstractShoppingBasket.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action/Action.h",
+			"MU",
+			"SJXRO2NVBY/moc_Action.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI/AdminModeGUI.h",
+			"MU",
+			"3KUB2K5BTL/moc_AdminModeGUI.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket/CSVShoppingBasket.h",
+			"MU",
+			"KYDP2BKH3X/moc_CSVShoppingBasket.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console/console.h",
+			"MU",
+			"R4KAXLYTMJ/moc_console.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain/domain.h",
+			"MU",
+			"JE6WBJKE3F/moc_domain.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/DynamicArray/dynamic_array.h",
+			"MU",
+			"ASFA6KRO6Y/moc_dynamic_array.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions/Exceptions.h",
+			"MU",
+			"3ZPKKT53DT/moc_Exceptions.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository/FileRepository.h",
+			"MU",
+			"GYJD3EEQ5U/moc_FileRepository.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI/GUI.h",
+			"MU",
+			"2LCCYRVYXB/moc_GUI.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket/HTMLShoppingBasket.h",
+			"MU",
+			"HDS347DISZ/moc_HTMLShoppingBasket.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate/PictureDelegate.h",
+			"MU",
+			"XM5FWBIHKZ/moc_PictureDelegate.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository/repository.h",
+			"MU",
+			"RSXGBB323P/moc_repository.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service/service.h",
+			"MU",
+			"QJ36PKLCSN/moc_service.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode/TableMode.h",
+			"MU",
+			"JN6COFVHFT/moc_TableMode.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_domain.h",
+			"MU",
+			"C2K7UQVPEK/moc_test_domain.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_dynamic_array.h",
+			"MU",
+			"C2K7UQVPEK/moc_test_dynamic_array.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_repository.h",
+			"MU",
+			"C2K7UQVPEK/moc_test_repository.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_service.h",
+			"MU",
+			"C2K7UQVPEK/moc_test_service.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_validation.h",
+			"MU",
+			"C2K7UQVPEK/moc_test_validation.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI/UserModeGUI.h",
+			"MU",
+			"H4XH4XOEEF/moc_UserModeGUI.cpp"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation/validation.h",
+			"MU",
+			"VK3TKBJLY3/moc_validation.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/include",
+	"MOC_COMPILATION_FILE" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CHARTS_LIB", "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/DynamicArray",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode",
+		"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate",
+		"C:/Qt/5.15.2/mingw81_64/include",
+		"C:/Qt/5.15.2/mingw81_64/include/QtCore",
+		"C:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++",
+		"C:/Qt/5.15.2/mingw81_64/include/QtCharts",
+		"C:/Qt/5.15.2/mingw81_64/include/QtWidgets",
+		"C:/Qt/5.15.2/mingw81_64/include/QtGui",
+		"C:/Qt/5.15.2/mingw81_64/include/QtANGLE",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Program Files/JetBrains/CLion 2020.3.2/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/a10_911_Alexandra_Bledea_1_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 6,
+	"PARSE_CACHE_FILE" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/a10_911_Alexandra_Bledea_1_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "C:/Qt/5.15.2/mingw81_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "C:/Qt/5.15.2/mingw81_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/a10_911_Alexandra_Bledea_1_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AbstractShoppingBasket/AbstractShoppingBasket.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Action/Action.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/AdminModeGUI/AdminModeGUI.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/CSVShoppingBasket/CSVShoppingBasket.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Console/console.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Domain/domain.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Exceptions/Exceptions.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/FileRepository/FileRepository.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/GUI/GUI.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/HTMLShoppingBasket/HTMLShoppingBasket.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/PictureDelegate/PictureDelegate.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Repository/repository.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Service/service.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/TableMode/TableMode.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_domain.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_dynamic_array.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_repository.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_service.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Tests/test_validation.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/UserModeGUI/UserModeGUI.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/Validation/validation.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/start.cpp",
+			"MU"
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

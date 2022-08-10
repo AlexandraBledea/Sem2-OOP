@@ -1,0 +1,4 @@
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/a10_911_Alexandra_Bledea_1.dir
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a10-911-Alexandra-Bledea-1/cmake-build-debug/CMakeFiles/a10_911_Alexandra_Bledea_1_autogen.dir

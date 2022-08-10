@@ -1,0 +1,11 @@
+S,Pink,200,18,https://cf.shopee.ph/file/6aa895e8f90a4c552636d02d2439c553
+S,Yellow,175,26,https://ae01.alicdn.com/kf/HTB1y5TTe25G3KVjSZPxq6zI3XXaa/Faux-Fur-Coat-Women-Long-Sleeve-Thick-Warm-Flurry-Jackets-Plus-Size-Coat-Winter-Black-Yellow.jpg_640x640.jpg
+XS,Green,135,5,https://cdn.shopify.com/s/files/1/0350/4786/6501/products/product-image-1182228866_800x.jpg?v=1614261967
+XS,Black,400,8,https://i.ebayimg.com/images/g/hCkAAOSwyWddUEBV/s-l640.jpg
+XL,Grey,999,23,https://www.berluti.com/dw/image/v2/BBMR_PRD/on/demandware.static/-/Sites-masterCatalog_Berluti/default/dw409484f9/images/R18OCU76-001_wool-and-cashmere-double-face-coat_fossil-grey-desert-tan_berluti_01.jpg?sw=640&sfrm=jpg
+L,Red,150,3,https://d2h1pu99sxkfvn.cloudfront.net/b0/3557109/382253943_vsSCWu8h5U/P1.jpg
+M,Blue,100,9,https://media.karousell.com/media/photos/products/2020/10/30/blue_coat_1604063111_5bf0cf5c.jpg
+XXL,Purple,200,29,https://i.pinimg.com/originals/a7/95/c0/a795c006be54d500d82caa2c6d740024.jpg
+XXS,Orange,150,40,https://ae01.alicdn.com/kf/H62a812260a8f4077b7f117aa832bc605s/Autumn-Winter-Women-Orange-Teddy-Coat-Stylish-Female-Thick-Warm-Cashmere-Jacket-Casual-Girls-Streetwear.jpg_640x640.jpg
+L,White,100,16,https://media.karousell.com/media/photos/products/2020/01/11/white_coat__dress_1578714468_adeb124e_progressive.jpg
+S,RandomColor,500,20,https://cdn.shopify.com/s/files/1/0303/0040/5859/products/pastel-rainbow-tie-dye-fur-euphoria-rave-outfit-rave-clothing.jpg?v=1615858013
