@@ -1,0 +1,189 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Tests/test_domain.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_domain.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_domain.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:using namespace std;
+        -:    3:#include "domain.h"
+        -:    4:#include "test_domain.h"
+        -:    5:#include <assert.h>
+        -:    6:
+        1:    7:void Test_Domain::TestSetQuantity() {
+        3:    8:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:    8-block  0
+        1:    8-block  1
+        1:    8-block  2
+        1:    8-block  3
+        1:    8-block  4
+    $$$$$:    8-block  5
+    $$$$$:    8-block  6
+    $$$$$:    8-block  7
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+        1:    9:    c.SetQuantity(999);
+       1*:   10:    assert(c.GetQuantity() == 999);
+        1:   10-block  0
+        1:   10-block  1
+    %%%%%:   10-block  2
+        1:   10-block  3
+    %%%%%:   10-block  4
+        1:   11:}
+        -:   12:
+        1:   13:void Test_Domain::TestSetPrice() {
+        3:   14:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   14-block  0
+        1:   14-block  1
+        1:   14-block  2
+        1:   14-block  3
+        1:   14-block  4
+    $$$$$:   14-block  5
+    $$$$$:   14-block  6
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+        1:   15:    c.SetPrice(999);
+       1*:   16:    assert(c.GetPrice() == 999);
+        1:   16-block  0
+        1:   16-block  1
+    %%%%%:   16-block  2
+        1:   16-block  3
+    %%%%%:   16-block  4
+        -:   17:
+        1:   18:}
+        -:   19:
+        1:   20:void Test_Domain::TestGetSize() {
+        2:   21:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   21-block  0
+        1:   21-block  1
+        1:   21-block  2
+        1:   21-block  3
+    $$$$$:   21-block  4
+    $$$$$:   21-block  5
+    $$$$$:   21-block  6
+    $$$$$:   21-block  7
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+    $$$$$:   21-block 10
+       1*:   22:    assert(c.GetSize() == "XL");
+        1:   22-block  0
+    %%%%%:   22-block  1
+        1:   22-block  2
+    %%%%%:   22-block  3
+        1:   22-block  4
+        1:   22-block  5
+        1:   22-block  6
+    $$$$$:   22-block  7
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+        1:   23:}
+        -:   24:
+        1:   25:void Test_Domain::TestGetColor() {
+        2:   26:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   26-block  0
+        1:   26-block  1
+        1:   26-block  2
+        1:   26-block  3
+    $$$$$:   26-block  4
+    $$$$$:   26-block  5
+    $$$$$:   26-block  6
+    $$$$$:   26-block  7
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+    $$$$$:   26-block 10
+       1*:   27:    assert(c.GetColor() == "Pink");
+        1:   27-block  0
+    %%%%%:   27-block  1
+        1:   27-block  2
+    %%%%%:   27-block  3
+        1:   27-block  4
+        1:   27-block  5
+        1:   27-block  6
+    $$$$$:   27-block  7
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+        1:   28:}
+        -:   29:
+        1:   30:void Test_Domain::TestGetPrice() {
+        3:   31:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   31-block  0
+        1:   31-block  1
+        1:   31-block  2
+        1:   31-block  3
+        1:   31-block  4
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+       1*:   32:    assert(c.GetPrice() == 100);
+        1:   32-block  0
+    %%%%%:   32-block  1
+        1:   32-block  2
+    %%%%%:   32-block  3
+        1:   33:}
+        -:   34:
+        1:   35:void Test_Domain::TestGetQuantity() {
+        3:   36:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   36-block  0
+        1:   36-block  1
+        1:   36-block  2
+        1:   36-block  3
+        1:   36-block  4
+    $$$$$:   36-block  5
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+    $$$$$:   36-block 10
+    $$$$$:   36-block 11
+       1*:   37:    assert(c.GetQuantity() == 10);
+        1:   37-block  0
+    %%%%%:   37-block  1
+        1:   37-block  2
+    %%%%%:   37-block  3
+        1:   38:}
+        -:   39:
+        1:   40:void Test_Domain::TestGetPhotograph() {
+        2:   41:    Coat c("XL", "Pink", 100, 10, "https://asgh.jpg/asgh");
+        1:   41-block  0
+        1:   41-block  1
+        1:   41-block  2
+        1:   41-block  3
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+    $$$$$:   41-block 10
+       1*:   42:    assert(c.GetPhotograph() == "https://asgh.jpg/asgh");
+        1:   42-block  0
+    %%%%%:   42-block  1
+        1:   42-block  2
+    %%%%%:   42-block  3
+        1:   42-block  4
+        1:   42-block  5
+        1:   42-block  6
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+        1:   43:}
+        -:   44:
+        1:   45:void Test_Domain::TestAllDomain() {
+        1:   46:    TestGetColor();
+        1:   46-block  0
+        1:   47:    TestGetPhotograph();
+        1:   48:    TestGetPrice();
+        1:   49:    TestGetQuantity();
+        1:   50:    TestGetSize();
+        1:   51:    TestSetPrice();
+        1:   52:    TestSetQuantity();
+        -:   53:
+        1:   54:}

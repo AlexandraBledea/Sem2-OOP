@@ -1,0 +1,95 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/start.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\start.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\start.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <iostream>
+        -:    6:#include "repository.h"
+        -:    7:#include "dynamic_array.h"
+        -:    8:#include "domain.h"
+        -:    9:#include "validation.h"
+        -:   10:#include "service.h"
+        -:   11:#include "console.h"
+        -:   12:#include <crtdbg.h>
+        -:   13:#include "test_domain.h"
+        -:   14:#include "test_repository.h"
+        -:   15:#include "test_dynamic_array.h"
+        -:   16:#include "test_service.h"
+        -:   17:#include "test_validation.h"
+        -:   18:#include <windows.h>
+        -:   19:using namespace std;
+        -:   20:
+        -:   21:
+        1:   22:int main(int argc, char* argv[])
+        -:   23:{
+        -:   24:
+        1:   25:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   25-block  0
+        1:   25-block  1
+    $$$$$:   25-block  2
+        1:   26:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   26-block  0
+        1:   26-block  1
+    $$$$$:   26-block  2
+        1:   27:    Repository* UserRepo = new Repository(UserDA);
+        1:   27-block  0
+        1:   27-block  1
+    $$$$$:   27-block  2
+        1:   28:    Repository* repo = new Repository(DA);
+        1:   28-block  0
+        1:   28-block  1
+    $$$$$:   28-block  2
+        1:   29:    repo->init_repository();
+        1:   29-block  0
+        1:   30:    Service* service = new Service(repo, UserRepo);
+        1:   30-block  0
+        1:   30-block  1
+    $$$$$:   30-block  2
+        1:   31:    Validator* validator = new Validator();
+        1:   31-block  0
+        1:   32:    Console* console = new Console(service, validator);
+        1:   32-block  0
+        1:   32-block  1
+    $$$$$:   32-block  2
+        -:   33:
+        -:   34:
+        -:   35:    Test_Domain T;
+        1:   36:    T.TestAllDomain();
+        1:   36-block  0
+        -:   37:    Test_Repository R;
+        1:   38:    R.TestAllRepository();
+        1:   38-block  0
+        -:   39:    Test_DynamicArray D;
+        1:   40:    D.TestAllDynamicArray();
+        1:   40-block  0
+        -:   41:    Test_Service S;
+        1:   42:    S.TestAllService();
+        1:   42-block  0
+        -:   43:    Test_Validation V;
+        1:   44:    V.TestAllValidation();
+        1:   44-block  0
+        1:   45:    console->Start();
+        1:   45-block  0
+        1:   46:    delete console;
+        1:   46-block  0
+        1:   46-block  1
+        -:   47:
+        -:   48:    _CrtDumpMemoryLeaks();
+        -:   49:    _CrtSetReportMode( _CRT_WARN, _CRTDBG_MODE_FILE );
+        -:   50:    _CrtSetReportFile( _CRT_WARN, _CRTDBG_FILE_STDOUT );
+        -:   51:    _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_FILE );
+        -:   52:    _CrtSetReportFile( _CRT_ERROR, _CRTDBG_FILE_STDOUT );
+        -:   53:    _CrtSetReportMode( _CRT_ASSERT, _CRTDBG_MODE_FILE );
+        -:   54:    _CrtSetReportFile( _CRT_ASSERT, _CRTDBG_FILE_STDOUT );
+        -:   55:
+        1:   56:    return 0;
+        1:   56-block  0
+        -:   57:
+        -:   58:}
+        -:   59:
+        -:   60://    ShellExecute(NULL, "open", "http://google.net",
+        -:   61://                 NULL, NULL, SW_SHOWNORMAL);

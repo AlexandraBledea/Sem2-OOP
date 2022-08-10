@@ -1,0 +1,967 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/console.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Console\console.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Console\console.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "console.h"
+        -:    6:#include <iostream>
+        -:    7:#include <string>
+        -:    8:#include <windows.h>
+        -:    9:using namespace std;
+        -:   10:
+    #####:   11:Console::Console() {
+        -:   12:
+    #####:   13:}
+        -:   14:
+        1:   15:Console::Console(Service *service, Validator* validator) {
+        1:   16:    this->service = service;
+        1:   17:    this->validator = validator;
+        1:   18:}
+        -:   19:
+        2:   20:Console::~Console() {
+        1:   21:    delete this->service;
+        1:   21-block  0
+        1:   21-block  1
+        1:   22:    delete this->validator;
+        1:   22-block  0
+        1:   23:}
+        -:   24:
+    #####:   25:void Console::AddAdminConsole() {
+    #####:   26:    string size;
+    %%%%%:   26-block  0
+    $$$$$:   26-block  1
+    #####:   27:    string color;
+    $$$$$:   27-block  0
+    #####:   28:    string str_price;
+    $$$$$:   28-block  0
+        -:   29:    int price;
+    #####:   30:    string str_quantity;
+    $$$$$:   30-block  0
+        -:   31:    int quantity;
+    #####:   32:    string photograph;
+    %%%%%:   32-block  0
+    $$$$$:   32-block  1
+    #####:   33:    cout<<"Type in the size: ";
+    #####:   34:    cin>>size;
+    %%%%%:   34-block  0
+    #####:   35:    cout<<"\nType in the color: ";
+    %%%%%:   35-block  0
+    #####:   36:    cin>>color;
+    %%%%%:   36-block  0
+    #####:   37:    cout<<"\nType in the price: ";
+    %%%%%:   37-block  0
+    #####:   38:    cin>>str_price;
+    %%%%%:   38-block  0
+    #####:   39:    cout<<"\nType in the quantity: ";
+    %%%%%:   39-block  0
+    #####:   40:    cin>>str_quantity;
+    %%%%%:   40-block  0
+    #####:   41:    cout<<"\nType in the photograph: ";
+    %%%%%:   41-block  0
+    #####:   42:    cin>>photograph;
+    %%%%%:   42-block  0
+    #####:   43:    price = this->validator->validate_price_product(str_price);
+    %%%%%:   43-block  0
+    %%%%%:   43-block  1
+    %%%%%:   43-block  2
+    $$$$$:   43-block  3
+    $$$$$:   43-block  4
+    #####:   44:    quantity = this->validator->validate_quantity_product(str_quantity);
+    %%%%%:   44-block  0
+    %%%%%:   44-block  1
+    $$$$$:   44-block  2
+    $$$$$:   44-block  3
+    #####:   45:    if(!this->validator->validate_color_product(color) || !this->validator->validate_size_product(size) || price == -1
+    %%%%%:   45-block  0
+    %%%%%:   45-block  1
+    %%%%%:   45-block  2
+    %%%%%:   45-block  3
+    %%%%%:   45-block  4
+    %%%%%:   45-block  5
+    %%%%%:   45-block  6
+    %%%%%:   45-block  7
+    $$$$$:   45-block  8
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+    $$$$$:   45-block 13
+    #####:   46:    || quantity == -1 || !this->validator->validate_photograph_product(photograph))
+    %%%%%:   46-block  0
+    %%%%%:   46-block  1
+    %%%%%:   46-block  2
+    %%%%%:   46-block  3
+    %%%%%:   46-block  4
+    %%%%%:   46-block  5
+    %%%%%:   46-block  6
+    %%%%%:   46-block  7
+    %%%%%:   46-block  8
+    %%%%%:   46-block  9
+    %%%%%:   46-block 10
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+    $$$$$:   46-block 13
+    #####:   47:        cout<<"Invalid input!\n";
+    %%%%%:   47-block  0
+        -:   48:    else
+        -:   49:    {
+    #####:   50:        if(this->service->AddService(size, color, price, quantity, photograph) == 0)
+    %%%%%:   50-block  0
+    %%%%%:   50-block  1
+    %%%%%:   50-block  2
+    %%%%%:   50-block  3
+    %%%%%:   50-block  4
+    $$$$$:   50-block  5
+    $$$$$:   50-block  6
+    $$$$$:   50-block  7
+    $$$$$:   50-block  8
+    $$$$$:   50-block  9
+    $$$$$:   50-block 10
+    #####:   51:            cout<<"The product was added successfully!\n";
+    %%%%%:   51-block  0
+        -:   52:        else
+    #####:   53:            cout<<"The given product already exists!\n";
+    %%%%%:   53-block  0
+        -:   54:    }
+    #####:   55:}
+        -:   56:
+    #####:   57:void Console::DisplayProductsAdmin() {
+        -:   58:    //this->service->print();
+    #####:   59:    for(int i = 0; i < this->service->GetSize(); i++)
+    %%%%%:   59-block  0
+    %%%%%:   59-block  1
+    #####:   60:        cout<<i+1<<")  ""Size: "<<(*this->service->GetRepository())[i].GetSize()<<" Color: " <<
+    $$$$$:   60-block  0
+    #####:   61:        (*this->service->GetRepository())[i].GetColor() << " Price: " << (*this->service->GetRepository())[i].GetPrice()
+    %%%%%:   61-block  0
+    %%%%%:   61-block  1
+    %%%%%:   61-block  2
+    %%%%%:   61-block  3
+    %%%%%:   61-block  4
+    %%%%%:   61-block  5
+    %%%%%:   61-block  6
+    %%%%%:   61-block  7
+    $$$$$:   61-block  8
+    $$$$$:   61-block  9
+    #####:   62:        <<" Quantity: " << (*this->service->GetRepository())[i].GetQuantity()<<"\nLink Photo: "
+    %%%%%:   62-block  0
+    %%%%%:   62-block  1
+    %%%%%:   62-block  2
+    %%%%%:   62-block  3
+    #####:   63:        << (*this->service->GetRepository())[i].GetPhotograph()<<"\n"<<"\n";
+    %%%%%:   63-block  0
+    %%%%%:   63-block  1
+    %%%%%:   63-block  2
+    %%%%%:   63-block  3
+    %%%%%:   63-block  4
+    %%%%%:   63-block  5
+    %%%%%:   63-block  6
+    %%%%%:   63-block  7
+    $$$$$:   63-block  8
+    $$$$$:   63-block  9
+    #####:   64:}
+    %%%%%:   64-block  0
+        -:   65:
+        -:   66:
+    #####:   67:void Console::UpdateProductsPriceAdmin() {
+    #####:   68:    string size;
+    %%%%%:   68-block  0
+    $$$$$:   68-block  1
+    #####:   69:    string color;
+    $$$$$:   69-block  0
+    #####:   70:    string str_price;
+    $$$$$:   70-block  0
+        -:   71:    int price;
+    #####:   72:    string photograph;
+    %%%%%:   72-block  0
+    $$$$$:   72-block  1
+    #####:   73:    cout<<"Type in the size: ";
+    #####:   74:    cin>>size;
+    %%%%%:   74-block  0
+    #####:   75:    cout<<"\nType in the color: ";
+    %%%%%:   75-block  0
+    #####:   76:    cin>>color;
+    %%%%%:   76-block  0
+    #####:   77:    cout<<"\nType in the price: ";
+    %%%%%:   77-block  0
+    #####:   78:    cin>>str_price;
+    %%%%%:   78-block  0
+    #####:   79:    cout<<"\nType in the photograph: ";
+    %%%%%:   79-block  0
+    #####:   80:    cin>>photograph;
+    %%%%%:   80-block  0
+    #####:   81:    price = this->validator->validate_price_product(str_price);
+    %%%%%:   81-block  0
+    %%%%%:   81-block  1
+    %%%%%:   81-block  2
+    $$$$$:   81-block  3
+    $$$$$:   81-block  4
+    #####:   82:    if(!this->validator->validate_color_product(color) || !this->validator->validate_size_product(size) || price == -1
+    %%%%%:   82-block  0
+    %%%%%:   82-block  1
+    %%%%%:   82-block  2
+    %%%%%:   82-block  3
+    %%%%%:   82-block  4
+    %%%%%:   82-block  5
+    %%%%%:   82-block  6
+    %%%%%:   82-block  7
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+    $$$$$:   82-block 13
+    #####:   83:       || !this->validator->validate_photograph_product(photograph))
+    %%%%%:   83-block  0
+    %%%%%:   83-block  1
+    %%%%%:   83-block  2
+    %%%%%:   83-block  3
+    %%%%%:   83-block  4
+    %%%%%:   83-block  5
+    %%%%%:   83-block  6
+    %%%%%:   83-block  7
+    %%%%%:   83-block  8
+    %%%%%:   83-block  9
+    $$$$$:   83-block 10
+    $$$$$:   83-block 11
+    $$$$$:   83-block 12
+    #####:   84:        cout<<"Invalid input!\n";
+    %%%%%:   84-block  0
+        -:   85:    else
+        -:   86:    {
+    #####:   87:        if(this->service->UpdatePriceService(size, color, photograph, price) == 0)
+    %%%%%:   87-block  0
+    %%%%%:   87-block  1
+    %%%%%:   87-block  2
+    %%%%%:   87-block  3
+    %%%%%:   87-block  4
+    $$$$$:   87-block  5
+    $$$$$:   87-block  6
+    $$$$$:   87-block  7
+    $$$$$:   87-block  8
+    $$$$$:   87-block  9
+    $$$$$:   87-block 10
+    #####:   88:            cout<<"The product was updated successfully!\n";
+    %%%%%:   88-block  0
+        -:   89:        else
+    #####:   90:            cout<<"The given product doesn't exist!";
+    %%%%%:   90-block  0
+        -:   91:    }
+        -:   92:
+    #####:   93:}
+        -:   94:
+    #####:   95:void Console::UpdateProductsQuantityAdmin() {
+    #####:   96:    string size;
+    %%%%%:   96-block  0
+    $$$$$:   96-block  1
+    #####:   97:    string color;
+    $$$$$:   97-block  0
+    #####:   98:    string str_quantity;
+    $$$$$:   98-block  0
+        -:   99:    int quantity;
+    #####:  100:    string photograph;
+    %%%%%:  100-block  0
+    $$$$$:  100-block  1
+    #####:  101:    cout<<"Type in the size: ";
+    #####:  102:    cin>>size;
+    %%%%%:  102-block  0
+    #####:  103:    cout<<"\nType in the color: ";
+    %%%%%:  103-block  0
+    #####:  104:    cin>>color;
+    %%%%%:  104-block  0
+    #####:  105:    cout<<"\nType in the quantity: ";
+    %%%%%:  105-block  0
+    #####:  106:    cin>>str_quantity;
+    %%%%%:  106-block  0
+    #####:  107:    cout<<"\nType in the photograph: ";
+    %%%%%:  107-block  0
+    #####:  108:    cin>>photograph;
+    %%%%%:  108-block  0
+    #####:  109:    quantity = this->validator->validate_quantity_product(str_quantity);
+    %%%%%:  109-block  0
+    %%%%%:  109-block  1
+    %%%%%:  109-block  2
+    $$$$$:  109-block  3
+    $$$$$:  109-block  4
+    #####:  110:    if(!this->validator->validate_color_product(color) || !this->validator->validate_size_product(size) ||
+    %%%%%:  110-block  0
+    %%%%%:  110-block  1
+    %%%%%:  110-block  2
+    %%%%%:  110-block  3
+    %%%%%:  110-block  4
+    %%%%%:  110-block  5
+    %%%%%:  110-block  6
+    %%%%%:  110-block  7
+    $$$$$:  110-block  8
+    $$$$$:  110-block  9
+    $$$$$:  110-block 10
+    $$$$$:  110-block 11
+    $$$$$:  110-block 12
+    $$$$$:  110-block 13
+    #####:  111:       quantity == -1 || !this->validator->validate_photograph_product(photograph))
+    %%%%%:  111-block  0
+    %%%%%:  111-block  1
+    %%%%%:  111-block  2
+    %%%%%:  111-block  3
+    %%%%%:  111-block  4
+    %%%%%:  111-block  5
+    %%%%%:  111-block  6
+    %%%%%:  111-block  7
+    %%%%%:  111-block  8
+    %%%%%:  111-block  9
+    $$$$$:  111-block 10
+    $$$$$:  111-block 11
+    $$$$$:  111-block 12
+    #####:  112:        cout<<"Invalid input!\n";
+    %%%%%:  112-block  0
+        -:  113:    else
+        -:  114:    {
+    #####:  115:        if(this->service->UpdateQuantityService(size, color, photograph, quantity) == 0)
+    %%%%%:  115-block  0
+    %%%%%:  115-block  1
+    %%%%%:  115-block  2
+    %%%%%:  115-block  3
+    %%%%%:  115-block  4
+    $$$$$:  115-block  5
+    $$$$$:  115-block  6
+    $$$$$:  115-block  7
+    $$$$$:  115-block  8
+    $$$$$:  115-block  9
+    $$$$$:  115-block 10
+    #####:  116:            cout<<"The product was updated successfully!\n";
+    %%%%%:  116-block  0
+        -:  117:        else
+    #####:  118:            cout<<"The given product doesn't exist!";
+    %%%%%:  118-block  0
+        -:  119:    }
+    #####:  120:}
+        -:  121:
+    #####:  122:void Console::DeleteSoldOutProductAdmin() {
+    #####:  123:    string size;
+    %%%%%:  123-block  0
+    $$$$$:  123-block  1
+    #####:  124:    string color;
+    $$$$$:  124-block  0
+    #####:  125:    string photograph;
+    %%%%%:  125-block  0
+    $$$$$:  125-block  1
+    #####:  126:    cout<<"Type in the size: ";
+    #####:  127:    cin>>size;
+    %%%%%:  127-block  0
+    #####:  128:    cout<<"\nType in the color: ";
+    %%%%%:  128-block  0
+    #####:  129:    cin>>color;
+    %%%%%:  129-block  0
+    #####:  130:    cout<<"\nType in the photograph: ";
+    %%%%%:  130-block  0
+    #####:  131:    cin>>photograph;
+    %%%%%:  131-block  0
+        -:  132:
+    #####:  133:    if(!this->validator->validate_color_product(color) || !this->validator->validate_size_product(size) ||
+    %%%%%:  133-block  0
+    %%%%%:  133-block  1
+    %%%%%:  133-block  2
+    %%%%%:  133-block  3
+    %%%%%:  133-block  4
+    %%%%%:  133-block  5
+    %%%%%:  133-block  6
+    %%%%%:  133-block  7
+    %%%%%:  133-block  8
+    %%%%%:  133-block  9
+    %%%%%:  133-block 10
+    %%%%%:  133-block 11
+    $$$$$:  133-block 12
+    $$$$$:  133-block 13
+    $$$$$:  133-block 14
+    $$$$$:  133-block 15
+    $$$$$:  133-block 16
+    $$$$$:  133-block 17
+    #####:  134:       !this->validator->validate_photograph_product(photograph))
+    %%%%%:  134-block  0
+    %%%%%:  134-block  1
+    %%%%%:  134-block  2
+    %%%%%:  134-block  3
+    %%%%%:  134-block  4
+    %%%%%:  134-block  5
+    $$$$$:  134-block  6
+    $$$$$:  134-block  7
+    $$$$$:  134-block  8
+    #####:  135:        cout<<"Invalid input!\n";
+    %%%%%:  135-block  0
+        -:  136:    else
+        -:  137:    {
+    #####:  138:        if(this->service->DeleteService(size, color, photograph, 2) == 0)
+    %%%%%:  138-block  0
+    %%%%%:  138-block  1
+    %%%%%:  138-block  2
+    %%%%%:  138-block  3
+    %%%%%:  138-block  4
+    $$$$$:  138-block  5
+    $$$$$:  138-block  6
+    $$$$$:  138-block  7
+    $$$$$:  138-block  8
+    $$$$$:  138-block  9
+    $$$$$:  138-block 10
+    #####:  139:            cout<<"The product was deleted successfully!\n";
+    %%%%%:  139-block  0
+        -:  140:        else
+    #####:  141:            cout<<"The given product isn't sold out or it doesn't exist!\n";
+    %%%%%:  141-block  0
+        -:  142:    }
+    #####:  143:}
+        -:  144:
+    #####:  145:void Console::DeleteEntireProductAdmin() {
+    #####:  146:    string size;
+    %%%%%:  146-block  0
+    $$$$$:  146-block  1
+    #####:  147:    string color;
+    $$$$$:  147-block  0
+    #####:  148:    string photograph;
+    %%%%%:  148-block  0
+    $$$$$:  148-block  1
+    #####:  149:    cout<<"Type in the size: ";
+    #####:  150:    cin>>size;
+    %%%%%:  150-block  0
+    #####:  151:    cout<<"\nType in the color: ";
+    %%%%%:  151-block  0
+    #####:  152:    cin>>color;
+    %%%%%:  152-block  0
+    #####:  153:    cout<<"\nType in the photograph: ";
+    %%%%%:  153-block  0
+    #####:  154:    cin>>photograph;
+    %%%%%:  154-block  0
+    #####:  155:    if(!this->validator->validate_color_product(color) || !this->validator->validate_size_product(size) ||
+    %%%%%:  155-block  0
+    %%%%%:  155-block  1
+    %%%%%:  155-block  2
+    %%%%%:  155-block  3
+    %%%%%:  155-block  4
+    %%%%%:  155-block  5
+    %%%%%:  155-block  6
+    %%%%%:  155-block  7
+    %%%%%:  155-block  8
+    %%%%%:  155-block  9
+    %%%%%:  155-block 10
+    %%%%%:  155-block 11
+    $$$$$:  155-block 12
+    $$$$$:  155-block 13
+    $$$$$:  155-block 14
+    $$$$$:  155-block 15
+    $$$$$:  155-block 16
+    $$$$$:  155-block 17
+    #####:  156:       !this->validator->validate_photograph_product(photograph))
+    %%%%%:  156-block  0
+    %%%%%:  156-block  1
+    %%%%%:  156-block  2
+    %%%%%:  156-block  3
+    %%%%%:  156-block  4
+    %%%%%:  156-block  5
+    $$$$$:  156-block  6
+    $$$$$:  156-block  7
+    $$$$$:  156-block  8
+    #####:  157:        cout<<"Invalid input!\n";
+    %%%%%:  157-block  0
+        -:  158:    else
+        -:  159:    {
+    #####:  160:        if(this->service->DeleteService(size, color, photograph, 1) == 0)
+    %%%%%:  160-block  0
+    %%%%%:  160-block  1
+    %%%%%:  160-block  2
+    %%%%%:  160-block  3
+    %%%%%:  160-block  4
+    $$$$$:  160-block  5
+    $$$$$:  160-block  6
+    $$$$$:  160-block  7
+    $$$$$:  160-block  8
+    $$$$$:  160-block  9
+    $$$$$:  160-block 10
+    #####:  161:            cout<<"The product was deleted successfully!\n";
+    %%%%%:  161-block  0
+        -:  162:        else
+    #####:  163:            cout<<"The given product doesn't exist!\n";
+    %%%%%:  163-block  0
+        -:  164:    }
+    #####:  165:}
+        -:  166:
+    #####:  167:void Console::MenuAdminMode() {
+        -:  168:
+    #####:  169:    cout<<"Type 1 for adding a product!\n";
+    %%%%%:  169-block  0
+    #####:  170:    cout<<"Type 2 for displaying the products!\n";
+    #####:  171:    cout<<"Type 3 for deleting a product!\n";
+    #####:  172:    cout<<"Type 4 for deleting a sold out product!\n";
+    #####:  173:    cout<<"Type 5 for updating the price of a product!\n";
+    #####:  174:    cout<<"Type 6 for updating the quantity of a product!\n";
+    #####:  175:    cout<<"Type H for displaying the menu!\n";
+    #####:  176:    cout<<"Type E in order to exit the program!\n";
+    #####:  177:}
+        -:  178:
+    #####:  179:void Console::AdministratorMode() {
+    #####:  180:    bool Administrator_Mode = false;
+    #####:  181:    MenuAdminMode();
+    %%%%%:  181-block  0
+    #####:  182:    while(Administrator_Mode == false)
+    %%%%%:  182-block  0
+        -:  183:    {
+    #####:  184:        string command;
+    %%%%%:  184-block  0
+    %%%%%:  184-block  1
+    $$$$$:  184-block  2
+    #####:  185:        cout<<"\nCommand> ";
+    #####:  186:        cin>>command;
+    %%%%%:  186-block  0
+    #####:  187:        if(command != "1" && command != "2" && command != "3" && command != "4" && command != "5" && command != "6" &&
+    %%%%%:  187-block  0
+    %%%%%:  187-block  1
+    %%%%%:  187-block  2
+    %%%%%:  187-block  3
+    %%%%%:  187-block  4
+    %%%%%:  187-block  5
+    %%%%%:  187-block  6
+    %%%%%:  187-block  7
+    %%%%%:  187-block  8
+    %%%%%:  187-block  9
+    %%%%%:  187-block 10
+    #####:  188:        command != "E" && command != "H")
+    %%%%%:  188-block  0
+    %%%%%:  188-block  1
+    %%%%%:  188-block  2
+    %%%%%:  188-block  3
+    %%%%%:  188-block  4
+    %%%%%:  188-block  5
+    %%%%%:  188-block  6
+    %%%%%:  188-block  7
+    #####:  189:            cout<<"Invalid command!\n";
+    %%%%%:  189-block  0
+        -:  190:        else
+    #####:  191:            switch(command[0])
+    %%%%%:  191-block  0
+    %%%%%:  191-block  1
+        -:  192:            {
+        -:  193:
+    #####:  194:                case '1':
+    #####:  195:                    AddAdminConsole();
+    %%%%%:  195-block  0
+    #####:  196:                    break;
+    %%%%%:  196-block  0
+        -:  197:
+    #####:  198:                case '2':
+    #####:  199:                    DisplayProductsAdmin();
+    %%%%%:  199-block  0
+    #####:  200:                    break;
+    %%%%%:  200-block  0
+        -:  201:
+    #####:  202:                case '3':
+    #####:  203:                    DeleteEntireProductAdmin();
+    %%%%%:  203-block  0
+    #####:  204:                    break;
+    %%%%%:  204-block  0
+        -:  205:
+    #####:  206:                case '4':
+    #####:  207:                    DeleteSoldOutProductAdmin();
+    %%%%%:  207-block  0
+    #####:  208:                    break;
+    %%%%%:  208-block  0
+        -:  209:
+    #####:  210:                case '5':
+    #####:  211:                    UpdateProductsPriceAdmin();
+    %%%%%:  211-block  0
+    #####:  212:                    break;
+    %%%%%:  212-block  0
+        -:  213:
+    #####:  214:                case '6':
+    #####:  215:                    UpdateProductsQuantityAdmin();
+    %%%%%:  215-block  0
+    #####:  216:                    break;
+    %%%%%:  216-block  0
+        -:  217:
+    #####:  218:                case 'H':
+    #####:  219:                    MenuAdminMode();
+    %%%%%:  219-block  0
+    #####:  220:                    break;
+    %%%%%:  220-block  0
+        -:  221:
+    #####:  222:                case 'E':
+    #####:  223:                    Administrator_Mode = true;
+    #####:  224:                    break;
+    %%%%%:  224-block  0
+        -:  225:            }
+        -:  226:
+        -:  227:    }
+    #####:  228:}
+    %%%%%:  228-block  0
+        -:  229:
+    #####:  230:void MenuUserMode()
+        -:  231:{
+    #####:  232:    cout<<"Type 1 for buying products!\n";
+    %%%%%:  232-block  0
+    #####:  233:    cout<<"Type 2 for displaying the shopping basket!\n";
+    #####:  234:    cout<<"Type E for exit!\n";
+    #####:  235:}
+        -:  236:
+    #####:  237:int Console::DisplayProductsUser() {
+    #####:  238:    int i = 0;
+    #####:  239:    if(i < this->service->GetSize())
+    %%%%%:  239-block  0
+        -:  240:    {
+    #####:  241:        cout<<"Size: "<<(*this->service->GetRepository())[i].GetSize()<<" Color: " <<
+    $$$$$:  241-block  0
+    $$$$$:  241-block  1
+    #####:  242:            (*this->service->GetRepository())[i].GetColor() << " Price: " << (*this->service->GetRepository())[i].GetPrice()
+    %%%%%:  242-block  0
+    %%%%%:  242-block  1
+    %%%%%:  242-block  2
+    %%%%%:  242-block  3
+    %%%%%:  242-block  4
+    %%%%%:  242-block  5
+    %%%%%:  242-block  6
+    %%%%%:  242-block  7
+    $$$$$:  242-block  8
+    $$$$$:  242-block  9
+    #####:  243:            <<" Quantity: " << (*this->service->GetRepository())[i].GetQuantity()<<"\nLink Photo: "
+    %%%%%:  243-block  0
+    %%%%%:  243-block  1
+    %%%%%:  243-block  2
+    %%%%%:  243-block  3
+    #####:  244:            << (*this->service->GetRepository())[i].GetPhotograph()<<"\n"<<"\n";
+    %%%%%:  244-block  0
+    %%%%%:  244-block  1
+    %%%%%:  244-block  2
+    %%%%%:  244-block  3
+    %%%%%:  244-block  4
+    %%%%%:  244-block  5
+    %%%%%:  244-block  6
+    %%%%%:  244-block  7
+    $$$$$:  244-block  8
+    $$$$$:  244-block  9
+    #####:  245:        ShellExecute(NULL, "open", (*this->service->GetRepository())[i].GetPhotograph().c_str(), NULL, NULL, SW_SHOWNORMAL);
+    %%%%%:  245-block  0
+    $$$$$:  245-block  1
+    $$$$$:  245-block  2
+    #####:  246:        cout<<"Buy or go Next\n";
+    #####:  247:        while(i < this->service->GetSize())
+    %%%%%:  247-block  0
+    %%%%%:  247-block  1
+        -:  248:        {
+    #####:  249:            string command;
+    %%%%%:  249-block  0
+    $$$$$:  249-block  1
+    #####:  250:            cout<<"\nCommand> ";
+    #####:  251:            cin>>command;
+    %%%%%:  251-block  0
+    #####:  252:            if(command != "Buy" && command != "Next" && command != "Pay")
+    %%%%%:  252-block  0
+    %%%%%:  252-block  1
+    %%%%%:  252-block  2
+    %%%%%:  252-block  3
+    %%%%%:  252-block  4
+    %%%%%:  252-block  5
+    %%%%%:  252-block  6
+    %%%%%:  252-block  7
+    %%%%%:  252-block  8
+    #####:  253:                cout<<"Invalid command!";
+    %%%%%:  253-block  0
+        -:  254:            else
+        -:  255:            {
+    #####:  256:                if(command == "Buy")
+    %%%%%:  256-block  0
+        -:  257:                {
+    #####:  258:                    this->service->UpdateQuantityService((*this->service->GetRepository())[i].GetSize(),
+    %%%%%:  258-block  0
+    %%%%%:  258-block  1
+    %%%%%:  258-block  2
+    %%%%%:  258-block  3
+    $$$$$:  258-block  4
+    $$$$$:  258-block  5
+    #####:  259:                                                         (*this->service->GetRepository())[i].GetColor(), (*this->service->GetRepository())[i].GetPhotograph(),
+    %%%%%:  259-block  0
+    %%%%%:  259-block  1
+    %%%%%:  259-block  2
+    $$$$$:  259-block  3
+    $$$$$:  259-block  4
+    $$$$$:  259-block  5
+    $$$$$:  259-block  6
+    #####:  260:                                                         (*this->service->GetRepository())[i].GetQuantity() - 1);
+    %%%%%:  260-block  0
+    %%%%%:  260-block  1
+    %%%%%:  260-block  2
+    #####:  261:                    Coat c((*this->service->GetRepository())[i].GetSize(),(*this->service->GetRepository())[i].GetColor(),
+    %%%%%:  261-block  0
+    %%%%%:  261-block  1
+    %%%%%:  261-block  2
+    $$$$$:  261-block  3
+    $$$$$:  261-block  4
+    #####:  262:                           (*this->service->GetRepository())[i].GetPrice(), 1, (*this->service->GetRepository())[i].GetPhotograph());
+    %%%%%:  262-block  0
+    %%%%%:  262-block  1
+    %%%%%:  262-block  2
+    %%%%%:  262-block  3
+    %%%%%:  262-block  4
+    %%%%%:  262-block  5
+    $$$$$:  262-block  6
+    $$$$$:  262-block  7
+    #####:  263:                    if( this->service->AddUserService((*this->service->GetRepository())[i], c) == 1)
+    %%%%%:  263-block  0
+    %%%%%:  263-block  1
+    %%%%%:  263-block  2
+    %%%%%:  263-block  3
+    $$$$$:  263-block  4
+    $$$$$:  263-block  5
+    $$$$$:  263-block  6
+    $$$$$:  263-block  7
+    #####:  264:                        i--;
+    %%%%%:  264-block  0
+        -:  265:                }
+    #####:  266:                if(command == "Next")
+    %%%%%:  266-block  0
+        -:  267:                {
+    #####:  268:                    i++;
+    #####:  269:                    if(i < this->service->GetSize()) {
+    %%%%%:  269-block  0
+    %%%%%:  269-block  1
+    #####:  270:                        cout << "Size: " << (*this->service->GetRepository())[i].GetSize() << " Color: " <<
+    %%%%%:  270-block  0
+    $$$$$:  270-block  1
+    $$$$$:  270-block  2
+    #####:  271:                             (*this->service->GetRepository())[i].GetColor() << " Price: "
+    %%%%%:  271-block  0
+    %%%%%:  271-block  1
+    %%%%%:  271-block  2
+    %%%%%:  271-block  3
+    %%%%%:  271-block  4
+    %%%%%:  271-block  5
+    %%%%%:  271-block  6
+    %%%%%:  271-block  7
+    $$$$$:  271-block  8
+    $$$$$:  271-block  9
+    #####:  272:                             << (*this->service->GetRepository())[i].GetPrice()
+    %%%%%:  272-block  0
+    %%%%%:  272-block  1
+    #####:  273:                             << " Quantity: " << (*this->service->GetRepository())[i].GetQuantity() << "\nLink Photo: "
+    %%%%%:  273-block  0
+    %%%%%:  273-block  1
+    %%%%%:  273-block  2
+    %%%%%:  273-block  3
+    #####:  274:                             << (*this->service->GetRepository())[i].GetPhotograph() << "\n" << "\n";
+    %%%%%:  274-block  0
+    %%%%%:  274-block  1
+    %%%%%:  274-block  2
+    %%%%%:  274-block  3
+    %%%%%:  274-block  4
+    %%%%%:  274-block  5
+    %%%%%:  274-block  6
+    %%%%%:  274-block  7
+    $$$$$:  274-block  8
+    $$$$$:  274-block  9
+    #####:  275:                        ShellExecute(NULL, "open", (*this->service->GetRepository())[i].GetPhotograph().c_str(), NULL,
+    %%%%%:  275-block  0
+    %%%%%:  275-block  1
+    %%%%%:  275-block  2
+    $$$$$:  275-block  3
+    $$$$$:  275-block  4
+        -:  276:                                     NULL, SW_SHOWNORMAL);
+    #####:  277:                        cout<<"Buy or go Next\n";
+        -:  278:                    }
+        -:  279:                    else
+    #####:  280:                        return 0;
+    %%%%%:  280-block  0
+        -:  281:                }
+    #####:  282:                if(command == "Pay")
+    %%%%%:  282-block  0
+        -:  283:                {
+    #####:  284:                    return -1;
+    %%%%%:  284-block  0
+        -:  285:                }
+        -:  286:            }
+        -:  287:        }
+        -:  288:    }
+    #####:  289:    return 1;
+    %%%%%:  289-block  0
+        -:  290:}
+        -:  291:
+        -:  292:
+    #####:  293:void Console::MenuDisplayProductsUser()
+        -:  294:{
+    #####:  295:    int done = 0;
+    #####:  296:    if(this->service->GetSize() == 0)
+    %%%%%:  296-block  0
+    #####:  297:        cout<<"There are no products on stock!";
+    %%%%%:  297-block  0
+        -:  298:    else{
+    #####:  299:        while(done == 0)
+    %%%%%:  299-block  0
+        -:  300:        {
+    #####:  301:            done = DisplayProductsUser();
+    %%%%%:  301-block  0
+        -:  302:        }
+        -:  303:    }
+    #####:  304:    if(done == 1)
+    %%%%%:  304-block  0
+    #####:  305:        cout<<"There are no products left on stock!";
+    %%%%%:  305-block  0
+        -:  306:
+    #####:  307:}
+        -:  308:
+    #####:  309:void Console::DisplayShoppingBag() {
+    #####:  310:    for(int i = 0; i < this->service->GetUserRepository()->GetSize(); i++)
+    %%%%%:  310-block  0
+    %%%%%:  310-block  1
+    #####:  311:        cout<<i+1<<")  ""Size: "<<(*this->service->GetUserRepository())[i].GetSize()<<" Color: " <<
+    $$$$$:  311-block  0
+    #####:  312:            (*this->service->GetUserRepository())[i].GetColor() << " Price: " << (*this->service->GetUserRepository())[i].GetPrice()
+    %%%%%:  312-block  0
+    %%%%%:  312-block  1
+    %%%%%:  312-block  2
+    %%%%%:  312-block  3
+    %%%%%:  312-block  4
+    %%%%%:  312-block  5
+    %%%%%:  312-block  6
+    %%%%%:  312-block  7
+    $$$$$:  312-block  8
+    $$$$$:  312-block  9
+    #####:  313:            <<" Quantity: " << (*this->service->GetUserRepository())[i].GetQuantity()<<"\nLink Photo: "
+    %%%%%:  313-block  0
+    %%%%%:  313-block  1
+    %%%%%:  313-block  2
+    %%%%%:  313-block  3
+    #####:  314:            << (*this->service->GetUserRepository())[i].GetPhotograph()<<"\n"<<"\n";
+    %%%%%:  314-block  0
+    %%%%%:  314-block  1
+    %%%%%:  314-block  2
+    %%%%%:  314-block  3
+    %%%%%:  314-block  4
+    %%%%%:  314-block  5
+    %%%%%:  314-block  6
+    %%%%%:  314-block  7
+    $$$$$:  314-block  8
+    $$$$$:  314-block  9
+    #####:  315:}
+    %%%%%:  315-block  0
+        -:  316:
+        -:  317:
+    #####:  318:void Console::UserMode() {
+    #####:  319:    bool User_Mode = false;
+        -:  320:
+    #####:  321:    MenuUserMode();
+    %%%%%:  321-block  0
+    #####:  322:    while(!User_Mode)
+    %%%%%:  322-block  0
+        -:  323:    {
+    #####:  324:        string command;
+    %%%%%:  324-block  0
+    %%%%%:  324-block  1
+    $$$$$:  324-block  2
+    #####:  325:        cout<<"\nCommand> ";
+    #####:  326:        cin>>command;
+    %%%%%:  326-block  0
+    #####:  327:        if(command != "1" && command != "2" && command != "E" && command != "H")
+    %%%%%:  327-block  0
+    %%%%%:  327-block  1
+    %%%%%:  327-block  2
+    %%%%%:  327-block  3
+    %%%%%:  327-block  4
+    %%%%%:  327-block  5
+    %%%%%:  327-block  6
+    %%%%%:  327-block  7
+    %%%%%:  327-block  8
+    %%%%%:  327-block  9
+    %%%%%:  327-block 10
+    #####:  328:            cout<<"Invalid command!\n";
+    %%%%%:  328-block  0
+        -:  329:        else
+    #####:  330:            switch(command[0])
+    %%%%%:  330-block  0
+    %%%%%:  330-block  1
+        -:  331:            {
+        -:  332:
+    #####:  333:                case '1':
+    #####:  334:                    MenuDisplayProductsUser();
+    %%%%%:  334-block  0
+    #####:  335:                    break;
+    %%%%%:  335-block  0
+        -:  336:
+    #####:  337:                case '2':
+    #####:  338:                    DisplayShoppingBag();
+    %%%%%:  338-block  0
+    #####:  339:                    break;
+    %%%%%:  339-block  0
+        -:  340:
+    #####:  341:                case 'H':
+    #####:  342:                    MenuUserMode();
+    %%%%%:  342-block  0
+    #####:  343:                    break;
+    %%%%%:  343-block  0
+        -:  344:
+    #####:  345:                case 'E':
+    #####:  346:                    User_Mode = true;
+    #####:  347:                    break;
+    %%%%%:  347-block  0
+        -:  348:            }
+        -:  349:
+        -:  350:    }
+    #####:  351:}
+    %%%%%:  351-block  0
+        -:  352:
+        -:  353:
+        1:  354:void Console::Start() {
+        -:  355:
+        1:  356:    bool Done = false;
+        1:  356-block  0
+        -:  357:
+        2:  358:    while(!Done)
+        2:  358-block  0
+        -:  359:    {
+        2:  360:        string command;
+        1:  360-block  0
+        1:  360-block  1
+    $$$$$:  360-block  2
+        1:  361:        cout<<"Type 1 for Administrator Mode or type 2 for User Mode:  ";
+        1:  362:        cin>>command;
+        1:  362-block  0
+        1:  363:        cout<<'\n';
+        1:  363-block  0
+       1*:  364:        if(command != "1" && command != "2" && command != "E")
+        1:  364-block  0
+        1:  364-block  1
+        1:  364-block  2
+        1:  364-block  3
+        1:  364-block  4
+        1:  364-block  5
+    %%%%%:  364-block  6
+        1:  364-block  7
+        1:  364-block  8
+    #####:  365:            cout<<"Invalid command!\n";
+    %%%%%:  365-block  0
+        -:  366:        else
+        1:  367:            switch(command[0])
+        1:  367-block  0
+        1:  367-block  1
+        -:  368:            {
+    #####:  369:                case '1':
+    #####:  370:                    AdministratorMode();
+    %%%%%:  370-block  0
+    #####:  371:                    break;
+    %%%%%:  371-block  0
+        -:  372:
+    #####:  373:                case '2':
+    #####:  374:                    UserMode();
+    %%%%%:  374-block  0
+    #####:  375:                    break;
+    %%%%%:  375-block  0
+        -:  376:
+        -:  377:
+        1:  378:                case 'E':
+        1:  379:                    Done = true;
+        1:  380:                    break;
+        1:  380-block  0
+        -:  381:            }
+        -:  382:
+        -:  383:    }
+        1:  384:}
+        1:  384-block  0
+        -:  385:
+        -:  386:

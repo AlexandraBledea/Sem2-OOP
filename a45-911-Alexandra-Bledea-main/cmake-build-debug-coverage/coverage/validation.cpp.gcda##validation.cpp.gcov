@@ -1,0 +1,112 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Validation/validation.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Validation\validation.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Validation\validation.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "validation.h"
+        -:    6:#include <ctype.h>
+        -:    7:#include <string>
+        -:    8:using namespace std;
+        -:    9://bool Validator::validate_user_input(string input) {
+        -:   10://}
+        2:   11:bool Validator::validate_color_product(string color) {
+        6:   12:    for(char i : color)
+        2:   12-block  0
+        6:   12-block  1
+        5:   12-block  2
+        4:   12-block  3
+        5:   13:        if(isdigit(i))
+        1:   13-block  0
+        4:   13-block  1
+        5:   13-block  2
+        1:   14:            return false;
+        1:   14-block  0
+        1:   15:    return true;
+        1:   15-block  0
+        -:   16:}
+        -:   17:
+        2:   18:bool Validator::validate_size_product(string size) {
+        2:   19:    if(size != "XXS" && size != "XS" && size != "S" && size != "M" && size != "L" && size != "XL" && size != "XXL")
+        2:   19-block  0
+        2:   19-block  1
+        2:   19-block  2
+        2:   19-block  3
+        2:   19-block  4
+        1:   19-block  5
+        1:   19-block  6
+        1:   19-block  7
+        1:   19-block  8
+        2:   19-block  9
+        1:   20:        return false;
+        1:   20-block  0
+        -:   21:    else
+        1:   22:        return true;
+        1:   22-block  0
+        -:   23:}
+        -:   24:
+        2:   25:int Validator::validate_price_product(string price) {
+        7:   26:    for(char i : price)
+        2:   26-block  0
+        7:   26-block  1
+        6:   26-block  2
+        5:   26-block  3
+        6:   27:        if(isalpha(i))
+        1:   28:            return -1;
+        1:   28-block  0
+        -:   29:    int new_price;
+        1:   30:    new_price = stoi(price);
+        1:   30-block  0
+        1:   31:    return new_price;
+        -:   32:
+        -:   33:}
+        -:   34:
+        4:   35:bool Validator::validate_photograph_product(string photograph) {
+        4:   36:    if(photograph.length() < 13)
+        4:   36-block  0
+        1:   37:        return false;
+        1:   37-block  0
+        5:   38:    if(photograph[0] != 'h' || photograph[1] != 't' || photograph[2] != 't' || photograph[3] != 'p' ||
+        3:   38-block  0
+        2:   38-block  1
+        2:   38-block  2
+        2:   38-block  3
+        5:   39:    photograph[4] != 's' || photograph[5] != ':' || photograph[6] != '/' || photograph[7] != '/')
+        2:   39-block  0
+        2:   39-block  1
+        2:   39-block  2
+        2:   39-block  3
+        1:   39-block  4
+        2:   39-block  5
+        3:   39-block  6
+        1:   40:        return false;
+        1:   40-block  0
+        2:   41:    if(photograph.find(".com") == std::string::npos && photograph.find(".jpg") == std::string::npos)
+        2:   41-block  0
+        2:   41-block  1
+        1:   41-block  2
+        1:   41-block  3
+        2:   41-block  4
+        1:   42:        return false;
+        1:   42-block  0
+        1:   43:    return true;
+        1:   43-block  0
+        -:   44:}
+        -:   45:
+        2:   46:int Validator::validate_quantity_product(string quantity) {
+        8:   47:    for(char i : quantity)
+        2:   47-block  0
+        8:   47-block  1
+        7:   47-block  2
+        6:   47-block  3
+        7:   48:        if(isalpha(i))
+        1:   49:            return -1;
+        1:   49-block  0
+        -:   50:    int new_quantity;
+        1:   51:    new_quantity = stoi(quantity);
+        1:   51-block  0
+        1:   52:    return new_quantity;
+        -:   53:}

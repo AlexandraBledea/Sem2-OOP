@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Domain/domain.h
+string
+-
+
+../DynamicArray/dynamic_array.h
+cstdlib
+-
+domain.h
+../DynamicArray/domain.h
+
+../Repository/repository.h
+cstdlib
+-
+dynamic_array.h
+../Repository/dynamic_array.h
+domain.h
+../Repository/domain.h
+
+../Service/service.h
+cstdlib
+-
+dynamic_array.h
+../Service/dynamic_array.h
+repository.h
+../Service/repository.h
+domain.h
+../Service/domain.h
+
+../Validation/validation.h
+string
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/console.cpp
+console.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/console.h
+iostream
+-
+string
+-
+windows.h
+-
+
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/console.h
+service.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/service.h
+validation.h
+C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Console/validation.h
+

@@ -1,0 +1,252 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Tests/test_validation.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_validation.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_validation.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/23/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <string>
+        -:    6:#include "test_validation.h"
+        -:    7:#include "validation.h"
+        -:    8:#include <assert.h>
+        -:    9:
+        -:   10:using namespace std;
+        -:   11:
+        1:   12:void Test_Validation::test_validate_color_product() {
+        1:   13:    Validator* validator = new Validator();
+        1:   13-block  0
+        2:   14:    string color = "Blue";
+        1:   14-block  0
+    $$$$$:   14-block  1
+    $$$$$:   14-block  2
+        2:   15:    string color2 = "16Pinksa1";
+    $$$$$:   15-block  0
+    $$$$$:   15-block  1
+       1*:   16:    assert(validator->validate_color_product(color));
+        1:   16-block  0
+        1:   16-block  1
+    %%%%%:   16-block  2
+        1:   16-block  3
+    %%%%%:   16-block  4
+        1:   16-block  5
+        1:   16-block  6
+    $$$$$:   16-block  7
+    $$$$$:   16-block  8
+    $$$$$:   16-block  9
+       1*:   17:    assert(!validator->validate_color_product(color2));
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+        1:   17-block  4
+    %%%%%:   17-block  5
+        1:   17-block  6
+        1:   17-block  7
+    $$$$$:   17-block  8
+    $$$$$:   17-block  9
+    $$$$$:   17-block 10
+        1:   18:    delete validator;
+        1:   18-block  0
+        -:   19:
+        1:   20:}
+        -:   21:
+        1:   22:void Test_Validation::test_validate_size_product() {
+        1:   23:    Validator* validator = new Validator();
+        1:   23-block  0
+       1*:   24:    assert(validator->validate_size_product("L"));
+        1:   24-block  0
+        1:   24-block  1
+    %%%%%:   24-block  2
+        1:   24-block  3
+    %%%%%:   24-block  4
+        1:   24-block  5
+        1:   24-block  6
+        1:   24-block  7
+        1:   24-block  8
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+    $$$$$:   24-block 13
+    $$$$$:   24-block 14
+       1*:   25:    assert(!validator->validate_size_product("small"));
+        1:   25-block  0
+        1:   25-block  1
+        1:   25-block  2
+    %%%%%:   25-block  3
+        1:   25-block  4
+    %%%%%:   25-block  5
+        1:   25-block  6
+        1:   25-block  7
+        1:   25-block  8
+        1:   25-block  9
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+    $$$$$:   25-block 14
+        1:   26:    delete validator;
+        1:   26-block  0
+        1:   27:}
+        -:   28:
+        1:   29:void Test_Validation::test_validate_price_product() {
+        1:   30:    Validator* validator = new Validator();
+        1:   30-block  0
+       1*:   31:    assert(validator->validate_price_product("100") == 100);
+        1:   31-block  0
+        1:   31-block  1
+    %%%%%:   31-block  2
+        1:   31-block  3
+    %%%%%:   31-block  4
+        1:   31-block  5
+        1:   31-block  6
+        1:   31-block  7
+        1:   31-block  8
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+    $$$$$:   31-block 13
+    $$$$$:   31-block 14
+       1*:   32:    assert(validator->validate_price_product("16gs") == -1);
+        1:   32-block  0
+        1:   32-block  1
+        1:   32-block  2
+    %%%%%:   32-block  3
+        1:   32-block  4
+    %%%%%:   32-block  5
+        1:   32-block  6
+        1:   32-block  7
+        1:   32-block  8
+        1:   32-block  9
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+    $$$$$:   32-block 14
+        1:   33:    delete validator;
+        1:   33-block  0
+        1:   34:}
+        -:   35:
+        1:   36:void Test_Validation::test_validate_quantity_product() {
+        1:   37:    Validator* validator = new Validator();
+        1:   37-block  0
+       1*:   38:    assert(validator->validate_quantity_product("145sgahj") == -1);
+        1:   38-block  0
+        1:   38-block  1
+    %%%%%:   38-block  2
+        1:   38-block  3
+    %%%%%:   38-block  4
+        1:   38-block  5
+        1:   38-block  6
+        1:   38-block  7
+        1:   38-block  8
+    $$$$$:   38-block  9
+    $$$$$:   38-block 10
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+    $$$$$:   38-block 13
+    $$$$$:   38-block 14
+       1*:   39:    assert(validator->validate_quantity_product("100") == 100);
+        1:   39-block  0
+        1:   39-block  1
+        1:   39-block  2
+    %%%%%:   39-block  3
+        1:   39-block  4
+    %%%%%:   39-block  5
+        1:   39-block  6
+        1:   39-block  7
+        1:   39-block  8
+        1:   39-block  9
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+    $$$$$:   39-block 14
+        1:   40:    delete validator;
+        1:   40-block  0
+        1:   41:}
+        -:   42:
+        1:   43:void Test_Validation::test_validate_photograph_product() {
+        1:   44:    Validator* validator = new Validator();
+        1:   44-block  0
+       1*:   45:    assert(!validator->validate_photograph_product("safgh"));
+        1:   45-block  0
+        1:   45-block  1
+    %%%%%:   45-block  2
+        1:   45-block  3
+    %%%%%:   45-block  4
+        1:   45-block  5
+        1:   45-block  6
+        1:   45-block  7
+        1:   45-block  8
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+       1*:   46:    assert(!validator->validate_photograph_product("saghsajdgfgahjkhgahj"));
+        1:   46-block  0
+        1:   46-block  1
+        1:   46-block  2
+    %%%%%:   46-block  3
+        1:   46-block  4
+    %%%%%:   46-block  5
+        1:   46-block  6
+        1:   46-block  7
+        1:   46-block  8
+        1:   46-block  9
+    $$$$$:   46-block 10
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+    $$$$$:   46-block 13
+    $$$$$:   46-block 14
+    $$$$$:   46-block 15
+       1*:   47:    assert(!validator->validate_photograph_product("https://sagsahjksahsagfgsahj"));
+        1:   47-block  0
+        1:   47-block  1
+        1:   47-block  2
+    %%%%%:   47-block  3
+        1:   47-block  4
+    %%%%%:   47-block  5
+        1:   47-block  6
+        1:   47-block  7
+        1:   47-block  8
+        1:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+    $$$$$:   47-block 15
+       1*:   48:    assert(validator->validate_photograph_product("https://sagahj.jpg"));
+        1:   48-block  0
+        1:   48-block  1
+        1:   48-block  2
+    %%%%%:   48-block  3
+        1:   48-block  4
+    %%%%%:   48-block  5
+        1:   48-block  6
+        1:   48-block  7
+        1:   48-block  8
+        1:   48-block  9
+    $$$$$:   48-block 10
+    $$$$$:   48-block 11
+    $$$$$:   48-block 12
+    $$$$$:   48-block 13
+    $$$$$:   48-block 14
+        1:   49:    delete validator;
+        1:   49-block  0
+        1:   50:}
+        -:   51:
+        1:   52:void Test_Validation::TestAllValidation() {
+        1:   53:    test_validate_color_product();
+        1:   53-block  0
+        1:   54:    test_validate_size_product();
+        1:   55:    test_validate_price_product();
+        1:   56:    test_validate_photograph_product();
+        1:   57:    test_validate_quantity_product();
+        1:   58:}

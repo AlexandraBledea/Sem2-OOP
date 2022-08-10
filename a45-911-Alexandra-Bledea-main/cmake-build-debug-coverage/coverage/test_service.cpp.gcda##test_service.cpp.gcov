@@ -1,0 +1,922 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Tests/test_service.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_service.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_service.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/23/2021.
+        -:    3://
+        -:    4:#include "dynamic_array.h"
+        -:    5:#include "repository.h"
+        -:    6:#include "service.h"
+        -:    7:#include "test_service.h"
+        -:    8:#include <assert.h>
+        -:    9:
+        1:   10:void Test_Service::TestAddService() {
+        1:   11:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   11-block  0
+    $$$$$:   11-block  1
+        1:   12:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   12-block  0
+    $$$$$:   12-block  1
+        1:   13:    Repository* UserRepo = new Repository(UserDA);
+        1:   13-block  0
+    $$$$$:   13-block  1
+        1:   14:    Repository* repo = new Repository(DA);
+        1:   14-block  0
+    $$$$$:   14-block  1
+        1:   15:    Service* service = new Service(repo, UserRepo);
+        1:   15-block  0
+    $$$$$:   15-block  1
+       1*:   16:    assert(service->AddService("XL", "Pink", 100, 10, "https://abcd.com") == 0);
+        1:   16-block  0
+        1:   16-block  1
+        1:   16-block  2
+        1:   16-block  3
+        1:   16-block  4
+    %%%%%:   16-block  5
+        1:   16-block  6
+    %%%%%:   16-block  7
+        1:   16-block  8
+        1:   16-block  9
+        1:   16-block 10
+        1:   16-block 11
+        1:   16-block 12
+        1:   16-block 13
+        1:   16-block 14
+        1:   16-block 15
+        1:   16-block 16
+        1:   16-block 17
+        1:   16-block 18
+        1:   16-block 19
+    $$$$$:   16-block 20
+    $$$$$:   16-block 21
+    $$$$$:   16-block 22
+    $$$$$:   16-block 23
+    $$$$$:   16-block 24
+    $$$$$:   16-block 25
+    $$$$$:   16-block 26
+    $$$$$:   16-block 27
+    $$$$$:   16-block 28
+    $$$$$:   16-block 29
+    $$$$$:   16-block 30
+    $$$$$:   16-block 31
+    $$$$$:   16-block 32
+    $$$$$:   16-block 33
+    $$$$$:   16-block 34
+    $$$$$:   16-block 35
+    $$$$$:   16-block 36
+    $$$$$:   16-block 37
+       1*:   17:    assert(service->AddService("XL", "Pink", 100, 10, "https://abcd.com") == 1);
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+        1:   17-block  3
+        1:   17-block  4
+    %%%%%:   17-block  5
+        1:   17-block  6
+    %%%%%:   17-block  7
+        1:   17-block  8
+        1:   17-block  9
+        1:   17-block 10
+        1:   17-block 11
+        1:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   17-block 15
+        1:   17-block 16
+        1:   17-block 17
+        1:   17-block 18
+        1:   17-block 19
+    $$$$$:   17-block 20
+    $$$$$:   17-block 21
+    $$$$$:   17-block 22
+    $$$$$:   17-block 23
+    $$$$$:   17-block 24
+    $$$$$:   17-block 25
+    $$$$$:   17-block 26
+    $$$$$:   17-block 27
+    $$$$$:   17-block 28
+    $$$$$:   17-block 29
+    $$$$$:   17-block 30
+    $$$$$:   17-block 31
+    $$$$$:   17-block 32
+    $$$$$:   17-block 33
+    $$$$$:   17-block 34
+    $$$$$:   17-block 35
+    $$$$$:   17-block 36
+        1:   18:    delete service;
+        1:   18-block  0
+        1:   18-block  1
+        1:   19:}
+        1:   19-block  0
+        -:   20:
+        1:   21:void Test_Service::TestGetRepository() {
+        1:   22:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   22-block  0
+    $$$$$:   22-block  1
+        1:   23:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   23-block  0
+    $$$$$:   23-block  1
+        1:   24:    Repository* UserRepo = new Repository(UserDA);
+        1:   24-block  0
+    $$$$$:   24-block  1
+        1:   25:    Repository* repo = new Repository(DA);
+        1:   25-block  0
+    $$$$$:   25-block  1
+        1:   26:    Service* service = new Service(repo, UserRepo);
+        1:   26-block  0
+    $$$$$:   26-block  1
+       1*:   27:    assert(service->GetRepository() == DA);
+        1:   27-block  0
+    %%%%%:   27-block  1
+        1:   27-block  2
+        1:   28:    delete service;
+        1:   28-block  0
+        1:   28-block  1
+        1:   29:}
+        1:   29-block  0
+        -:   30:
+        1:   31:void Test_Service::TestDeleteService() {
+        1:   32:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   32-block  0
+    $$$$$:   32-block  1
+        1:   33:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   33-block  0
+    $$$$$:   33-block  1
+        1:   34:    Repository* UserRepo = new Repository(UserDA);
+        1:   34-block  0
+    $$$$$:   34-block  1
+        1:   35:    Repository* repo = new Repository(DA);
+        1:   35-block  0
+    $$$$$:   35-block  1
+        1:   36:    Service* service = new Service(repo, UserRepo);
+        1:   36-block  0
+    $$$$$:   36-block  1
+        -:   37:
+        1:   38:    service->AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   38-block  0
+        1:   38-block  1
+        1:   38-block  2
+        1:   38-block  3
+        1:   38-block  4
+    $$$$$:   38-block  5
+    $$$$$:   38-block  6
+    $$$$$:   38-block  7
+    $$$$$:   38-block  8
+    $$$$$:   38-block  9
+    $$$$$:   38-block 10
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+    $$$$$:   38-block 13
+    $$$$$:   38-block 14
+    $$$$$:   38-block 15
+    $$$$$:   38-block 16
+       1*:   39:    assert(service->DeleteService("XL", "Pink", "https://abcd.com", 1) == 0);
+        1:   39-block  0
+        1:   39-block  1
+        1:   39-block  2
+        1:   39-block  3
+    %%%%%:   39-block  4
+        1:   39-block  5
+    %%%%%:   39-block  6
+        1:   39-block  7
+        1:   39-block  8
+        1:   39-block  9
+        1:   39-block 10
+        1:   39-block 11
+        1:   39-block 12
+        1:   39-block 13
+        1:   39-block 14
+        1:   39-block 15
+        1:   39-block 16
+        1:   39-block 17
+        1:   39-block 18
+    $$$$$:   39-block 19
+    $$$$$:   39-block 20
+    $$$$$:   39-block 21
+    $$$$$:   39-block 22
+    $$$$$:   39-block 23
+    $$$$$:   39-block 24
+    $$$$$:   39-block 25
+    $$$$$:   39-block 26
+    $$$$$:   39-block 27
+    $$$$$:   39-block 28
+    $$$$$:   39-block 29
+    $$$$$:   39-block 30
+    $$$$$:   39-block 31
+    $$$$$:   39-block 32
+    $$$$$:   39-block 33
+    $$$$$:   39-block 34
+    $$$$$:   39-block 35
+    $$$$$:   39-block 36
+       1*:   40:    assert(service->DeleteService("XL", "Pink", "https://abcd.com", 1) == 1);
+        1:   40-block  0
+        1:   40-block  1
+        1:   40-block  2
+        1:   40-block  3
+        1:   40-block  4
+    %%%%%:   40-block  5
+        1:   40-block  6
+    %%%%%:   40-block  7
+        1:   40-block  8
+        1:   40-block  9
+        1:   40-block 10
+        1:   40-block 11
+        1:   40-block 12
+        1:   40-block 13
+        1:   40-block 14
+        1:   40-block 15
+        1:   40-block 16
+        1:   40-block 17
+        1:   40-block 18
+        1:   40-block 19
+    $$$$$:   40-block 20
+    $$$$$:   40-block 21
+    $$$$$:   40-block 22
+    $$$$$:   40-block 23
+    $$$$$:   40-block 24
+    $$$$$:   40-block 25
+    $$$$$:   40-block 26
+    $$$$$:   40-block 27
+    $$$$$:   40-block 28
+    $$$$$:   40-block 29
+    $$$$$:   40-block 30
+    $$$$$:   40-block 31
+    $$$$$:   40-block 32
+    $$$$$:   40-block 33
+    $$$$$:   40-block 34
+    $$$$$:   40-block 35
+    $$$$$:   40-block 36
+    $$$$$:   40-block 37
+        -:   41:
+        1:   42:    service->AddService("XL", "Pink", 100, 0, "https://abcd.com");
+        1:   42-block  0
+        1:   42-block  1
+        1:   42-block  2
+        1:   42-block  3
+        1:   42-block  4
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+    $$$$$:   42-block 10
+    $$$$$:   42-block 11
+    $$$$$:   42-block 12
+    $$$$$:   42-block 13
+    $$$$$:   42-block 14
+    $$$$$:   42-block 15
+    $$$$$:   42-block 16
+       1*:   43:    assert(service->DeleteService("XL", "Pink", "https://abcd.com", 2) == 0);
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+        1:   43-block  3
+    %%%%%:   43-block  4
+        1:   43-block  5
+    %%%%%:   43-block  6
+        1:   43-block  7
+        1:   43-block  8
+        1:   43-block  9
+        1:   43-block 10
+        1:   43-block 11
+        1:   43-block 12
+        1:   43-block 13
+        1:   43-block 14
+        1:   43-block 15
+        1:   43-block 16
+        1:   43-block 17
+        1:   43-block 18
+    $$$$$:   43-block 19
+    $$$$$:   43-block 20
+    $$$$$:   43-block 21
+    $$$$$:   43-block 22
+    $$$$$:   43-block 23
+    $$$$$:   43-block 24
+    $$$$$:   43-block 25
+    $$$$$:   43-block 26
+    $$$$$:   43-block 27
+    $$$$$:   43-block 28
+    $$$$$:   43-block 29
+    $$$$$:   43-block 30
+    $$$$$:   43-block 31
+    $$$$$:   43-block 32
+    $$$$$:   43-block 33
+    $$$$$:   43-block 34
+    $$$$$:   43-block 35
+    $$$$$:   43-block 36
+       1*:   44:    assert(service->DeleteService("XL", "Pink", "https://abcd.com", 2) == 1);
+        1:   44-block  0
+        1:   44-block  1
+        1:   44-block  2
+        1:   44-block  3
+        1:   44-block  4
+    %%%%%:   44-block  5
+        1:   44-block  6
+    %%%%%:   44-block  7
+        1:   44-block  8
+        1:   44-block  9
+        1:   44-block 10
+        1:   44-block 11
+        1:   44-block 12
+        1:   44-block 13
+        1:   44-block 14
+        1:   44-block 15
+        1:   44-block 16
+        1:   44-block 17
+        1:   44-block 18
+        1:   44-block 19
+    $$$$$:   44-block 20
+    $$$$$:   44-block 21
+    $$$$$:   44-block 22
+    $$$$$:   44-block 23
+    $$$$$:   44-block 24
+    $$$$$:   44-block 25
+    $$$$$:   44-block 26
+    $$$$$:   44-block 27
+    $$$$$:   44-block 28
+    $$$$$:   44-block 29
+    $$$$$:   44-block 30
+    $$$$$:   44-block 31
+    $$$$$:   44-block 32
+    $$$$$:   44-block 33
+    $$$$$:   44-block 34
+    $$$$$:   44-block 35
+    $$$$$:   44-block 36
+    $$$$$:   44-block 37
+       1*:   45:    assert(service->DeleteService("XL", "Pink", "https://abcd.com", 4) == 1);
+        1:   45-block  0
+        1:   45-block  1
+        1:   45-block  2
+        1:   45-block  3
+        1:   45-block  4
+    %%%%%:   45-block  5
+        1:   45-block  6
+    %%%%%:   45-block  7
+        1:   45-block  8
+        1:   45-block  9
+        1:   45-block 10
+        1:   45-block 11
+        1:   45-block 12
+        1:   45-block 13
+        1:   45-block 14
+        1:   45-block 15
+        1:   45-block 16
+        1:   45-block 17
+        1:   45-block 18
+        1:   45-block 19
+    $$$$$:   45-block 20
+    $$$$$:   45-block 21
+    $$$$$:   45-block 22
+    $$$$$:   45-block 23
+    $$$$$:   45-block 24
+    $$$$$:   45-block 25
+    $$$$$:   45-block 26
+    $$$$$:   45-block 27
+    $$$$$:   45-block 28
+    $$$$$:   45-block 29
+    $$$$$:   45-block 30
+    $$$$$:   45-block 31
+    $$$$$:   45-block 32
+    $$$$$:   45-block 33
+    $$$$$:   45-block 34
+    $$$$$:   45-block 35
+    $$$$$:   45-block 36
+        -:   46:
+        1:   47:    delete service;
+        1:   47-block  0
+        1:   47-block  1
+        1:   48:}
+        1:   48-block  0
+        -:   49:
+        1:   50:void Test_Service::TestUpdatePriceService() {
+        1:   51:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   51-block  0
+    $$$$$:   51-block  1
+        1:   52:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   52-block  0
+    $$$$$:   52-block  1
+        1:   53:    Repository* UserRepo = new Repository(UserDA);
+        1:   53-block  0
+    $$$$$:   53-block  1
+        1:   54:    Repository* repo = new Repository(DA);
+        1:   54-block  0
+    $$$$$:   54-block  1
+        1:   55:    Service* service = new Service(repo, UserRepo);
+        1:   55-block  0
+    $$$$$:   55-block  1
+        1:   56:    service->AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   56-block  0
+        1:   56-block  1
+        1:   56-block  2
+        1:   56-block  3
+        1:   56-block  4
+    $$$$$:   56-block  5
+    $$$$$:   56-block  6
+    $$$$$:   56-block  7
+    $$$$$:   56-block  8
+    $$$$$:   56-block  9
+    $$$$$:   56-block 10
+    $$$$$:   56-block 11
+    $$$$$:   56-block 12
+    $$$$$:   56-block 13
+    $$$$$:   56-block 14
+    $$$$$:   56-block 15
+    $$$$$:   56-block 16
+       1*:   57:    assert(service->UpdatePriceService("XL", "Pink", "https://abcd.com", 200) == 0);
+        1:   57-block  0
+        1:   57-block  1
+        1:   57-block  2
+        1:   57-block  3
+    %%%%%:   57-block  4
+        1:   57-block  5
+    %%%%%:   57-block  6
+        1:   57-block  7
+        1:   57-block  8
+        1:   57-block  9
+        1:   57-block 10
+        1:   57-block 11
+        1:   57-block 12
+        1:   57-block 13
+        1:   57-block 14
+        1:   57-block 15
+        1:   57-block 16
+        1:   57-block 17
+        1:   57-block 18
+    $$$$$:   57-block 19
+    $$$$$:   57-block 20
+    $$$$$:   57-block 21
+    $$$$$:   57-block 22
+    $$$$$:   57-block 23
+    $$$$$:   57-block 24
+    $$$$$:   57-block 25
+    $$$$$:   57-block 26
+    $$$$$:   57-block 27
+    $$$$$:   57-block 28
+    $$$$$:   57-block 29
+    $$$$$:   57-block 30
+    $$$$$:   57-block 31
+    $$$$$:   57-block 32
+    $$$$$:   57-block 33
+    $$$$$:   57-block 34
+    $$$$$:   57-block 35
+    $$$$$:   57-block 36
+       1*:   58:    assert(service->UpdatePriceService("XL", "Purple", "https://abcdaadsd.com", 200) == 1);
+        1:   58-block  0
+        1:   58-block  1
+        1:   58-block  2
+        1:   58-block  3
+        1:   58-block  4
+    %%%%%:   58-block  5
+        1:   58-block  6
+    %%%%%:   58-block  7
+        1:   58-block  8
+        1:   58-block  9
+        1:   58-block 10
+        1:   58-block 11
+        1:   58-block 12
+        1:   58-block 13
+        1:   58-block 14
+        1:   58-block 15
+        1:   58-block 16
+        1:   58-block 17
+        1:   58-block 18
+        1:   58-block 19
+    $$$$$:   58-block 20
+    $$$$$:   58-block 21
+    $$$$$:   58-block 22
+    $$$$$:   58-block 23
+    $$$$$:   58-block 24
+    $$$$$:   58-block 25
+    $$$$$:   58-block 26
+    $$$$$:   58-block 27
+    $$$$$:   58-block 28
+    $$$$$:   58-block 29
+    $$$$$:   58-block 30
+    $$$$$:   58-block 31
+    $$$$$:   58-block 32
+    $$$$$:   58-block 33
+    $$$$$:   58-block 34
+    $$$$$:   58-block 35
+    $$$$$:   58-block 36
+        -:   59:
+        1:   60:    delete service;
+        1:   60-block  0
+        1:   60-block  1
+        1:   61:}
+        1:   61-block  0
+        -:   62:
+        1:   63:void Test_Service::TestUpdateQuantityService() {
+        1:   64:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   64-block  0
+    $$$$$:   64-block  1
+        1:   65:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   65-block  0
+    $$$$$:   65-block  1
+        1:   66:    Repository* UserRepo = new Repository(UserDA);
+        1:   66-block  0
+    $$$$$:   66-block  1
+        1:   67:    Repository* repo = new Repository(DA);
+        1:   67-block  0
+    $$$$$:   67-block  1
+        1:   68:    Service* service = new Service(repo, UserRepo);
+        1:   68-block  0
+    $$$$$:   68-block  1
+        1:   69:    service->AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   69-block  0
+        1:   69-block  1
+        1:   69-block  2
+        1:   69-block  3
+        1:   69-block  4
+    $$$$$:   69-block  5
+    $$$$$:   69-block  6
+    $$$$$:   69-block  7
+    $$$$$:   69-block  8
+    $$$$$:   69-block  9
+    $$$$$:   69-block 10
+    $$$$$:   69-block 11
+    $$$$$:   69-block 12
+    $$$$$:   69-block 13
+    $$$$$:   69-block 14
+    $$$$$:   69-block 15
+    $$$$$:   69-block 16
+       1*:   70:    assert(service->UpdateQuantityService("XL", "Pink", "https://abcd.com", 200) == 0);
+        1:   70-block  0
+        1:   70-block  1
+        1:   70-block  2
+        1:   70-block  3
+    %%%%%:   70-block  4
+        1:   70-block  5
+    %%%%%:   70-block  6
+        1:   70-block  7
+        1:   70-block  8
+        1:   70-block  9
+        1:   70-block 10
+        1:   70-block 11
+        1:   70-block 12
+        1:   70-block 13
+        1:   70-block 14
+        1:   70-block 15
+        1:   70-block 16
+        1:   70-block 17
+        1:   70-block 18
+    $$$$$:   70-block 19
+    $$$$$:   70-block 20
+    $$$$$:   70-block 21
+    $$$$$:   70-block 22
+    $$$$$:   70-block 23
+    $$$$$:   70-block 24
+    $$$$$:   70-block 25
+    $$$$$:   70-block 26
+    $$$$$:   70-block 27
+    $$$$$:   70-block 28
+    $$$$$:   70-block 29
+    $$$$$:   70-block 30
+    $$$$$:   70-block 31
+    $$$$$:   70-block 32
+    $$$$$:   70-block 33
+    $$$$$:   70-block 34
+    $$$$$:   70-block 35
+    $$$$$:   70-block 36
+       1*:   71:    assert(service->UpdateQuantityService("XL", "Purple", "https://abcdaadsd.com", 200) == 1);
+        1:   71-block  0
+        1:   71-block  1
+        1:   71-block  2
+        1:   71-block  3
+        1:   71-block  4
+    %%%%%:   71-block  5
+        1:   71-block  6
+    %%%%%:   71-block  7
+        1:   71-block  8
+        1:   71-block  9
+        1:   71-block 10
+        1:   71-block 11
+        1:   71-block 12
+        1:   71-block 13
+        1:   71-block 14
+        1:   71-block 15
+        1:   71-block 16
+        1:   71-block 17
+        1:   71-block 18
+        1:   71-block 19
+    $$$$$:   71-block 20
+    $$$$$:   71-block 21
+    $$$$$:   71-block 22
+    $$$$$:   71-block 23
+    $$$$$:   71-block 24
+    $$$$$:   71-block 25
+    $$$$$:   71-block 26
+    $$$$$:   71-block 27
+    $$$$$:   71-block 28
+    $$$$$:   71-block 29
+    $$$$$:   71-block 30
+    $$$$$:   71-block 31
+    $$$$$:   71-block 32
+    $$$$$:   71-block 33
+    $$$$$:   71-block 34
+    $$$$$:   71-block 35
+    $$$$$:   71-block 36
+        -:   72:
+        1:   73:    delete service;
+        1:   73-block  0
+        1:   73-block  1
+        1:   74:}
+        1:   74-block  0
+        -:   75:
+        1:   76:void Test_Service::TestGetSize() {
+        1:   77:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   77-block  0
+    $$$$$:   77-block  1
+        1:   78:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   78-block  0
+    $$$$$:   78-block  1
+        1:   79:    Repository* UserRepo = new Repository(UserDA);
+        1:   79-block  0
+    $$$$$:   79-block  1
+        1:   80:    Repository* repo = new Repository(DA);
+        1:   80-block  0
+    $$$$$:   80-block  1
+        1:   81:    Service* service = new Service(repo, UserRepo);
+        1:   81-block  0
+    $$$$$:   81-block  1
+        1:   82:    service->AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   82-block  0
+        1:   82-block  1
+        1:   82-block  2
+        1:   82-block  3
+        1:   82-block  4
+    $$$$$:   82-block  5
+    $$$$$:   82-block  6
+    $$$$$:   82-block  7
+    $$$$$:   82-block  8
+    $$$$$:   82-block  9
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+    $$$$$:   82-block 13
+    $$$$$:   82-block 14
+    $$$$$:   82-block 15
+       1*:   83:    assert(service->GetSize() == 1);
+    %%%%%:   83-block  0
+        1:   83-block  1
+        1:   84:    delete service;
+        1:   84-block  0
+        1:   84-block  1
+        1:   85:}
+        1:   85-block  0
+        -:   86:
+        1:   87:void Test_Service::TestAddUserService() {
+        1:   88:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:   88-block  0
+        1:   88-block  1
+    $$$$$:   88-block  2
+        1:   89:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   89-block  0
+        1:   89-block  1
+    $$$$$:   89-block  2
+        1:   90:    Repository* UserRepo = new Repository(UserDA);
+        1:   90-block  0
+        1:   90-block  1
+    $$$$$:   90-block  2
+        1:   91:    Repository* repo = new Repository(DA);
+        1:   91-block  0
+        1:   91-block  1
+    $$$$$:   91-block  2
+        1:   92:    Service* service = new Service(repo, UserRepo);
+        1:   92-block  0
+        1:   92-block  1
+    $$$$$:   92-block  2
+        1:   93:    service->AddService("XL", "Pink", 100, 10, "https://abcd.com");
+        1:   93-block  0
+        1:   93-block  1
+        1:   93-block  2
+        1:   93-block  3
+        1:   93-block  4
+    $$$$$:   93-block  5
+    $$$$$:   93-block  6
+    $$$$$:   93-block  7
+    $$$$$:   93-block  8
+    $$$$$:   93-block  9
+    $$$$$:   93-block 10
+    $$$$$:   93-block 11
+    $$$$$:   93-block 12
+    $$$$$:   93-block 13
+    $$$$$:   93-block 14
+    $$$$$:   93-block 15
+    $$$$$:   93-block 16
+        3:   94:    Coat c("XL", "Pink", 100, 3, "https://abcd.com");
+        1:   94-block  0
+        1:   94-block  1
+        1:   94-block  2
+    $$$$$:   94-block  3
+    $$$$$:   94-block  4
+    $$$$$:   94-block  5
+    $$$$$:   94-block  6
+    $$$$$:   94-block  7
+    $$$$$:   94-block  8
+    $$$$$:   94-block  9
+        3:   95:    Coat cUser("XL", "Pink", 100, 1, "https://abcd.com");
+        1:   95-block  0
+        1:   95-block  1
+        1:   95-block  2
+    $$$$$:   95-block  3
+    $$$$$:   95-block  4
+    $$$$$:   95-block  5
+    $$$$$:   95-block  6
+    $$$$$:   95-block  7
+    $$$$$:   95-block  8
+    $$$$$:   95-block  9
+       1*:   96:    assert(service->AddUserService(c, cUser) == 0);
+        1:   96-block  0
+        1:   96-block  1
+        1:   96-block  2
+    %%%%%:   96-block  3
+        1:   96-block  4
+    %%%%%:   96-block  5
+        1:   96-block  6
+        1:   96-block  7
+        1:   96-block  8
+        1:   96-block  9
+    $$$$$:   96-block 10
+    $$$$$:   96-block 11
+    $$$$$:   96-block 12
+    $$$$$:   96-block 13
+    $$$$$:   96-block 14
+    $$$$$:   96-block 15
+       1*:   97:    assert((*UserRepo->GetDynArr())[0].GetSize() == "XL");
+        1:   97-block  0
+        1:   97-block  1
+        1:   97-block  2
+    %%%%%:   97-block  3
+        1:   97-block  4
+    %%%%%:   97-block  5
+        1:   97-block  6
+        1:   97-block  7
+    $$$$$:   97-block  8
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+       1*:   98:    assert((*UserRepo->GetDynArr())[0].GetColor() == "Pink");
+        1:   98-block  0
+        1:   98-block  1
+        1:   98-block  2
+    %%%%%:   98-block  3
+        1:   98-block  4
+    %%%%%:   98-block  5
+        1:   98-block  6
+        1:   98-block  7
+    $$$$$:   98-block  8
+    $$$$$:   98-block  9
+    $$$$$:   98-block 10
+       1*:   99:    assert((*UserRepo->GetDynArr())[0].GetPrice() == 100);
+        1:   99-block  0
+        1:   99-block  1
+        1:   99-block  2
+    %%%%%:   99-block  3
+        1:   99-block  4
+    %%%%%:   99-block  5
+       1*:  100:    assert((*UserRepo->GetDynArr())[0].GetQuantity() == 1);
+        1:  100-block  0
+        1:  100-block  1
+        1:  100-block  2
+    %%%%%:  100-block  3
+        1:  100-block  4
+    %%%%%:  100-block  5
+       1*:  101:    assert((*UserRepo->GetDynArr())[0].GetPhotograph() == "https://abcd.com");
+        1:  101-block  0
+        1:  101-block  1
+        1:  101-block  2
+    %%%%%:  101-block  3
+        1:  101-block  4
+    %%%%%:  101-block  5
+        1:  101-block  6
+        1:  101-block  7
+    $$$$$:  101-block  8
+    $$$$$:  101-block  9
+    $$$$$:  101-block 10
+       1*:  102:    assert(service->AddUserService(c, cUser) == 0);
+        1:  102-block  0
+        1:  102-block  1
+        1:  102-block  2
+        1:  102-block  3
+    %%%%%:  102-block  4
+        1:  102-block  5
+    %%%%%:  102-block  6
+        1:  102-block  7
+        1:  102-block  8
+        1:  102-block  9
+        1:  102-block 10
+    $$$$$:  102-block 11
+    $$$$$:  102-block 12
+    $$$$$:  102-block 13
+    $$$$$:  102-block 14
+    $$$$$:  102-block 15
+    $$$$$:  102-block 16
+       1*:  103:    assert((*UserRepo->GetDynArr())[0].GetQuantity() == 2);
+        1:  103-block  0
+        1:  103-block  1
+        1:  103-block  2
+    %%%%%:  103-block  3
+        1:  103-block  4
+    %%%%%:  103-block  5
+        3:  104:    Coat cc("XL", "Purple", 100, 0, "https://sag.com");
+        1:  104-block  0
+        1:  104-block  1
+        1:  104-block  2
+        1:  104-block  3
+        1:  104-block  4
+    $$$$$:  104-block  5
+    $$$$$:  104-block  6
+    $$$$$:  104-block  7
+    $$$$$:  104-block  8
+    $$$$$:  104-block  9
+    $$$$$:  104-block 10
+    $$$$$:  104-block 11
+       1*:  105:    assert(service->AddUserService(cc, cUser) == 1);
+        1:  105-block  0
+        1:  105-block  1
+        1:  105-block  2
+    %%%%%:  105-block  3
+        1:  105-block  4
+    %%%%%:  105-block  5
+        1:  105-block  6
+        1:  105-block  7
+        1:  105-block  8
+        1:  105-block  9
+    $$$$$:  105-block 10
+    $$$$$:  105-block 11
+    $$$$$:  105-block 12
+    $$$$$:  105-block 13
+    $$$$$:  105-block 14
+    $$$$$:  105-block 15
+        1:  106:    delete service;
+        1:  106-block  0
+        1:  106-block  1
+        1:  107:}
+        -:  108:
+        1:  109:void Test_Service::TestGetTotalPrice() {
+        1:  110:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:  110-block  0
+    $$$$$:  110-block  1
+        1:  111:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:  111-block  0
+    $$$$$:  111-block  1
+        1:  112:    Repository* UserRepo = new Repository(UserDA);
+        1:  112-block  0
+    $$$$$:  112-block  1
+        1:  113:    Repository* repo = new Repository(DA);
+        1:  113-block  0
+    $$$$$:  113-block  1
+        1:  114:    Service* service = new Service(repo, UserRepo);
+        1:  114-block  0
+    $$$$$:  114-block  1
+       1*:  115:    assert(service->GetTotalPrice() == 0);
+        1:  115-block  0
+    %%%%%:  115-block  1
+        1:  115-block  2
+        1:  116:    delete service;
+        1:  116-block  0
+        1:  116-block  1
+        1:  117:}
+        1:  117-block  0
+        -:  118:
+        1:  119:void Test_Service::TestGetUserRepository() {
+        1:  120:    DynamicArray<Coat>* UserDA = new DynamicArray<Coat>(100);
+        1:  120-block  0
+    $$$$$:  120-block  1
+        1:  121:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:  121-block  0
+    $$$$$:  121-block  1
+        1:  122:    Repository* UserRepo = new Repository(UserDA);
+        1:  122-block  0
+    $$$$$:  122-block  1
+        1:  123:    Repository* repo = new Repository(DA);
+        1:  123-block  0
+    $$$$$:  123-block  1
+        1:  124:    Service* service = new Service(repo, UserRepo);
+        1:  124-block  0
+    $$$$$:  124-block  1
+       1*:  125:    assert(service->GetUserRepository() == UserDA);
+        1:  125-block  0
+    %%%%%:  125-block  1
+        1:  125-block  2
+        1:  126:    delete service;
+        1:  126-block  0
+        1:  126-block  1
+        1:  127:}
+        1:  127-block  0
+        -:  128:
+        1:  129:void Test_Service::TestAllService() {
+        1:  130:    TestAddService();
+        1:  130-block  0
+        1:  131:    TestGetRepository();
+        1:  132:    TestDeleteService();
+        1:  133:    TestUpdatePriceService();
+        1:  134:    TestUpdateQuantityService();
+        1:  135:    TestGetSize();
+        1:  136:    TestAddUserService();
+        1:  137:    TestGetUserRepository();
+        1:  138:    TestGetTotalPrice();
+        1:  139:}
+        -:  140:
+        -:  141:

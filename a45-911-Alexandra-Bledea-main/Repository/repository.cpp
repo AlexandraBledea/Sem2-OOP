@@ -1,0 +1,126 @@
+//
+// Created by Alexandra on 3/17/2021.
+//
+
+#include <cstring>
+#include "repository.h"
+#include <iostream>
+
+Repository::Repository(DynamicArray<Coat>* DArray) {
+    this->DArray = DArray;
+}
+
+int Repository::AddRepo(string size, string color, int price, int quantity, string photograph) {
+    int position;
+    position = CheckExistenceCoat(size, color, photograph);
+    if(position == -1)
+    {
+        Coat c(size, color, price, quantity, photograph);
+        this->DArray->Add(c);
+        return 0;
+    }
+    return 1;
+}
+
+int Repository::CheckExistenceCoat(string size, string color, string photograph) {
+
+    for(int i = 0; i < this->DArray->GetSize(); i++)
+        if((*this->DArray)[i].GetSize() == size && (*this->DArray)[i].GetColor() == color &&
+        (*this->DArray)[i].GetPhotograph() == photograph)
+            return i;
+    return -1;
+}
+
+Repository::~Repository() {
+    delete this->DArray;
+}
+
+DynamicArray<Coat> *Repository::GetDynArr() {
+    return this->DArray;
+}
+
+int Repository::GetSize() {
+    return this->DArray->GetSize();
+}
+
+void Repository::init_repository() {
+    AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+    AddRepo("L", "Red", 150, 5,
+            "https://res.cloudinary.com/wolfandbadger/image/upload/s--6lJSlYAP--/q_auto:eco/products/f8mgtgse6mnpsegyxrxo");
+    AddRepo("S", "Pink", 200, 3, "https://images-na.ssl-images-amazon.com/images/I/71IismvKi3L._AC_UL1447_.jpg");
+    AddRepo("S", "Yellow", 175, 10, "https://i.pinimg.com/originals/36/34/57/363457f4a8f758c43fab554e04de1038.jpg");
+    AddRepo("M", "Orange", 242, 2, "https://n.nordstrommedia.com/ImageGallery/store/product/Zoom/10/_107638010.jpg?h=365&w=240&dpr=2");
+    AddRepo("L", "Black", 305, 2, "https://media.mauvetree.com/wp-content/uploads/2018/04/Black-trench-coat-for-men.jpg");
+    AddRepo("XL", "Grey", 100, 4, "https://cdn.shopify.com/s/files/1/0024/0697/3485/products/407A7456.jpg?v=1604310704");
+    AddRepo("XS", "Magenta", 400, 1, "https://i.pinimg.com/originals/6e/b1/a9/6eb1a9282acc0aeef06dd693ae0301d9.jpg");
+    AddRepo("XS", "Green", 135, 3, "https://i.etsystatic.com/6811060/r/il/f9e28e/1977783236/il_570xN.1977783236_4xx9.jpg");
+    AddRepo("XL", "Purple", 243, 10, "https://images-na.ssl-images-amazon.com/images/I/51W49L9WQ8L._AC_UX385_.jpg");
+
+}
+
+int Repository::DeleteEntireProductRepo(string size, string color, string photograph) {
+    int position;
+    position = CheckExistenceCoat(size, color, photograph);
+    if(position != -1)
+    {
+        this->DArray->Delete(position);
+        return 0;
+    }
+    else
+        return 1;
+}
+
+int Repository::DeleteSoldOutProductRepo(string size, string color, string photograph) {
+    int position;
+    position = CheckExistenceCoat(size, color, photograph);
+    int quantity  = (*this->DArray)[position].GetQuantity();
+    if(position != -1 && quantity == 0)
+    {
+        this->DArray->Delete(position);
+        return 0;
+    }
+    else
+        return 1;
+}
+
+int Repository::UpdateQuantityRepo(string size, string color, string photograph, int quantity) {
+    int position;
+    position = CheckExistenceCoat(size, color, photograph);
+    if(position != -1)
+    {
+        double price = (*this->DArray)[position].GetPrice();
+        Coat c(size, color, price, quantity, photograph);
+        this->DArray->Update(c, position);
+        return 0;
+    }
+    else
+        return 1;
+}
+
+int Repository::UpdatePriceRepo(string size, string color, string photograph, int price) {
+    int position;
+    position = CheckExistenceCoat(size, color, photograph);
+    if(position != -1)
+    {
+        int quantity = (*this->DArray)[position].GetQuantity();
+        Coat c(size, color, price, quantity, photograph);
+        this->DArray->Update(c, position);
+        return 0;
+    }
+    else
+        return 1;
+}
+
+//void Repository::print_repository() {
+//    for(int i = 0; i < this->GetSize(); i++)
+//        cout<<i+1<<")  "<<"Size:  "<<(*this->DArray)[i].GetSize()<<"  Color:  "<<(*this->DArray)[i].GetColor()
+//        <<"  Price:  "<< (*this->DArray)[i].GetPrice() <<"  Quantity:  " << (*this->DArray)[i].GetQuantity()
+//        <<"\nLink Photo:  " << (*this->DArray)[i].GetPhotograph()<<"\n\n";
+//
+//}
+
+
+
+//DArray DArray::GetDArray() {
+//    return *this->*DArray;
+//}

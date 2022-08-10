@@ -1,0 +1,153 @@
+        -:    0:Source:C:/Users/ALEXAN~1/Desktop/FACULT~1/SEMEST~2/911/A45-91~1/DYNAMI~1/dynamic_array.h
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:#include <cstdlib>
+        -:    5:#include "domain.h"
+        -:    6:#pragma once
+        -:    7:
+        -:    8:template <class TElem>
+        -:    9:class DynamicArray
+        -:   10:{
+        -:   11:private:
+        -:   12:    TElem* elements;
+        -:   13:    int length;
+        -:   14:    int initial_capacity;
+        -:   15:    int capacity;
+        -:   16:
+        -:   17:    /// With this function we resize the dynamic array
+        -:   18:    void Resize()
+        -:   19:    {
+        -:   20:        TElem* NewElements;
+        -:   21:        this->capacity = this->capacity * 2;
+        -:   22:        NewElements = new TElem[this->capacity];
+        -:   23:        for(int i = 0; i < this->length; i++)
+        -:   24:        {
+        -:   25:            NewElements[i] = this->elements[i];
+        -:   26:        }
+        -:   27:        delete[] this->elements;
+        -:   28:        this->elements = NewElements;
+        -:   29:    }
+        -:   30:
+        -:   31:    /// With this function we clear the dynamic array
+        -:   32:    void Clear()
+        -:   33:    {
+        -:   34:        this->length = 0;
+        -:   35:        TElem* NewElements;
+        -:   36:        this->capacity = this->initial_capacity;
+        -:   37:        NewElements = new TElem[this->capacity];
+        -:   38:        for(int i = 0; i < this->length; i++)
+        -:   39:        {
+        -:   40:            NewElements[i] = this->elements[i];
+        -:   41:        }
+        -:   42:        delete[] this->elements;
+        -:   43:        this->elements = NewElements;
+        -:   44:    }
+        -:   45:
+        -:   46:public:
+        -:   47:/// Constructor
+        -:   48:    DynamicArray(){
+        -:   49:    }
+        -:   50:
+        -:   51:    ///  With this function we initialize the dynamic array
+        -:   52:    /// \param capacity
+       29:   53:    DynamicArray(int capacity)
+        -:   54:    {
+       29:   55:        this->capacity = capacity;
+       29:   56:        this->length = 0;
+    2929*:   57:        this->elements = new TElem[capacity];
+       29:   57-block  0
+       29:   57-block  1
+    %%%%%:   57-block  2
+       29:   57-block  3
+     2929:   57-block  4
+     2900:   57-block  5
+     2900:   57-block  6
+    $$$$$:   57-block  7
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+       29:   58:        this->initial_capacity = capacity;
+       29:   59:    }
+       29:   59-block  0
+        -:   60:
+        -:   61:/// Destructor
+        -:   62:    ~DynamicArray(){
+        -:   63:        delete [] this->elements;
+        -:   64:    }
+        -:   65:
+        -:   66:/// With this function we add an element
+        -:   67:/// \param element the element we are about to add
+        -:   68:    void Add (const TElem &element)
+        -:   69:    {
+        -:   70://        if(this->elements == nullptr)
+        -:   71://            return;
+        -:   72:        if(this->length == this->capacity)
+        -:   73:            Resize();
+        -:   74:        this->elements[this->length++] = element;
+        -:   75:    }
+        -:   76:
+        -:   77:/// With this function we delete an element
+        -:   78:/// \param position the position of the element we are about to delete
+        -:   79:    void Delete(int position)
+        -:   80:    {
+        -:   81:        if (this->length == 1) // If array has only one element
+        -:   82:            Clear(); // than we clear it, since it will be deleted
+        -:   83:        else
+        -:   84:        {
+        -:   85:            // otherwise, shift array elements
+        -:   86:            for(int i = position; i < this->length - 1; i++)
+        -:   87:                this->elements[i] = this->elements[i+1];
+        -:   88:
+        -:   89:            // decrease array size
+        -:   90:            this->length--;
+        -:   91:        }
+        -:   92:    }
+        -:   93:
+        -:   94:/// With this function we update an element
+        -:   95:/// \param element the element we are about to update
+        -:   96:/// \param position the position of the element
+        -:   97:    void Update(const TElem &element, int position){
+        -:   98:        this->elements[position] = element;
+        -:   99:    }
+        -:  100:
+        -:  101:///With this function we get the number of elements from the dynamic array
+        -:  102:    int GetSize()
+        -:  103:    {
+        -:  104:        return this->length;
+        -:  105:    }
+        -:  106:
+        -:  107:/// With this function we get an exact element from the array
+        -:  108:/// \param position the position of the element; we are about to get
+        -:  109:/// \return it returns the element
+    #####:  110:    TElem& operator [] (int position){
+    #####:  111:        return this->elements[position];
+    %%%%%:  111-block  0
+        -:  112:    }
+        -:  113:    DynamicArray& operator = (const DynamicArray &a){
+        -:  114:        if(this == &a)
+        -:  115:            return *this;
+        -:  116:
+        -:  117:        if(a.capacity == 0)
+        -:  118:            Clear();
+        -:  119:
+        -:  120:        this->capacity = a.capacity/2;
+        -:  121:        Resize();
+        -:  122:
+        -:  123:        memcpy(this->elements, a.elements, sizeof(TElem)*a.capacity);
+        -:  124:        return *this;
+        -:  125:
+        -:  126:    }
+        -:  127:};
+        -:  128:
+        -:  129:
+        -:  130://void* GetAll()
+        -:  131://    {
+        -:  132://        return this->elements;
+        -:  133://    }

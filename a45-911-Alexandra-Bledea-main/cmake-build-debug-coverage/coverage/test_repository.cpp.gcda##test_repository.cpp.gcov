@@ -1,0 +1,821 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Tests/test_repository.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Tests\test_repository.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/23/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "test_repository.h"
+        -:    6:#include "dynamic_array.h"
+        -:    7:#include "repository.h"
+        -:    8:#include <assert.h>
+        -:    9:
+        1:   10:void Test_Repository::Test_init_repository() {
+        1:   11:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   11-block  0
+    $$$$$:   11-block  1
+        1:   12:    Repository* repo = new Repository(DA);
+        1:   12-block  0
+    $$$$$:   12-block  1
+        1:   13:    repo->init_repository();
+        1:   13-block  0
+       1*:   14:    assert((*repo)[0].GetSize() == "M");
+        1:   14-block  0
+        1:   14-block  1
+    %%%%%:   14-block  2
+        1:   14-block  3
+    %%%%%:   14-block  4
+        1:   14-block  5
+        1:   14-block  6
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+       1*:   15:    assert((*repo)[0].GetColor() == "Blue");
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+    %%%%%:   15-block  3
+        1:   15-block  4
+    %%%%%:   15-block  5
+        1:   15-block  6
+        1:   15-block  7
+    $$$$$:   15-block  8
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+       1*:   16:    assert((*repo)[0].GetPrice() == 100);
+        1:   16-block  0
+    %%%%%:   16-block  1
+        1:   16-block  2
+       1*:   17:    assert((*repo)[0].GetQuantity() == 10);
+        1:   17-block  0
+    %%%%%:   17-block  1
+        1:   17-block  2
+       1*:   18:    assert((*repo)[0].GetPhotograph() == "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   18-block  0
+        1:   18-block  1
+        1:   18-block  2
+    %%%%%:   18-block  3
+        1:   18-block  4
+    %%%%%:   18-block  5
+        1:   18-block  6
+        1:   18-block  7
+    $$$$$:   18-block  8
+    $$$$$:   18-block  9
+        -:   19:
+        1:   20:    delete repo;
+        1:   20-block  0
+        1:   20-block  1
+        1:   21:}
+        1:   21-block  0
+        -:   22:
+        1:   23:void Test_Repository::TestGetSize() {
+        1:   24:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   24-block  0
+    $$$$$:   24-block  1
+        1:   25:    Repository* repo = new Repository(DA);
+        1:   25-block  0
+    $$$$$:   25-block  1
+        1:   26:    repo->init_repository();
+        1:   26-block  0
+       1*:   27:    assert(repo->GetSize() == 10);
+    %%%%%:   27-block  0
+        1:   27-block  1
+        -:   28:
+        1:   29:    delete repo;
+        1:   29-block  0
+        1:   29-block  1
+        1:   30:}
+        1:   30-block  0
+        -:   31:
+        1:   32:void Test_Repository::TestGetDynArr() {
+        1:   33:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   33-block  0
+    $$$$$:   33-block  1
+        1:   34:    Repository* repo = new Repository(DA);
+        1:   34-block  0
+    $$$$$:   34-block  1
+       1*:   35:    assert(DA == repo->GetDynArr());
+        1:   35-block  0
+    %%%%%:   35-block  1
+        1:   35-block  2
+        1:   36:    delete repo;
+        1:   36-block  0
+        1:   36-block  1
+        1:   37:}
+        1:   37-block  0
+        -:   38:
+        1:   39:void Test_Repository::TestAddRepo() {
+        1:   40:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   40-block  0
+    $$$$$:   40-block  1
+        1:   41:    Repository* repo = new Repository(DA);
+        1:   41-block  0
+    $$$$$:   41-block  1
+       1*:   42:    assert(repo->AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 0);
+        1:   42-block  0
+        1:   42-block  1
+        1:   42-block  2
+        1:   42-block  3
+        1:   42-block  4
+    %%%%%:   42-block  5
+        1:   42-block  6
+    %%%%%:   42-block  7
+        1:   42-block  8
+        1:   42-block  9
+        1:   42-block 10
+        1:   42-block 11
+        1:   42-block 12
+        1:   42-block 13
+        1:   42-block 14
+        1:   42-block 15
+        1:   42-block 16
+        1:   42-block 17
+        1:   42-block 18
+        1:   42-block 19
+    $$$$$:   42-block 20
+    $$$$$:   42-block 21
+    $$$$$:   42-block 22
+    $$$$$:   42-block 23
+    $$$$$:   42-block 24
+    $$$$$:   42-block 25
+    $$$$$:   42-block 26
+    $$$$$:   42-block 27
+    $$$$$:   42-block 28
+    $$$$$:   42-block 29
+    $$$$$:   42-block 30
+    $$$$$:   42-block 31
+    $$$$$:   42-block 32
+    $$$$$:   42-block 33
+    $$$$$:   42-block 34
+    $$$$$:   42-block 35
+    $$$$$:   42-block 36
+    $$$$$:   42-block 37
+       1*:   43:    assert((*repo)[0].GetSize() == "M");
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+    %%%%%:   43-block  3
+        1:   43-block  4
+    %%%%%:   43-block  5
+        1:   43-block  6
+        1:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+       1*:   44:    assert((*repo)[0].GetColor() == "Blue");
+        1:   44-block  0
+        1:   44-block  1
+        1:   44-block  2
+    %%%%%:   44-block  3
+        1:   44-block  4
+    %%%%%:   44-block  5
+        1:   44-block  6
+        1:   44-block  7
+    $$$$$:   44-block  8
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+       1*:   45:    assert((*repo)[0].GetPrice() == 100);
+        1:   45-block  0
+    %%%%%:   45-block  1
+        1:   45-block  2
+       1*:   46:    assert((*repo)[0].GetQuantity() == 10);
+        1:   46-block  0
+    %%%%%:   46-block  1
+        1:   46-block  2
+       1*:   47:    assert((*repo)[0].GetPhotograph() == "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   47-block  0
+        1:   47-block  1
+        1:   47-block  2
+    %%%%%:   47-block  3
+        1:   47-block  4
+    %%%%%:   47-block  5
+        1:   47-block  6
+        1:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+       1*:   48:    assert(repo->AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 1);
+        1:   48-block  0
+        1:   48-block  1
+        1:   48-block  2
+        1:   48-block  3
+        1:   48-block  4
+    %%%%%:   48-block  5
+        1:   48-block  6
+    %%%%%:   48-block  7
+        1:   48-block  8
+        1:   48-block  9
+        1:   48-block 10
+        1:   48-block 11
+        1:   48-block 12
+        1:   48-block 13
+        1:   48-block 14
+        1:   48-block 15
+        1:   48-block 16
+        1:   48-block 17
+        1:   48-block 18
+        1:   48-block 19
+    $$$$$:   48-block 20
+    $$$$$:   48-block 21
+    $$$$$:   48-block 22
+    $$$$$:   48-block 23
+    $$$$$:   48-block 24
+    $$$$$:   48-block 25
+    $$$$$:   48-block 26
+    $$$$$:   48-block 27
+    $$$$$:   48-block 28
+    $$$$$:   48-block 29
+    $$$$$:   48-block 30
+    $$$$$:   48-block 31
+    $$$$$:   48-block 32
+    $$$$$:   48-block 33
+    $$$$$:   48-block 34
+    $$$$$:   48-block 35
+    $$$$$:   48-block 36
+        -:   49:
+        1:   50:    delete repo;
+        1:   50-block  0
+        1:   50-block  1
+        -:   51:
+        1:   52:}
+        1:   52-block  0
+        -:   53:
+        1:   54:void Test_Repository::TestCheckExistenceCoat() {
+        1:   55:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   55-block  0
+    $$$$$:   55-block  1
+        1:   56:    Repository* repo = new Repository(DA);
+        1:   56-block  0
+    $$$$$:   56-block  1
+        1:   57:    repo->AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   57-block  0
+        1:   57-block  1
+        1:   57-block  2
+        1:   57-block  3
+        1:   57-block  4
+    $$$$$:   57-block  5
+    $$$$$:   57-block  6
+    $$$$$:   57-block  7
+    $$$$$:   57-block  8
+    $$$$$:   57-block  9
+    $$$$$:   57-block 10
+    $$$$$:   57-block 11
+    $$$$$:   57-block 12
+    $$$$$:   57-block 13
+    $$$$$:   57-block 14
+    $$$$$:   57-block 15
+    $$$$$:   57-block 16
+       1*:   58:    assert(repo->CheckExistenceCoat("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 0);
+        1:   58-block  0
+        1:   58-block  1
+        1:   58-block  2
+        1:   58-block  3
+    %%%%%:   58-block  4
+        1:   58-block  5
+    %%%%%:   58-block  6
+        1:   58-block  7
+        1:   58-block  8
+        1:   58-block  9
+        1:   58-block 10
+        1:   58-block 11
+        1:   58-block 12
+        1:   58-block 13
+        1:   58-block 14
+        1:   58-block 15
+        1:   58-block 16
+        1:   58-block 17
+        1:   58-block 18
+    $$$$$:   58-block 19
+    $$$$$:   58-block 20
+    $$$$$:   58-block 21
+    $$$$$:   58-block 22
+    $$$$$:   58-block 23
+    $$$$$:   58-block 24
+    $$$$$:   58-block 25
+    $$$$$:   58-block 26
+    $$$$$:   58-block 27
+    $$$$$:   58-block 28
+    $$$$$:   58-block 29
+    $$$$$:   58-block 30
+    $$$$$:   58-block 31
+    $$$$$:   58-block 32
+    $$$$$:   58-block 33
+    $$$$$:   58-block 34
+    $$$$$:   58-block 35
+    $$$$$:   58-block 36
+       1*:   59:    assert(repo->CheckExistenceCoat("S", "Pink", "https://sagsahj.jpg/saghsa") == -1);
+        1:   59-block  0
+        1:   59-block  1
+        1:   59-block  2
+        1:   59-block  3
+        1:   59-block  4
+    %%%%%:   59-block  5
+        1:   59-block  6
+    %%%%%:   59-block  7
+        1:   59-block  8
+        1:   59-block  9
+        1:   59-block 10
+        1:   59-block 11
+        1:   59-block 12
+        1:   59-block 13
+        1:   59-block 14
+        1:   59-block 15
+        1:   59-block 16
+        1:   59-block 17
+        1:   59-block 18
+        1:   59-block 19
+    $$$$$:   59-block 20
+    $$$$$:   59-block 21
+    $$$$$:   59-block 22
+    $$$$$:   59-block 23
+    $$$$$:   59-block 24
+    $$$$$:   59-block 25
+    $$$$$:   59-block 26
+    $$$$$:   59-block 27
+    $$$$$:   59-block 28
+    $$$$$:   59-block 29
+    $$$$$:   59-block 30
+    $$$$$:   59-block 31
+    $$$$$:   59-block 32
+    $$$$$:   59-block 33
+    $$$$$:   59-block 34
+    $$$$$:   59-block 35
+    $$$$$:   59-block 36
+        1:   60:    delete repo;
+        1:   60-block  0
+        1:   60-block  1
+        1:   61:}
+        1:   61-block  0
+        -:   62:
+        1:   63:void Test_Repository::TestDeleteEntireProductRepo() {
+        1:   64:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   64-block  0
+    $$$$$:   64-block  1
+        1:   65:    Repository* repo = new Repository(DA);
+        1:   65-block  0
+    $$$$$:   65-block  1
+        1:   66:    repo->AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   66-block  0
+        1:   66-block  1
+        1:   66-block  2
+        1:   66-block  3
+        1:   66-block  4
+    $$$$$:   66-block  5
+    $$$$$:   66-block  6
+    $$$$$:   66-block  7
+    $$$$$:   66-block  8
+    $$$$$:   66-block  9
+    $$$$$:   66-block 10
+    $$$$$:   66-block 11
+    $$$$$:   66-block 12
+    $$$$$:   66-block 13
+    $$$$$:   66-block 14
+    $$$$$:   66-block 15
+    $$$$$:   66-block 16
+       1*:   67:    assert(repo->DeleteEntireProductRepo("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 0);
+        1:   67-block  0
+        1:   67-block  1
+        1:   67-block  2
+        1:   67-block  3
+    %%%%%:   67-block  4
+        1:   67-block  5
+    %%%%%:   67-block  6
+        1:   67-block  7
+        1:   67-block  8
+        1:   67-block  9
+        1:   67-block 10
+        1:   67-block 11
+        1:   67-block 12
+        1:   67-block 13
+        1:   67-block 14
+        1:   67-block 15
+        1:   67-block 16
+        1:   67-block 17
+        1:   67-block 18
+    $$$$$:   67-block 19
+    $$$$$:   67-block 20
+    $$$$$:   67-block 21
+    $$$$$:   67-block 22
+    $$$$$:   67-block 23
+    $$$$$:   67-block 24
+    $$$$$:   67-block 25
+    $$$$$:   67-block 26
+    $$$$$:   67-block 27
+    $$$$$:   67-block 28
+    $$$$$:   67-block 29
+    $$$$$:   67-block 30
+    $$$$$:   67-block 31
+    $$$$$:   67-block 32
+    $$$$$:   67-block 33
+    $$$$$:   67-block 34
+    $$$$$:   67-block 35
+    $$$$$:   67-block 36
+       1*:   68:    assert(repo->DeleteEntireProductRepo("s", "Purple", "https://safghsajk.jpg") == 1);
+        1:   68-block  0
+        1:   68-block  1
+        1:   68-block  2
+        1:   68-block  3
+        1:   68-block  4
+    %%%%%:   68-block  5
+        1:   68-block  6
+    %%%%%:   68-block  7
+        1:   68-block  8
+        1:   68-block  9
+        1:   68-block 10
+        1:   68-block 11
+        1:   68-block 12
+        1:   68-block 13
+        1:   68-block 14
+        1:   68-block 15
+        1:   68-block 16
+        1:   68-block 17
+        1:   68-block 18
+        1:   68-block 19
+    $$$$$:   68-block 20
+    $$$$$:   68-block 21
+    $$$$$:   68-block 22
+    $$$$$:   68-block 23
+    $$$$$:   68-block 24
+    $$$$$:   68-block 25
+    $$$$$:   68-block 26
+    $$$$$:   68-block 27
+    $$$$$:   68-block 28
+    $$$$$:   68-block 29
+    $$$$$:   68-block 30
+    $$$$$:   68-block 31
+    $$$$$:   68-block 32
+    $$$$$:   68-block 33
+    $$$$$:   68-block 34
+    $$$$$:   68-block 35
+    $$$$$:   68-block 36
+        1:   69:    delete repo;
+        1:   69-block  0
+        1:   69-block  1
+        -:   70:
+        1:   71:}
+        1:   71-block  0
+        -:   72:
+        1:   73:void Test_Repository::TestDeleteSoldOutProductRepo() {
+        1:   74:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   74-block  0
+    $$$$$:   74-block  1
+        1:   75:    Repository* repo = new Repository(DA);
+        1:   75-block  0
+    $$$$$:   75-block  1
+        1:   76:    repo->AddRepo("M", "Blue", 100, 10, "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg");
+        1:   76-block  0
+        1:   76-block  1
+        1:   76-block  2
+        1:   76-block  3
+        1:   76-block  4
+    $$$$$:   76-block  5
+    $$$$$:   76-block  6
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+    $$$$$:   76-block 13
+    $$$$$:   76-block 14
+    $$$$$:   76-block 15
+    $$$$$:   76-block 16
+        1:   77:    repo->AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:   77-block  0
+        1:   77-block  1
+        1:   77-block  2
+        1:   77-block  3
+    $$$$$:   77-block  4
+    $$$$$:   77-block  5
+    $$$$$:   77-block  6
+    $$$$$:   77-block  7
+    $$$$$:   77-block  8
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+    $$$$$:   77-block 15
+       1*:   78:    assert(repo->DeleteSoldOutProductRepo("M", "Blue", "https://www.morganclare.co.uk/images/luxe-blue-coat-p36372-114149_image.jpg") == 1);
+        1:   78-block  0
+        1:   78-block  1
+        1:   78-block  2
+        1:   78-block  3
+    %%%%%:   78-block  4
+        1:   78-block  5
+    %%%%%:   78-block  6
+        1:   78-block  7
+        1:   78-block  8
+        1:   78-block  9
+        1:   78-block 10
+        1:   78-block 11
+        1:   78-block 12
+        1:   78-block 13
+        1:   78-block 14
+        1:   78-block 15
+        1:   78-block 16
+        1:   78-block 17
+        1:   78-block 18
+    $$$$$:   78-block 19
+    $$$$$:   78-block 20
+    $$$$$:   78-block 21
+    $$$$$:   78-block 22
+    $$$$$:   78-block 23
+    $$$$$:   78-block 24
+    $$$$$:   78-block 25
+    $$$$$:   78-block 26
+    $$$$$:   78-block 27
+    $$$$$:   78-block 28
+    $$$$$:   78-block 29
+    $$$$$:   78-block 30
+    $$$$$:   78-block 31
+    $$$$$:   78-block 32
+    $$$$$:   78-block 33
+    $$$$$:   78-block 34
+    $$$$$:   78-block 35
+    $$$$$:   78-block 36
+       1*:   79:    assert(repo->DeleteSoldOutProductRepo("M", "Pink", "https://abcdef.jpg") == 0);
+        1:   79-block  0
+        1:   79-block  1
+        1:   79-block  2
+        1:   79-block  3
+        1:   79-block  4
+    %%%%%:   79-block  5
+        1:   79-block  6
+    %%%%%:   79-block  7
+        1:   79-block  8
+        1:   79-block  9
+        1:   79-block 10
+        1:   79-block 11
+        1:   79-block 12
+        1:   79-block 13
+        1:   79-block 14
+        1:   79-block 15
+        1:   79-block 16
+        1:   79-block 17
+        1:   79-block 18
+        1:   79-block 19
+    $$$$$:   79-block 20
+    $$$$$:   79-block 21
+    $$$$$:   79-block 22
+    $$$$$:   79-block 23
+    $$$$$:   79-block 24
+    $$$$$:   79-block 25
+    $$$$$:   79-block 26
+    $$$$$:   79-block 27
+    $$$$$:   79-block 28
+    $$$$$:   79-block 29
+    $$$$$:   79-block 30
+    $$$$$:   79-block 31
+    $$$$$:   79-block 32
+    $$$$$:   79-block 33
+    $$$$$:   79-block 34
+    $$$$$:   79-block 35
+    $$$$$:   79-block 36
+        1:   80:    delete repo;
+        1:   80-block  0
+        1:   80-block  1
+        1:   81:}
+        1:   81-block  0
+        -:   82:
+        1:   83:void Test_Repository::TestUpdatePriceRepo() {
+        1:   84:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   84-block  0
+    $$$$$:   84-block  1
+        1:   85:    Repository* repo = new Repository(DA);
+        1:   85-block  0
+    $$$$$:   85-block  1
+        1:   86:    repo->AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:   86-block  0
+        1:   86-block  1
+        1:   86-block  2
+        1:   86-block  3
+        1:   86-block  4
+    $$$$$:   86-block  5
+    $$$$$:   86-block  6
+    $$$$$:   86-block  7
+    $$$$$:   86-block  8
+    $$$$$:   86-block  9
+    $$$$$:   86-block 10
+    $$$$$:   86-block 11
+    $$$$$:   86-block 12
+    $$$$$:   86-block 13
+    $$$$$:   86-block 14
+    $$$$$:   86-block 15
+    $$$$$:   86-block 16
+       1*:   87:    assert(repo->UpdatePriceRepo("M", "Pink", "https://abcdef.jpg", 999) == 0);
+        1:   87-block  0
+        1:   87-block  1
+        1:   87-block  2
+        1:   87-block  3
+    %%%%%:   87-block  4
+        1:   87-block  5
+    %%%%%:   87-block  6
+        1:   87-block  7
+        1:   87-block  8
+        1:   87-block  9
+        1:   87-block 10
+        1:   87-block 11
+        1:   87-block 12
+        1:   87-block 13
+        1:   87-block 14
+        1:   87-block 15
+        1:   87-block 16
+        1:   87-block 17
+        1:   87-block 18
+    $$$$$:   87-block 19
+    $$$$$:   87-block 20
+    $$$$$:   87-block 21
+    $$$$$:   87-block 22
+    $$$$$:   87-block 23
+    $$$$$:   87-block 24
+    $$$$$:   87-block 25
+    $$$$$:   87-block 26
+    $$$$$:   87-block 27
+    $$$$$:   87-block 28
+    $$$$$:   87-block 29
+    $$$$$:   87-block 30
+    $$$$$:   87-block 31
+    $$$$$:   87-block 32
+    $$$$$:   87-block 33
+    $$$$$:   87-block 34
+    $$$$$:   87-block 35
+    $$$$$:   87-block 36
+       1*:   88:    assert((*repo)[0].GetPrice() == 999);
+        1:   88-block  0
+    %%%%%:   88-block  1
+        1:   88-block  2
+       1*:   89:    assert(repo->UpdatePriceRepo("S", "Blue", "https://abcdesaff.jpg", 999) == 1);
+        1:   89-block  0
+        1:   89-block  1
+        1:   89-block  2
+        1:   89-block  3
+        1:   89-block  4
+    %%%%%:   89-block  5
+        1:   89-block  6
+    %%%%%:   89-block  7
+        1:   89-block  8
+        1:   89-block  9
+        1:   89-block 10
+        1:   89-block 11
+        1:   89-block 12
+        1:   89-block 13
+        1:   89-block 14
+        1:   89-block 15
+        1:   89-block 16
+        1:   89-block 17
+        1:   89-block 18
+        1:   89-block 19
+    $$$$$:   89-block 20
+    $$$$$:   89-block 21
+    $$$$$:   89-block 22
+    $$$$$:   89-block 23
+    $$$$$:   89-block 24
+    $$$$$:   89-block 25
+    $$$$$:   89-block 26
+    $$$$$:   89-block 27
+    $$$$$:   89-block 28
+    $$$$$:   89-block 29
+    $$$$$:   89-block 30
+    $$$$$:   89-block 31
+    $$$$$:   89-block 32
+    $$$$$:   89-block 33
+    $$$$$:   89-block 34
+    $$$$$:   89-block 35
+    $$$$$:   89-block 36
+        -:   90:
+        1:   91:    delete repo;
+        1:   91-block  0
+        1:   91-block  1
+        1:   92:}
+        1:   92-block  0
+        -:   93:
+        1:   94:void Test_Repository::TestUpdateQuantityRepo() {
+        1:   95:    DynamicArray<Coat>* DA = new DynamicArray<Coat>(100);
+        1:   95-block  0
+    $$$$$:   95-block  1
+        1:   96:    Repository* repo = new Repository(DA);
+        1:   96-block  0
+    $$$$$:   96-block  1
+        1:   97:    repo->AddRepo("M", "Pink", 100, 0, "https://abcdef.jpg");
+        1:   97-block  0
+        1:   97-block  1
+        1:   97-block  2
+        1:   97-block  3
+        1:   97-block  4
+    $$$$$:   97-block  5
+    $$$$$:   97-block  6
+    $$$$$:   97-block  7
+    $$$$$:   97-block  8
+    $$$$$:   97-block  9
+    $$$$$:   97-block 10
+    $$$$$:   97-block 11
+    $$$$$:   97-block 12
+    $$$$$:   97-block 13
+    $$$$$:   97-block 14
+    $$$$$:   97-block 15
+    $$$$$:   97-block 16
+       1*:   98:    assert(repo->UpdateQuantityRepo("M", "Pink", "https://abcdef.jpg", 999) == 0);
+        1:   98-block  0
+        1:   98-block  1
+        1:   98-block  2
+        1:   98-block  3
+    %%%%%:   98-block  4
+        1:   98-block  5
+    %%%%%:   98-block  6
+        1:   98-block  7
+        1:   98-block  8
+        1:   98-block  9
+        1:   98-block 10
+        1:   98-block 11
+        1:   98-block 12
+        1:   98-block 13
+        1:   98-block 14
+        1:   98-block 15
+        1:   98-block 16
+        1:   98-block 17
+        1:   98-block 18
+    $$$$$:   98-block 19
+    $$$$$:   98-block 20
+    $$$$$:   98-block 21
+    $$$$$:   98-block 22
+    $$$$$:   98-block 23
+    $$$$$:   98-block 24
+    $$$$$:   98-block 25
+    $$$$$:   98-block 26
+    $$$$$:   98-block 27
+    $$$$$:   98-block 28
+    $$$$$:   98-block 29
+    $$$$$:   98-block 30
+    $$$$$:   98-block 31
+    $$$$$:   98-block 32
+    $$$$$:   98-block 33
+    $$$$$:   98-block 34
+    $$$$$:   98-block 35
+    $$$$$:   98-block 36
+       1*:   99:    assert((*repo)[0].GetQuantity() == 999);
+        1:   99-block  0
+    %%%%%:   99-block  1
+        1:   99-block  2
+       1*:  100:    assert(repo->UpdateQuantityRepo("S", "Blue", "https://abcdesaff.jpg", 999) == 1);
+        1:  100-block  0
+        1:  100-block  1
+        1:  100-block  2
+        1:  100-block  3
+        1:  100-block  4
+    %%%%%:  100-block  5
+        1:  100-block  6
+    %%%%%:  100-block  7
+        1:  100-block  8
+        1:  100-block  9
+        1:  100-block 10
+        1:  100-block 11
+        1:  100-block 12
+        1:  100-block 13
+        1:  100-block 14
+        1:  100-block 15
+        1:  100-block 16
+        1:  100-block 17
+        1:  100-block 18
+        1:  100-block 19
+    $$$$$:  100-block 20
+    $$$$$:  100-block 21
+    $$$$$:  100-block 22
+    $$$$$:  100-block 23
+    $$$$$:  100-block 24
+    $$$$$:  100-block 25
+    $$$$$:  100-block 26
+    $$$$$:  100-block 27
+    $$$$$:  100-block 28
+    $$$$$:  100-block 29
+    $$$$$:  100-block 30
+    $$$$$:  100-block 31
+    $$$$$:  100-block 32
+    $$$$$:  100-block 33
+    $$$$$:  100-block 34
+    $$$$$:  100-block 35
+    $$$$$:  100-block 36
+        -:  101:
+        1:  102:    delete repo;
+        1:  102-block  0
+        1:  102-block  1
+        -:  103:
+        1:  104:}
+        1:  104-block  0
+        -:  105:
+        1:  106:void Test_Repository::TestAllRepository() {
+        1:  107:    Test_init_repository();
+        1:  107-block  0
+        1:  108:    TestGetSize();
+        1:  109:    TestGetDynArr();
+        1:  110:    TestAddRepo();
+        1:  111:    TestCheckExistenceCoat();
+        1:  112:    TestDeleteEntireProductRepo();
+        1:  113:    TestDeleteSoldOutProductRepo();
+        1:  114:    TestUpdatePriceRepo();
+        1:  115:    TestUpdateQuantityRepo();
+        -:  116:
+        1:  117:}

@@ -1,0 +1,76 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Domain/domain.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Domain\domain.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Domain\domain.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include <cstring>
+        -:    6:#include "domain.h"
+        -:    7:
+     3200:    8:Coat::Coat() {
+     3200:    8-block  0
+     3200:    9:}
+        -:   10:
+       61:   11:Coat::Coat(string size, string color, int price, int quantity, string photograph):
+       61:   12:size{size}, color{color}, price{price}, quantity{quantity}, photograph{photograph}{
+       61:   12-block  0
+       61:   12-block  1
+    $$$$$:   12-block  2
+    $$$$$:   12-block  3
+        -:   13://    this->size = size;
+        -:   14://    this->color = color;
+        -:   15://    this->price = price;
+        -:   16://    this->quantity = quantity;
+        -:   17://    this->photograph = photograph;
+       61:   18:}
+       61:   18-block  0
+        -:   19:
+        -:   20://void Coat::SetSize(string size) {
+        -:   21://    this->size =  size;
+        -:   22://}
+        -:   23:
+        1:   24:void Coat::SetQuantity(int quantity) {
+        1:   25:    this->quantity = quantity;
+        1:   26:}
+        -:   27:
+        1:   28:void Coat::SetPrice(int price) {
+        1:   29:    this->price = price;
+        1:   30:}
+        -:   31:
+      170:   32:string Coat::GetSize() {
+      170:   33:    return this->size;
+      170:   33-block  0
+        -:   34:}
+        -:   35:
+       47:   36:string Coat::GetColor() {
+       47:   37:    return this->color;
+       47:   37-block  0
+        -:   38:}
+        -:   39:
+       14:   40:int Coat::GetPrice() {
+       14:   41:    return this->price;
+       14:   41-block  0
+        -:   42:}
+        -:   43:
+       20:   44:int Coat::GetQuantity() {
+       20:   45:    return this->quantity;
+       20:   45-block  0
+        -:   46:}
+        -:   47:
+       27:   48:string Coat::GetPhotograph() {
+       27:   49:    return this->photograph;
+       27:   49-block  0
+        -:   50:}
+        -:   51:
+        -:   52:
+        -:   53://void Coat::createCoat(char *size, char *color, double price, int quantity, char *photograph) {
+        -:   54://    strcpy(this->size, size);
+        -:   55://    strcpy(this->color, color);
+        -:   56://    this->price = price;
+        -:   57://    this->quantity = quantity;
+        -:   58://    strcpy(this->photograph, photograph);
+        -:   59://}
+        -:   60:

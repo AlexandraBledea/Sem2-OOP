@@ -1,0 +1,214 @@
+        -:    0:Source:C:/Users/Alexandra/Desktop/Facultate/Semestru 2/911/a45-911-Alexandra-Bledea/Service/service.cpp
+        -:    0:Graph:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Service\service.cpp.gcno
+        -:    0:Data:C:\Users\Alexandra\Desktop\Facultate\Semestru 2\911\a45-911-Alexandra-Bledea\cmake-build-debug-coverage\CMakeFiles\a45_911_Alexandra_Bledea.dir\Service\service.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1://
+        -:    2:// Created by Alexandra on 3/17/2021.
+        -:    3://
+        -:    4:
+        -:    5:#include "service.h"
+        -:    6:
+        -:    7://Service::Service() {
+        -:    8://
+        -:    9://}
+        -:   10:
+       10:   11:Service::Service(Repository *repository, Repository *user_repository) {
+       10:   12:    this->repository = repository;
+       10:   13:    this->user_repository = user_repository;
+       10:   14:    this->total_price = 0;
+       10:   15:}
+        -:   16:
+       20:   17:Service::~Service() {
+       10:   18:    delete this->repository;
+       10:   18-block  0
+       10:   18-block  1
+       10:   19:    delete this->user_repository;
+       10:   19-block  0
+       10:   19-block  1
+       10:   20:}
+        -:   21:
+        8:   22:int Service::AddService(string size, string color, int price, int quantity, string photograph) {
+        8:   23:    if(this->repository->AddRepo(size, color, price, quantity, photograph) == 0)
+        8:   23-block  0
+        8:   23-block  1
+        8:   23-block  2
+        8:   23-block  3
+    $$$$$:   23-block  4
+    $$$$$:   23-block  5
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+    $$$$$:   23-block  8
+        7:   24:        return 0;
+        7:   24-block  0
+        -:   25:    else
+        1:   26:        return 1;
+        1:   26-block  0
+        -:   27:}
+        -:   28:
+        2:   29:DynamicArray<Coat> *Service::GetRepository() {
+        2:   30:    return this->repository->GetDynArr();
+        2:   30-block  0
+        -:   31:}
+        -:   32:
+        1:   33:DynamicArray<Coat> *Service::GetUserRepository() {
+        1:   34:    return this->user_repository->GetDynArr();
+        1:   34-block  0
+        -:   35:}
+        -:   36:
+        1:   37:int Service::GetSize() {
+        1:   38:    return this->GetRepository()->GetSize();
+        1:   38-block  0
+        -:   39:}
+        -:   40:
+        5:   41:int Service::DeleteService(string size, string color, string photograph, int criteria) {
+        5:   42:    if (criteria == 1) {
+        5:   42-block  0
+        2:   43:        if (this->repository->DeleteEntireProductRepo(size, color, photograph) == 0)
+        2:   43-block  0
+        2:   43-block  1
+        2:   43-block  2
+        2:   43-block  3
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+        1:   44:            return 0;
+        1:   44-block  0
+        -:   45:        else
+        1:   46:            return 1;
+        1:   46-block  0
+        3:   47:    } else if (criteria == 2) {
+        3:   47-block  0
+        2:   48:        if (this->repository->DeleteSoldOutProductRepo(size, color, photograph) == 0)
+        2:   48-block  0
+        2:   48-block  1
+        2:   48-block  2
+        2:   48-block  3
+    $$$$$:   48-block  4
+    $$$$$:   48-block  5
+    $$$$$:   48-block  6
+    $$$$$:   48-block  7
+    $$$$$:   48-block  8
+        1:   49:            return 0;
+        1:   49-block  0
+        -:   50:        else
+        1:   51:            return 1;
+        1:   51-block  0
+        -:   52:    }
+        1:   53:    return 1;
+        1:   53-block  0
+        -:   54:}
+        -:   55:
+        2:   56:int Service::UpdatePriceService(string size, string color, string photograph, int price) {
+        2:   57:    if(this->repository->UpdatePriceRepo(size, color, photograph, price) == 0)
+        2:   57-block  0
+        2:   57-block  1
+        2:   57-block  2
+        2:   57-block  3
+    $$$$$:   57-block  4
+    $$$$$:   57-block  5
+    $$$$$:   57-block  6
+    $$$$$:   57-block  7
+    $$$$$:   57-block  8
+        1:   58:        return 0;
+        1:   58-block  0
+        -:   59:    else
+        1:   60:        return 1;
+        1:   60-block  0
+        -:   61:}
+        -:   62:
+        2:   63:int Service::UpdateQuantityService(string size, string color, string photograph, int quantity) {
+        2:   64:    if(this->repository->UpdateQuantityRepo(size, color, photograph, quantity) == 0)
+        2:   64-block  0
+        2:   64-block  1
+        2:   64-block  2
+        2:   64-block  3
+    $$$$$:   64-block  4
+    $$$$$:   64-block  5
+    $$$$$:   64-block  6
+    $$$$$:   64-block  7
+    $$$$$:   64-block  8
+        1:   65:        return 0;
+        1:   65-block  0
+        -:   66:    else
+        1:   67:        return 1;
+        1:   67-block  0
+        -:   68:}
+        -:   69:
+        3:   70:int Service::AddUserService(Coat c, Coat cUser) {
+        3:   71:    int index = this->user_repository->CheckExistenceCoat(cUser.GetSize(), cUser.GetColor(), cUser.GetPhotograph());
+        3:   71-block  0
+        3:   71-block  1
+        3:   71-block  2
+        3:   71-block  3
+    $$$$$:   71-block  4
+    $$$$$:   71-block  5
+    $$$$$:   71-block  6
+    $$$$$:   71-block  7
+    $$$$$:   71-block  8
+    $$$$$:   71-block  9
+        3:   72:    if(index == -1) {
+        1:   73:        this->user_repository->AddRepo(cUser.GetSize(), cUser.GetColor(), cUser.GetPrice(), cUser.GetQuantity(),
+        1:   73-block  0
+        1:   73-block  1
+        1:   73-block  2
+        1:   73-block  3
+        1:   73-block  4
+    $$$$$:   73-block  5
+    $$$$$:   73-block  6
+    $$$$$:   73-block  7
+    $$$$$:   73-block  8
+        2:   74:                                       c.GetPhotograph());
+        1:   74-block  0
+    $$$$$:   74-block  1
+    $$$$$:   74-block  2
+        1:   75:        this->total_price = this->total_price + cUser.GetPrice();
+        -:   76:    }
+        -:   77:    else {
+        2:   78:        int new_quantity = (*this->user_repository->GetDynArr())[index].GetQuantity() + 1;
+        2:   78-block  0
+        2:   79:        this->user_repository->UpdateQuantityRepo(cUser.GetSize(), cUser.GetColor(), cUser.GetPhotograph(), new_quantity);
+        2:   79-block  0
+        2:   79-block  1
+        2:   79-block  2
+    $$$$$:   79-block  3
+    $$$$$:   79-block  4
+    $$$$$:   79-block  5
+    $$$$$:   79-block  6
+    $$$$$:   79-block  7
+    $$$$$:   79-block  8
+        2:   80:        this->total_price = this->total_price + cUser.GetPrice();
+        -:   81:    }
+        3:   82:    if(c.GetQuantity() == 0) {
+        3:   82-block  0
+        1:   83:        this->repository->DeleteSoldOutProductRepo(c.GetSize(), c.GetColor(), c.GetPhotograph());
+        1:   83-block  0
+        1:   83-block  1
+        1:   83-block  2
+        1:   83-block  3
+    $$$$$:   83-block  4
+    $$$$$:   83-block  5
+    $$$$$:   83-block  6
+    $$$$$:   83-block  7
+    $$$$$:   83-block  8
+        1:   84:        return 1;
+        -:   85:    }
+        2:   86:    return 0;
+        2:   86-block  0
+        -:   87:}
+        -:   88:
+        1:   89:int Service::GetTotalPrice() const {
+        1:   90:    return this->total_price;
+        1:   90-block  0
+        -:   91:}
+        -:   92:
+        -:   93:
+        -:   94://void Service::print() {
+        -:   95://    this->repository->print_repository();
+        -:   96://}
+        -:   97:
+        -:   98:
+        -:   99:
