@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\a89_911_Alexandra_Bledea.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\a89_911_Alexandra_Bledea.dir/objects.a @CMakeFiles\a89_911_Alexandra_Bledea.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\a89_911_Alexandra_Bledea.dir/objects.a -Wl,--no-whole-archive  -o a89_911_Alexandra_Bledea.exe -Wl,--out-implib,liba89_911_Alexandra_Bledea.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\a89_911_Alexandra_Bledea.dir\linklibs.rsp
